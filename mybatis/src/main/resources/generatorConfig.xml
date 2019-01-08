@@ -3,8 +3,9 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
+
     <!--指定特定数据库的jdbc驱动jar包的位置 -->
-    <classPathEntry location="F:\oracle\mysqlJDBC\mysql-connector-java-5.0.3-bin.jar"/>
+    <classPathEntry location="D:\maven\repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar"/>
     <context id="context" targetRuntime="MyBatis3">
         <!-- optional，旨在创建class时，对注释进行控制 -->
         <commentGenerator>
@@ -15,9 +16,9 @@
         <!--jdbc的数据库连接 -->
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://39.107.253.13:3306/jingxi"
-                userId="jingxi"
-                password="F7Je4L62XXeKpikH">
+                connectionURL="jdbc:mysql://localhost:3306/bank"
+                userId="bank"
+                password="1806">
             <property name="remarksReporting" value="true"/>
         </jdbcConnection>
         <javaTypeResolver>
@@ -25,22 +26,33 @@
         </javaTypeResolver>
 
         <!-- !!!! Model Configurations !!!! -->
-        <javaModelGenerator targetPackage="com.tb.pojo" targetProject=".\src\main\java">
+        <javaModelGenerator targetPackage="com.bank.pojo" targetProject=".\src\main">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!-- !!!! Mapper XML Configurations !!!! -->
-        <sqlMapGenerator targetPackage="com.tb.mapperxml" targetProject=".\src\main\java">
+        <sqlMapGenerator targetPackage="com.bank.mapper" targetProject=".\src\main">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
         <!-- !!!! Mapper Interface Configurations !!!! -->
-        <javaClientGenerator targetPackage="com.tb.mapper" targetProject=".\src\main\java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.bank.dao" targetProject=".\src\main" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
         <!-- !!!! Table Configurations !!!! -->
-        <table  tableName="test"/>
+        <table  tableName="BANK"/>
+        <table  tableName="CARD"/>
+        <table  tableName="CHECKS"/>
+        <table  tableName="CONSUME"/>
+        <table  tableName="CUSTOMER"/>
+        <table  tableName="DEPOSIT"/>
+        <table  tableName="DICT"/>
+        <table  tableName="EMP"/>
+        <table  tableName="LOAN"/>
+        <table  tableName="ROLE"/>
+        <table  tableName="TRANSFER"/>
+        <table  tableName="WITHDRAW"/>
     </context>
 </generatorConfiguration>
