@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tb.mapper.TestMapper">
-  <resultMap id="BaseResultMap" type="com.tb.pojo.Test">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="age" jdbcType="INTEGER" property="age" />
+<mapper namespace="com.bank.dao.DictMapper">
+  <resultMap id="BaseResultMap" type="com.bank.pojo.Dict">
+    <id column="DICT_ID" jdbcType="INTEGER" property="dictId" />
+    <result column="DICT_CATEGORY_ID" jdbcType="INTEGER" property="dictCategoryId" />
+    <result column="DICT_INFO" jdbcType="VARCHAR" property="dictInfo" />
+    <result column="DICT_VALUE" jdbcType="VARCHAR" property="dictValue" />
+    <result column="DICT_OTHER" jdbcType="VARCHAR" property="dictOther" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -65,15 +67,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, age
+    DICT_ID, DICT_CATEGORY_ID, DICT_INFO, DICT_VALUE, DICT_OTHER
   </sql>
-  <select id="selectByExample" parameterType="com.tb.pojo.TestExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.bank.pojo.DictExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from test
+    from dict
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -84,67 +86,85 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from test
-    where id = #{id,jdbcType=INTEGER}
+    from dict
+    where DICT_ID = #{dictId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from test
-    where id = #{id,jdbcType=INTEGER}
+    delete from dict
+    where DICT_ID = #{dictId,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.tb.pojo.TestExample">
-    delete from test
+  <delete id="deleteByExample" parameterType="com.bank.pojo.DictExample">
+    delete from dict
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.tb.pojo.Test">
-    insert into test (id, name, age
-      )
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}
-      )
+  <insert id="insert" parameterType="com.bank.pojo.Dict">
+    insert into dict (DICT_ID, DICT_CATEGORY_ID, DICT_INFO, 
+      DICT_VALUE, DICT_OTHER)
+    values (#{dictId,jdbcType=INTEGER}, #{dictCategoryId,jdbcType=INTEGER}, #{dictInfo,jdbcType=VARCHAR}, 
+      #{dictValue,jdbcType=VARCHAR}, #{dictOther,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.tb.pojo.Test">
-    insert into test
+  <insert id="insertSelective" parameterType="com.bank.pojo.Dict">
+    insert into dict
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
+      <if test="dictId != null">
+        DICT_ID,
       </if>
-      <if test="name != null">
-        name,
+      <if test="dictCategoryId != null">
+        DICT_CATEGORY_ID,
       </if>
-      <if test="age != null">
-        age,
+      <if test="dictInfo != null">
+        DICT_INFO,
+      </if>
+      <if test="dictValue != null">
+        DICT_VALUE,
+      </if>
+      <if test="dictOther != null">
+        DICT_OTHER,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=INTEGER},
+      <if test="dictId != null">
+        #{dictId,jdbcType=INTEGER},
       </if>
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
+      <if test="dictCategoryId != null">
+        #{dictCategoryId,jdbcType=INTEGER},
       </if>
-      <if test="age != null">
-        #{age,jdbcType=INTEGER},
+      <if test="dictInfo != null">
+        #{dictInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="dictValue != null">
+        #{dictValue,jdbcType=VARCHAR},
+      </if>
+      <if test="dictOther != null">
+        #{dictOther,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.tb.pojo.TestExample" resultType="java.lang.Long">
-    select count(*) from test
+  <select id="countByExample" parameterType="com.bank.pojo.DictExample" resultType="java.lang.Long">
+    select count(*) from dict
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update test
+    update dict
     <set>
-      <if test="record.id != null">
-        id = #{record.id,jdbcType=INTEGER},
+      <if test="record.dictId != null">
+        DICT_ID = #{record.dictId,jdbcType=INTEGER},
       </if>
-      <if test="record.name != null">
-        name = #{record.name,jdbcType=VARCHAR},
+      <if test="record.dictCategoryId != null">
+        DICT_CATEGORY_ID = #{record.dictCategoryId,jdbcType=INTEGER},
       </if>
-      <if test="record.age != null">
-        age = #{record.age,jdbcType=INTEGER},
+      <if test="record.dictInfo != null">
+        DICT_INFO = #{record.dictInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dictValue != null">
+        DICT_VALUE = #{record.dictValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dictOther != null">
+        DICT_OTHER = #{record.dictOther,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -152,30 +172,40 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update test
-    set id = #{record.id,jdbcType=INTEGER},
-      name = #{record.name,jdbcType=VARCHAR},
-      age = #{record.age,jdbcType=INTEGER}
+    update dict
+    set DICT_ID = #{record.dictId,jdbcType=INTEGER},
+      DICT_CATEGORY_ID = #{record.dictCategoryId,jdbcType=INTEGER},
+      DICT_INFO = #{record.dictInfo,jdbcType=VARCHAR},
+      DICT_VALUE = #{record.dictValue,jdbcType=VARCHAR},
+      DICT_OTHER = #{record.dictOther,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.tb.pojo.Test">
-    update test
+  <update id="updateByPrimaryKeySelective" parameterType="com.bank.pojo.Dict">
+    update dict
     <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
+      <if test="dictCategoryId != null">
+        DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER},
       </if>
-      <if test="age != null">
-        age = #{age,jdbcType=INTEGER},
+      <if test="dictInfo != null">
+        DICT_INFO = #{dictInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="dictValue != null">
+        DICT_VALUE = #{dictValue,jdbcType=VARCHAR},
+      </if>
+      <if test="dictOther != null">
+        DICT_OTHER = #{dictOther,jdbcType=VARCHAR},
       </if>
     </set>
-    where id = #{id,jdbcType=INTEGER}
+    where DICT_ID = #{dictId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.tb.pojo.Test">
-    update test
-    set name = #{name,jdbcType=VARCHAR},
-      age = #{age,jdbcType=INTEGER}
-    where id = #{id,jdbcType=INTEGER}
+  <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Dict">
+    update dict
+    set DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER},
+      DICT_INFO = #{dictInfo,jdbcType=VARCHAR},
+      DICT_VALUE = #{dictValue,jdbcType=VARCHAR},
+      DICT_OTHER = #{dictOther,jdbcType=VARCHAR}
+    where DICT_ID = #{dictId,jdbcType=INTEGER}
   </update>
 </mapper>

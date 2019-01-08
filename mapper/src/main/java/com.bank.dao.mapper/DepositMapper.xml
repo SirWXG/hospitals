@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bank.dao.DepositMapper">
+  <resultMap id="BaseResultMap" type="com.bank.pojo.Deposit">
+    <id column="DEPOSIT_ID" jdbcType="INTEGER" property="depositId" />
+    <result column="CUSTOMER_ID" jdbcType="INTEGER" property="customerId" />
+    <result column="DEPOSIT_AMOUNT" jdbcType="REAL" property="depositAmount" />
+    <result column="DEPOSIT_TERM" jdbcType="INTEGER" property="depositTerm" />
+    <result column="DEPOSIT_RATE" jdbcType="REAL" property="depositRate" />
+    <result column="DEPOSIT_DATE" jdbcType="DATE" property="depositDate" />
+    <result column="DEPOSIT_BANK_ID" jdbcType="INTEGER" property="depositBankId" />
+    <result column="DEPOSIT_OTHER" jdbcType="VARCHAR" property="depositOther" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    DEPOSIT_ID, CUSTOMER_ID, DEPOSIT_AMOUNT, DEPOSIT_TERM, DEPOSIT_RATE, DEPOSIT_DATE, 
+    DEPOSIT_BANK_ID, DEPOSIT_OTHER
+  </sql>
+  <select id="selectByExample" parameterType="com.bank.pojo.DepositExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from deposit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from deposit
+    where DEPOSIT_ID = #{depositId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from deposit
+    where DEPOSIT_ID = #{depositId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bank.pojo.DepositExample">
+    delete from deposit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bank.pojo.Deposit">
+    insert into deposit (DEPOSIT_ID, CUSTOMER_ID, DEPOSIT_AMOUNT, 
+      DEPOSIT_TERM, DEPOSIT_RATE, DEPOSIT_DATE, 
+      DEPOSIT_BANK_ID, DEPOSIT_OTHER)
+    values (#{depositId,jdbcType=INTEGER}, #{customerId,jdbcType=INTEGER}, #{depositAmount,jdbcType=REAL}, 
+      #{depositTerm,jdbcType=INTEGER}, #{depositRate,jdbcType=REAL}, #{depositDate,jdbcType=DATE}, 
+      #{depositBankId,jdbcType=INTEGER}, #{depositOther,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.bank.pojo.Deposit">
+    insert into deposit
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="depositId != null">
+        DEPOSIT_ID,
+      </if>
+      <if test="customerId != null">
+        CUSTOMER_ID,
+      </if>
+      <if test="depositAmount != null">
+        DEPOSIT_AMOUNT,
+      </if>
+      <if test="depositTerm != null">
+        DEPOSIT_TERM,
+      </if>
+      <if test="depositRate != null">
+        DEPOSIT_RATE,
+      </if>
+      <if test="depositDate != null">
+        DEPOSIT_DATE,
+      </if>
+      <if test="depositBankId != null">
+        DEPOSIT_BANK_ID,
+      </if>
+      <if test="depositOther != null">
+        DEPOSIT_OTHER,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="depositId != null">
+        #{depositId,jdbcType=INTEGER},
+      </if>
+      <if test="customerId != null">
+        #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="depositAmount != null">
+        #{depositAmount,jdbcType=REAL},
+      </if>
+      <if test="depositTerm != null">
+        #{depositTerm,jdbcType=INTEGER},
+      </if>
+      <if test="depositRate != null">
+        #{depositRate,jdbcType=REAL},
+      </if>
+      <if test="depositDate != null">
+        #{depositDate,jdbcType=DATE},
+      </if>
+      <if test="depositBankId != null">
+        #{depositBankId,jdbcType=INTEGER},
+      </if>
+      <if test="depositOther != null">
+        #{depositOther,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bank.pojo.DepositExample" resultType="java.lang.Long">
+    select count(*) from deposit
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update deposit
+    <set>
+      <if test="record.depositId != null">
+        DEPOSIT_ID = #{record.depositId,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerId != null">
+        CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+      </if>
+      <if test="record.depositAmount != null">
+        DEPOSIT_AMOUNT = #{record.depositAmount,jdbcType=REAL},
+      </if>
+      <if test="record.depositTerm != null">
+        DEPOSIT_TERM = #{record.depositTerm,jdbcType=INTEGER},
+      </if>
+      <if test="record.depositRate != null">
+        DEPOSIT_RATE = #{record.depositRate,jdbcType=REAL},
+      </if>
+      <if test="record.depositDate != null">
+        DEPOSIT_DATE = #{record.depositDate,jdbcType=DATE},
+      </if>
+      <if test="record.depositBankId != null">
+        DEPOSIT_BANK_ID = #{record.depositBankId,jdbcType=INTEGER},
+      </if>
+      <if test="record.depositOther != null">
+        DEPOSIT_OTHER = #{record.depositOther,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update deposit
+    set DEPOSIT_ID = #{record.depositId,jdbcType=INTEGER},
+      CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+      DEPOSIT_AMOUNT = #{record.depositAmount,jdbcType=REAL},
+      DEPOSIT_TERM = #{record.depositTerm,jdbcType=INTEGER},
+      DEPOSIT_RATE = #{record.depositRate,jdbcType=REAL},
+      DEPOSIT_DATE = #{record.depositDate,jdbcType=DATE},
+      DEPOSIT_BANK_ID = #{record.depositBankId,jdbcType=INTEGER},
+      DEPOSIT_OTHER = #{record.depositOther,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bank.pojo.Deposit">
+    update deposit
+    <set>
+      <if test="customerId != null">
+        CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="depositAmount != null">
+        DEPOSIT_AMOUNT = #{depositAmount,jdbcType=REAL},
+      </if>
+      <if test="depositTerm != null">
+        DEPOSIT_TERM = #{depositTerm,jdbcType=INTEGER},
+      </if>
+      <if test="depositRate != null">
+        DEPOSIT_RATE = #{depositRate,jdbcType=REAL},
+      </if>
+      <if test="depositDate != null">
+        DEPOSIT_DATE = #{depositDate,jdbcType=DATE},
+      </if>
+      <if test="depositBankId != null">
+        DEPOSIT_BANK_ID = #{depositBankId,jdbcType=INTEGER},
+      </if>
+      <if test="depositOther != null">
+        DEPOSIT_OTHER = #{depositOther,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where DEPOSIT_ID = #{depositId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Deposit">
+    update deposit
+    set CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+      DEPOSIT_AMOUNT = #{depositAmount,jdbcType=REAL},
+      DEPOSIT_TERM = #{depositTerm,jdbcType=INTEGER},
+      DEPOSIT_RATE = #{depositRate,jdbcType=REAL},
+      DEPOSIT_DATE = #{depositDate,jdbcType=DATE},
+      DEPOSIT_BANK_ID = #{depositBankId,jdbcType=INTEGER},
+      DEPOSIT_OTHER = #{depositOther,jdbcType=VARCHAR}
+    where DEPOSIT_ID = #{depositId,jdbcType=INTEGER}
+  </update>
+</mapper>

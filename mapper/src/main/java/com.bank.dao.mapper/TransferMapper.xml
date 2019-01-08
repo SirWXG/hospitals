@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bank.dao.TransferMapper">
+  <resultMap id="BaseResultMap" type="com.bank.pojo.Transfer">
+    <id column="TRANSFER_ID" jdbcType="INTEGER" property="transferId" />
+    <result column="TRANSFER_OUT" jdbcType="VARCHAR" property="transferOut" />
+    <result column="TRANSFER_AMOUNT" jdbcType="INTEGER" property="transferAmount" />
+    <result column="TRANSFER_DATE" jdbcType="DATE" property="transferDate" />
+    <result column="TRANSFER_IN" jdbcType="VARCHAR" property="transferIn" />
+    <result column="TRANSFER_IN_NAME" jdbcType="VARCHAR" property="transferInName" />
+    <result column="TRANSFER_INFO" jdbcType="VARCHAR" property="transferInfo" />
+    <result column="TRANSFER_STATUS" jdbcType="VARCHAR" property="transferStatus" />
+    <result column="TRANSFER_OTHER" jdbcType="VARCHAR" property="transferOther" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    TRANSFER_ID, TRANSFER_OUT, TRANSFER_AMOUNT, TRANSFER_DATE, TRANSFER_IN, TRANSFER_IN_NAME, 
+    TRANSFER_INFO, TRANSFER_STATUS, TRANSFER_OTHER
+  </sql>
+  <select id="selectByExample" parameterType="com.bank.pojo.TransferExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from transfer
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from transfer
+    where TRANSFER_ID = #{transferId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from transfer
+    where TRANSFER_ID = #{transferId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bank.pojo.TransferExample">
+    delete from transfer
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bank.pojo.Transfer">
+    insert into transfer (TRANSFER_ID, TRANSFER_OUT, TRANSFER_AMOUNT, 
+      TRANSFER_DATE, TRANSFER_IN, TRANSFER_IN_NAME, 
+      TRANSFER_INFO, TRANSFER_STATUS, TRANSFER_OTHER
+      )
+    values (#{transferId,jdbcType=INTEGER}, #{transferOut,jdbcType=VARCHAR}, #{transferAmount,jdbcType=INTEGER}, 
+      #{transferDate,jdbcType=DATE}, #{transferIn,jdbcType=VARCHAR}, #{transferInName,jdbcType=VARCHAR}, 
+      #{transferInfo,jdbcType=VARCHAR}, #{transferStatus,jdbcType=VARCHAR}, #{transferOther,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.bank.pojo.Transfer">
+    insert into transfer
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="transferId != null">
+        TRANSFER_ID,
+      </if>
+      <if test="transferOut != null">
+        TRANSFER_OUT,
+      </if>
+      <if test="transferAmount != null">
+        TRANSFER_AMOUNT,
+      </if>
+      <if test="transferDate != null">
+        TRANSFER_DATE,
+      </if>
+      <if test="transferIn != null">
+        TRANSFER_IN,
+      </if>
+      <if test="transferInName != null">
+        TRANSFER_IN_NAME,
+      </if>
+      <if test="transferInfo != null">
+        TRANSFER_INFO,
+      </if>
+      <if test="transferStatus != null">
+        TRANSFER_STATUS,
+      </if>
+      <if test="transferOther != null">
+        TRANSFER_OTHER,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="transferId != null">
+        #{transferId,jdbcType=INTEGER},
+      </if>
+      <if test="transferOut != null">
+        #{transferOut,jdbcType=VARCHAR},
+      </if>
+      <if test="transferAmount != null">
+        #{transferAmount,jdbcType=INTEGER},
+      </if>
+      <if test="transferDate != null">
+        #{transferDate,jdbcType=DATE},
+      </if>
+      <if test="transferIn != null">
+        #{transferIn,jdbcType=VARCHAR},
+      </if>
+      <if test="transferInName != null">
+        #{transferInName,jdbcType=VARCHAR},
+      </if>
+      <if test="transferInfo != null">
+        #{transferInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="transferStatus != null">
+        #{transferStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="transferOther != null">
+        #{transferOther,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bank.pojo.TransferExample" resultType="java.lang.Long">
+    select count(*) from transfer
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update transfer
+    <set>
+      <if test="record.transferId != null">
+        TRANSFER_ID = #{record.transferId,jdbcType=INTEGER},
+      </if>
+      <if test="record.transferOut != null">
+        TRANSFER_OUT = #{record.transferOut,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transferAmount != null">
+        TRANSFER_AMOUNT = #{record.transferAmount,jdbcType=INTEGER},
+      </if>
+      <if test="record.transferDate != null">
+        TRANSFER_DATE = #{record.transferDate,jdbcType=DATE},
+      </if>
+      <if test="record.transferIn != null">
+        TRANSFER_IN = #{record.transferIn,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transferInName != null">
+        TRANSFER_IN_NAME = #{record.transferInName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transferInfo != null">
+        TRANSFER_INFO = #{record.transferInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transferStatus != null">
+        TRANSFER_STATUS = #{record.transferStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transferOther != null">
+        TRANSFER_OTHER = #{record.transferOther,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update transfer
+    set TRANSFER_ID = #{record.transferId,jdbcType=INTEGER},
+      TRANSFER_OUT = #{record.transferOut,jdbcType=VARCHAR},
+      TRANSFER_AMOUNT = #{record.transferAmount,jdbcType=INTEGER},
+      TRANSFER_DATE = #{record.transferDate,jdbcType=DATE},
+      TRANSFER_IN = #{record.transferIn,jdbcType=VARCHAR},
+      TRANSFER_IN_NAME = #{record.transferInName,jdbcType=VARCHAR},
+      TRANSFER_INFO = #{record.transferInfo,jdbcType=VARCHAR},
+      TRANSFER_STATUS = #{record.transferStatus,jdbcType=VARCHAR},
+      TRANSFER_OTHER = #{record.transferOther,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bank.pojo.Transfer">
+    update transfer
+    <set>
+      <if test="transferOut != null">
+        TRANSFER_OUT = #{transferOut,jdbcType=VARCHAR},
+      </if>
+      <if test="transferAmount != null">
+        TRANSFER_AMOUNT = #{transferAmount,jdbcType=INTEGER},
+      </if>
+      <if test="transferDate != null">
+        TRANSFER_DATE = #{transferDate,jdbcType=DATE},
+      </if>
+      <if test="transferIn != null">
+        TRANSFER_IN = #{transferIn,jdbcType=VARCHAR},
+      </if>
+      <if test="transferInName != null">
+        TRANSFER_IN_NAME = #{transferInName,jdbcType=VARCHAR},
+      </if>
+      <if test="transferInfo != null">
+        TRANSFER_INFO = #{transferInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="transferStatus != null">
+        TRANSFER_STATUS = #{transferStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="transferOther != null">
+        TRANSFER_OTHER = #{transferOther,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where TRANSFER_ID = #{transferId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Transfer">
+    update transfer
+    set TRANSFER_OUT = #{transferOut,jdbcType=VARCHAR},
+      TRANSFER_AMOUNT = #{transferAmount,jdbcType=INTEGER},
+      TRANSFER_DATE = #{transferDate,jdbcType=DATE},
+      TRANSFER_IN = #{transferIn,jdbcType=VARCHAR},
+      TRANSFER_IN_NAME = #{transferInName,jdbcType=VARCHAR},
+      TRANSFER_INFO = #{transferInfo,jdbcType=VARCHAR},
+      TRANSFER_STATUS = #{transferStatus,jdbcType=VARCHAR},
+      TRANSFER_OTHER = #{transferOther,jdbcType=VARCHAR}
+    where TRANSFER_ID = #{transferId,jdbcType=INTEGER}
+  </update>
+</mapper>
