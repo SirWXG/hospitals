@@ -23,6 +23,8 @@
     <dependencyManagement>
         <dependencies>
 
+            <!--ceshi-->
+
             <!--junit测试-->
             <dependency>
                 <groupId>junit</groupId>
