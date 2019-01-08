@@ -23,7 +23,7 @@
     <dependencyManagement>
         <dependencies>
 
-            <!--ceshi-->
+
 
             <!--junit测试-->
             <dependency>
