@@ -6,69 +6,418 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1540ffbf-ba99-4066-8d7b-5d455ba713d1" name="Default Changelist" comment="protal">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/data2layui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/content_service_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/content_service_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/content_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/content_service_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/protal_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/protal_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/protal_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/protal_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="1540ffbf-ba99-4066-8d7b-5d455ba713d1" name="Default Changelist" comment="环境配置2">
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/easyloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/jquery.easyui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/jquery.easyui.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/license_freeware.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/locale/easyui-lang-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.combogrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.combotree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.combotreegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.datagrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.datalist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.datebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.datetimebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.datetimespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.droppable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.filebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.linkbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.menubutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.messager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.numberbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.numberspinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.panel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.passwordbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.progressbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.propertygrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.resizable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.searchbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.spinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.splitbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.switchbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.textbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.timespinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.treegrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.validatebox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/plugins/jquery.window.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/black/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/bootstrap/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/default/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/gray/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/cancel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/cut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/edit_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/edit_remove.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/filesave.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/filter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/large_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/large_clipart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/large_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/large_shapes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/large_smartart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/mini_add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/mini_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/mini_refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/reload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/sum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/icons/undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/material/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/combo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/combobox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/datagrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/datalist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/datebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/easyui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/filebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/accordion_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/calendar_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/combo_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/datagrid_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/datebox_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/layout_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/linkbutton_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/menu_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/messager_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/pagination_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/panel_tools.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/passwordbox_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/passwordbox_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/searchbox_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/slider_handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/spinner_arrows.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/tabs_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/tree_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/images/validatebox_warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/layout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/linkbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/menubutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/messager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/numberbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/pagination.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/panel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/passwordbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/progressbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/propertygrid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/searchbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/slider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/spinner.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/splitbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/switchbutton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/textbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/tooltip.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/tree.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/validatebox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/metro/window.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery-easyui-1.5/themes/mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/moment/moment-with-locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/js/moment/moment.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-interface/content-interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-interface/content-interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/tb/dubbo/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/tb/dubbo/ItestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/content-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/content-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/tb/dubbo_service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/tb/dubbo_service/TestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content.iml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/BankMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/BankMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/CardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/ChecksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ChecksMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/ConsumeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ConsumeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/DepositMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DepositMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/DictMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/LoanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/LoanMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/TransferMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TransferMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao.mapper/WithdrawMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/WithdrawMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Checks.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Checks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Consume.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Consume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dict.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Emp.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Emp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Loan.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Loan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/protal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/protal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/tb/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/tb/service/IhellowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/tb/service/xx.java" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/java/com/bank/service/xx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/resources/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobuy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bankManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/tb/utils/Utf8.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/coding2utf8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/tb/utils/sadas" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/content/content-interface/target/" />
     <ignored path="$PROJECT_DIR$/content/content-service/target/" />
@@ -89,48 +438,54 @@
     <session id="-786358715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="39" />
-          <entry key="jsp" value="1" />
+          <entry key="css" value="1" />
+          <entry key="java" value="41" />
+          <entry key="js" value="1" />
+          <entry key="jsp" value="3" />
           <entry key="properties" value="3" />
           <entry key="sadas" value="1" />
-          <entry key="xml" value="37" />
+          <entry key="xml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="39" />
-          <entry key="JSP" value="1" />
+          <entry key="CSS" value="1" />
+          <entry key="JAVA" value="41" />
+          <entry key="JSP" value="3" />
+          <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="3" />
-          <entry key="XML" value="37" />
+          <entry key="XML" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
           <entry key="java" value="410" />
-          <entry key="jsp" value="15" />
+          <entry key="jsp" value="19" />
           <entry key="properties" value="24" />
-          <entry key="txt" value="66" />
+          <entry key="txt" value="96" />
           <entry key="xml" value="395" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="410" />
-          <entry key="JSP" value="15" />
-          <entry key="PLAIN_TEXT" value="92" />
+          <entry key="JSP" value="19" />
+          <entry key="PLAIN_TEXT" value="122" />
           <entry key="Properties" value="24" />
           <entry key="XML" value="395" />
         </counts>
@@ -138,13 +493,67 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/css/layui.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -205,6 +614,7 @@
         <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp" />
       </list>
     </option>
   </component>
@@ -246,7 +656,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="436" />
+    <option name="x" value="435" />
     <option name="y" value="50" />
     <option name="width" value="1400" />
     <option name="height" value="995" />
@@ -256,6 +666,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,6 +678,97 @@
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -288,15 +791,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com.bank.pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
@@ -349,9 +843,7 @@
               <item name="protal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bank" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
@@ -359,38 +851,42 @@
               <item name="protal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="protal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547005211893" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547021547160" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25789472" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\BankProject\mapper\src\main\java\com.bank.dao" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\BankProject\protal\src\main\webapp\css" />
+      <recent name="D:\IdeaProjects\BankProject\protal\src\main\webapp\js" />
       <recent name="D:\IdeaProjects\BankProject\mapper\src\main\java" />
       <recent name="D:\IdeaProjects\BankProject\pojo\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\BankProject\mapper\src\main\java\com.bank.dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,7 +1010,9 @@
       <workItem from="1546934559779" duration="440000" />
       <workItem from="1546935492779" duration="6876000" />
       <workItem from="1546950005242" duration="10498000" />
-      <workItem from="1546994833799" duration="10319000" />
+      <workItem from="1546994833799" duration="12172000" />
+      <workItem from="1547010882186" duration="5190000" />
+      <workItem from="1547018556034" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="customer.jsp">
       <created>1546939328060</created>
@@ -544,16 +1042,37 @@
       <option name="project" value="LOCAL" />
       <updated>1546951818325</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="环境配置">
+      <created>1547005277556</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547005277556</updated>
+    </task>
+    <task id="LOCAL-00006" summary="service">
+      <created>1547011784274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547011784274</updated>
+    </task>
+    <task id="LOCAL-00007" summary="controller">
+      <created>1547011811151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547011811151</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28133000" />
+    <option name="totallyTimeSpent" value="36713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21514745" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -566,7 +1085,7 @@
       <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49798927" visible="true" weight="0.3815603" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49798927" weight="0.3815603" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
@@ -574,7 +1093,7 @@
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5020107" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5020107" side_tool="true" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -602,37 +1121,16 @@
     <MESSAGE value="dao层" />
     <MESSAGE value="逆向工程" />
     <MESSAGE value="pojo" />
-    <option name="LAST_COMMIT_MESSAGE" value="pojo" />
+    <MESSAGE value="环境配置" />
+    <MESSAGE value="service" />
+    <MESSAGE value="controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/WEB-INF/customer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/com.bank.generator/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/com/bank/dao/BankMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -721,9 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,9 +1228,6 @@
           <caret line="272" column="16" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -768,19 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -798,23 +1277,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DictServicePro.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,9 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,9 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,9 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,9 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,9 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,59 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1266#1267#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-            <element signature="e#1453#1454#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1542#1543#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1618#1619#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2161#2162#0" expanded="true" />
-            <element signature="e#2198#2199#0" expanded="true" />
-            <element signature="e#2230#2231#0" expanded="true" />
-            <element signature="e#2281#2282#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2360#2361#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2524#2525#0" expanded="true" />
-            <element signature="e#2557#2558#0" expanded="true" />
-            <element signature="e#2588#2589#0" expanded="true" />
-            <element signature="e#2634#2635#0" expanded="true" />
-            <element signature="e#2674#2675#0" expanded="true" />
-            <element signature="e#2712#2713#0" expanded="true" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#3000#3001#0" expanded="true" />
-            <element signature="e#3076#3077#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,9 +1403,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,11 +1410,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/elem1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/js/moment/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
@@ -1075,12 +1518,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>bankManager</last-edited>
+          <last-edited>Spring|content-service</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.25789472" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
