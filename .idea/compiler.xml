@@ -16,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bankManager" target="1.8" />
       <module name="content" target="1.8" />
       <module name="content-interface" target="1.8" />
       <module name="content-service" target="1.8" />
@@ -23,7 +24,6 @@
       <module name="mybatis" target="1.8" />
       <module name="pojo" target="1.8" />
       <module name="protal" target="1.8" />
-      <module name="taobuy" target="1.8" />
       <module name="utils" target="1.8" />
     </bytecodeTargetLevel>
   </component>

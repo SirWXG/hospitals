@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Consume {
+public class Consume implements Serializable {
     private Integer consumeId;
 
     private String cardId;

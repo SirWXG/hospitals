@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bankManager.iml" filepath="$PROJECT_DIR$/bankManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/content/content.iml" filepath="$PROJECT_DIR$/content/content.iml" />
       <module fileurl="file://$PROJECT_DIR$/content/content-interface/content-interface.iml" filepath="$PROJECT_DIR$/content/content-interface/content-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/content/content-service/content-service.iml" filepath="$PROJECT_DIR$/content/content-service/content-service.iml" />
@@ -9,7 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/pojo/pojo.iml" filepath="$PROJECT_DIR$/pojo/pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/protal/protal.iml" filepath="$PROJECT_DIR$/protal/protal.iml" />
-      <module fileurl="file://$PROJECT_DIR$/taobuy.iml" filepath="$PROJECT_DIR$/taobuy.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>

@@ -1,4 +1,4 @@
-package com.tb.dubbo;
+package com.bank.dubbo;
 
 /**
  * @author 何龙

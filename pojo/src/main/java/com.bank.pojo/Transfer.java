@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Transfer {
+public class Transfer implements Serializable {
     private Integer transferId;
 
     private String transferOut;

@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Emp {
+public class Emp implements Serializable {
     private Integer empId;
 
     private Integer roleId;

@@ -1,6 +1,8 @@
 package com.bank.pojo;
 
-public class Bank {
+import java.io.Serializable;
+
+public class Bank implements Serializable {
     private Integer bankId;
 
     private String bankName;

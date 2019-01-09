@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Checks {
+public class Checks implements Serializable {
     private Integer checkId;
 
     private Integer bankId;

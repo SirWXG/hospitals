@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Withdraw {
+public class Withdraw  implements Serializable {
     private Integer withdrawId;
 
     private String cardId;

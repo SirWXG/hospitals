@@ -1,6 +1,8 @@
 package com.bank.pojo;
 
-public class Dict {
+import java.io.Serializable;
+
+public class Dict implements Serializable {
     private Integer dictId;
 
     private Integer dictCategoryId;

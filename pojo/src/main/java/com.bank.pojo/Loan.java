@@ -1,8 +1,9 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Loan {
+public class Loan  implements Serializable {
     private Integer loanId;
 
     private String customerId;

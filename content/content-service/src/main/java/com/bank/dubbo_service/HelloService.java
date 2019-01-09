@@ -1,15 +1,12 @@
-package com.tb.dubbo_service;
+package com.bank.dubbo_service;
 
 
-import com.tb.dubbo.Hello;
+import com.bank.dubbo.Hello;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
 
-/**
- * @author 何龙
- * @create 2019-01-07 21:24
- */
+
 @Service
 public class HelloService implements Hello, Serializable {
 
