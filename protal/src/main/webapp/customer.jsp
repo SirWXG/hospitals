@@ -99,7 +99,7 @@
                 <div class="col-md-1" style="line-height: 60px;" align="right">
                     <a class="btn btn-primary btn-large theme-login" href="javascript:;">登录</a>
                 </div>
-                <div class="col-md-1" style="line-height: 60px; width: 15px;">|</div>
+                <div class="col-md-1"   style="line-height: 60px; width: 15px;">|</div>
                 <div class="col-md-1" style="line-height: 60px;" align="left">
                     <a class="btn btn-primary btn-large theme-regist" href="#">开通个人网上银行</a>
                 </div>
