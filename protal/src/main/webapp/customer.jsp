@@ -154,6 +154,7 @@
     <div style="width: 100%;height: 600px;" align="center">
         <div id="mainbody" style="width: 60%;height: 100%;">
             <!-- 页面加载时自动将信用卡页面展示 -->
+            <jsp:include page="elem1.jsp"></jsp:include>
 </div><div style="width: 60%;height: 100%;" >        </div>
     </div>
 
@@ -161,7 +162,7 @@
 
     <div style="width: 100%;height: 700px;" align="center">
         <div style="width: 60%;height: 100%;">
-            <div style="width: 100%;height: 10%;" align="left"><font size="1">丨悦享生活<span style="background-color: deepskyblue;height: 50px;box-shadow: 3px 3px 3px deepskyblue;font-size: medium;">衣食住行 物有所值，在这里实现您的生活品质</span></font></div>
+            <div style="width: 100%;height: 10%;" align="left"><font size="+6">丨悦享生活<span style="background-color: deepskyblue;height: 50px;box-shadow: 3px 3px 3px deepskyblue;font-size: medium;">衣食住行 物有所值，在这里实现您的生活品质</span></font></div>
             <div style="width: 100%;height: 10%;"></div>
             <div style="width: 100%;height: 60%;">
                 <div style="width: 50%;height: 100%;float: left;">
