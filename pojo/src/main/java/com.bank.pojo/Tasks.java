@@ -1,8 +1,10 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
-public class Tasks {
+public class Tasks implements Serializable {
     private String taskId;
 
     private Integer taskEmpid;
@@ -16,6 +18,24 @@ public class Tasks {
     private String taskResult;
 
     private String taskOther;
+    private List<Streamline> streamline;
+private Emp emp;
+
+    public Emp getEmp() {
+        return emp;
+    }
+
+    public void setEmp(Emp emp) {
+        this.emp = emp;
+    }
+
+    public List<Streamline> getStreamline() {
+        return streamline;
+    }
+
+    public void setStreamline(List<Streamline> streamline) {
+        this.streamline = streamline;
+    }
 
     public String getTaskId() {
         return taskId;

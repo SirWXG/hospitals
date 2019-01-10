@@ -22,4 +22,6 @@
 
 
 	<dubbo:reference id="dict" interface="com.bank.dubbo.dictService"/>
+	<dubbo:reference id="task" interface="com.bank.dubbo.taskService"/>
+	<dubbo:reference id="streamline" interface="com.bank.dubbo.streamlineService"/>
 </beans>

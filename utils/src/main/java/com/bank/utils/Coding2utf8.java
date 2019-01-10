@@ -3,7 +3,7 @@ package com.bank.utils;
 import java.io.UnsupportedEncodingException;
 
 
-public class coding2utf8 {
+public class Coding2utf8 {
     public static String getString(String filePath) {
         try {
             return new String(filePath.getBytes("ISO-8859-1"), "utf-8");

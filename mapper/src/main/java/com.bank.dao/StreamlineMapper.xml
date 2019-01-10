@@ -12,6 +12,17 @@
     <result column="NEXT_EMPID" jdbcType="INTEGER" property="nextEmpid" />
     <result column="STREAMLINE_OTHER" jdbcType="VARCHAR" property="streamlineOther" />
   </resultMap>
+  <resultMap id="myResultMap" type="streamline" extends="BaseResultMap">
+    <association property="emp" javaType="emp">
+      <id column="EMP_ID" jdbcType="INTEGER" property="empId" />
+      <result column="ROLE_ID" jdbcType="INTEGER" property="roleId" />
+      <result column="EMP_NAME" jdbcType="VARCHAR" property="empName" />
+    </association>
+  </resultMap>
+  <select id="selectBystask" resultMap="myResultMap" >
+    select <include refid="Base_Column_List"></include> emp_name,role_id
+    from streamline s left join  emp e on e.emp_id=s.check_empid where streamline_other=#{task_id}
+  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

@@ -10,6 +10,41 @@
     <result column="TASK_RESULT" jdbcType="VARCHAR" property="taskResult" />
     <result column="TASK_OTHER" jdbcType="VARCHAR" property="taskOther" />
   </resultMap>
+  <resultMap id="myResultMap" type="tasks" extends="BaseResultMap">
+    <association property="emp" javaType="emp">
+      <id column="EMP_ID" jdbcType="INTEGER" property="empId" />
+      <result column="EMP_NAME" jdbcType="VARCHAR" property="empName" />
+    </association>
+    <collection property="streamline" javaType="list" ofType="streamline" >
+      <id column="STREAMLINE_ID" jdbcType="INTEGER" property="streamlineId" />
+      <result column="STREAMLINE_NAME" jdbcType="VARCHAR" property="streamlineName" />
+      <result column="CHECK_EMPID" jdbcType="INTEGER" property="checkEmpid" />
+      <result column="STREAMLINE_DATE" jdbcType="DATE" property="streamlineDate" />
+      <result column="STREAMLINE_INFO" jdbcType="VARCHAR" property="streamlineInfo" />
+      <result column="STREAMLINE_RESULT" jdbcType="VARCHAR" property="streamlineResult" />
+      <result column="LAST_ID" jdbcType="INTEGER" property="lastId" />
+      <result column="NEXT_EMPID" jdbcType="INTEGER" property="nextEmpid" />
+      <result column="STREAMLINE_OTHER" jdbcType="VARCHAR" property="streamlineOther" />
+    </collection>
+  </resultMap>
+  <select id="selectBymap"  parameterType="map" resultMap="myResultMap">
+    select  distinct
+    <include refid="Base_Column_List" />   STREAMLINE_ID, STREAMLINE_NAME, CHECK_EMPID, STREAMLINE_DATE, STREAMLINE_INFO, STREAMLINE_RESULT,
+    LAST_ID, NEXT_EMPID, STREAMLINE_OTHER,emp_name
+    from tasks t left join  streamline s on s.streamline_other=t.task_id left join emp e on e.emp_id=task_empid
+    <where>
+      <if test="taskEmpid !=null">
+        task_empid=#{taskEmpid}
+      </if> <if test="checkEmpid !=null">
+      check_empid=#{checkEmpid}
+      </if><if test="nextEmpid !=null">
+        next_empid=#{nextEmpid}
+      </if><if test="taskId !=null">
+       task_id=#{task_id}
+      </if>
+    </where>
+  </select>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

@@ -3,9 +3,13 @@ package com.bank.dao;
 import com.bank.pojo.Tasks;
 import com.bank.pojo.TasksExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TasksMapper {
+    List<Tasks> selectBymap(Map<String,Object> map);
+
     long countByExample(TasksExample example);
 
     int deleteByExample(TasksExample example);

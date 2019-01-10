@@ -7,7 +7,8 @@ import java.util.List;
 
 public interface dictService {
     /**
-     * 查询全表
+     *
+     * @return Dict 集合
      */
     List<Dict> getAll();
 

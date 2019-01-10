@@ -1,9 +1,10 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Streamline {
-    private Integer streamlineId;
+public class Streamline implements Serializable{
+   private Integer streamlineId;
 
     private String streamlineName;
 
@@ -20,6 +21,15 @@ public class Streamline {
     private Integer nextEmpid;
 
     private String streamlineOther;
+    private  Emp emp;
+
+    public Emp getEmp() {
+        return emp;
+    }
+
+    public void setEmp(Emp emp) {
+        this.emp = emp;
+    }
 
     public Integer getStreamlineId() {
         return streamlineId;

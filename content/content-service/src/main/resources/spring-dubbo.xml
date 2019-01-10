@@ -22,4 +22,8 @@
 
     <dubbo:service interface="com.bank.dubbo.dictService" ref="dictServicePro"/>
 
+    <dubbo:service interface="com.bank.dubbo.taskService" ref="taskServicePro"/>
+
+    <dubbo:service interface="com.bank.dubbo.streamlineService" ref="streamlineServicePro"/>
+
 </beans>
