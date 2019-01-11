@@ -59,7 +59,7 @@
                         <dd><a href="javascript:;">分送任务</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item layui-nav-itemed">
+                <li class="layui-nav-item">
                     <a class="" href="javascript:;">柜台现金业务办理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">客户取款</a></dd>
@@ -69,7 +69,7 @@
                         <dd><a href="javascript:;">其他</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item layui-nav-itemed">
+                <li class="layui-nav-item">
                     <a class="" href="javascript:;">柜台电子业务办理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="javascript:;">客户贷款</a></dd>
