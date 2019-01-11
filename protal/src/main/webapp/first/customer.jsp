@@ -15,7 +15,7 @@
     <title>网上银行</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/lanrenzhijia.css">
-    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="../js/jquery.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style type="text/css">
         a link{text-decoration: none;}
@@ -130,7 +130,7 @@
 
     <div style=" height: 300px;" align="center">
         <div style="height: 99%;width: 60%;" >
-            <div class="fontsize"><img src="http://image3.ccb.com/cn/v3/upload/20151210_1449718015/20151210112849011770.png"/><a href="#">账户查询></a><br><font size="-2">快速查询各类账户信息</font> </div>
+            <div class="fontsize"><img src="http://image3.ccb.com/cn/v3/upload/20151210_1449718015/20151210112849011770.png"/><a href="userInfo.jsp">账户查询></a><br><font size="-2">快速查询各类账户信息</font> </div>
             <div class="fontsize"><img src="http://image4.ccb.com/cn/v3/upload/20151206_1449366128/20160327025818381290.png"/><a href="#">悦生活></a><br><font size="-2">生活缴费充值&nbsp;信用卡</font></div>
             <div class="fontsize"><img src="http://image3.ccb.com/cn/v3/upload/20151206_1449365272/20151210152046089269.png"/><a href="#">业务申请></a><br><font size="-2">信用卡,贷款快速申请</font></div>
             <div class="fontsize"><img src="http://image4.ccb.com/cn/v3/upload/20180423_1524446422/20180423092101281469.gif"/><a href="#">业务验证></a><br><font size="-2">在线验证个人资信证明书凭证</font></div>
@@ -142,10 +142,10 @@
             </div>
 
             <div class="fontsize" align="right" style="width: 100%;margin-top: 60px;">
-                <div style="width: 10%;float: right;"><a href="elem4.jsp" class="elem"><font size="4">电子银行</font></a></div>
-                <div style="width: 10%;float: right;"><a href="elem3.jsp" class="elem"><font size="4">个人贷款</font></a></div>
-                <div style="width: 10%;float: right;"><a href="elem2.jsp" class="elem"><font size="4">投资理财</font></a></div>
-                <div style="width: 10%;float: right;"><a href="elem1.jsp" class="elem"><font size="4">信用卡</font></a></div>
+                <div style="width: 10%;float: right;"><a href="../elem4.jsp" class="elem"><font size="4">电子银行</font></a></div>
+                <div style="width: 10%;float: right;"><a href="../elem3.jsp" class="elem"><font size="4">个人贷款</font></a></div>
+                <div style="width: 10%;float: right;"><a href="../elem2.jsp" class="elem"><font size="4">投资理财</font></a></div>
+                <div style="width: 10%;float: right;"><a href="../elem1.jsp" class="elem"><font size="4">信用卡</font></a></div>
             </div>
 
         </div>
@@ -154,7 +154,7 @@
     <div style="width: 100%;height: 600px;" align="center">
         <div id="mainbody" style="width: 60%;height: 100%;">
             <!-- 页面加载时自动将信用卡页面展示 -->
-            <jsp:include page="elem1.jsp"></jsp:include>
+            <jsp:include page="../elem1.jsp"></jsp:include>
 </div><div style="width: 60%;height: 100%;" >        </div>
     </div>
 
