@@ -19,9 +19,9 @@
       <result column="EMP_NAME" jdbcType="VARCHAR" property="empName" />
     </association>
   </resultMap>
-  <select id="selectBystask" resultMap="myResultMap" >
-    select <include refid="Base_Column_List"></include> emp_name,role_id
-    from streamline s left join  emp e on e.emp_id=s.check_empid where streamline_other=#{task_id}
+  <select id="selectBystask" resultMap="myResultMap" parameterType="string">
+    select <include refid="Base_Column_List"></include> ,emp_name,role_id
+    from streamline s left join  emp e on e.emp_id=s.check_empid where streamline_other=#{taskId}
   </select>
   <sql id="Example_Where_Clause">
     <where>

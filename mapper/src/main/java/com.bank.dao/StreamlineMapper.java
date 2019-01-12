@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 public interface StreamlineMapper {
 
-    List<Streamline> selectBystask(int taskid);
+    List<Streamline> selectBystask(String taskid);
     long countByExample(StreamlineExample example);
 
     int deleteByExample(StreamlineExample example);

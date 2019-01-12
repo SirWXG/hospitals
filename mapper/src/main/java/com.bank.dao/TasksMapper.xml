@@ -40,7 +40,7 @@
       </if><if test="nextEmpid !=null">
         next_empid=#{nextEmpid}
       </if><if test="taskId !=null">
-       task_id=#{task_id}
+       task_id=#{taskId}
       </if>
     </where>
   </select>
