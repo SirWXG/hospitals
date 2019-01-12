@@ -3,7 +3,7 @@ package com.bank.controller;
 import com.bank.dubbo.streamlineService;
 import com.bank.dubbo.taskService;
 import com.bank.pojo.Tasks;
-import com.bank.utils.Data2layui;
+import com.bank.utils.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,11 +29,11 @@ public class TaskController {
 
     @RequestMapping("select")
     @ResponseBody
-    public Data2layui getAlltask(@RequestParam(name = "type", defaultValue = "wait") String type, @RequestParam(name = "taskId",defaultValue = "-1")int taskId){
+    public Msg getAlltask(@RequestParam(name = "type", defaultValue = "wait") String type, @RequestParam(name = "taskId",defaultValue = "-1")int taskId){
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         HttpSession session = request.getSession();
         session.setAttribute("empId",1);
-        Data2layui data=new Data2layui();
+        Msg data=new Msg();
         Map<String,Object> map =new HashMap<>();
         if("wait".equals(type)){
             map.put("nextEmpid",session.getAttribute("empId"));
@@ -61,13 +61,14 @@ public class TaskController {
     }
     @Autowired
     private streamlineService streamService;
-    @RequestMapping("open/{stakid}")
-    public String getTheOne(@PathVariable(name = "taskid")Integer taskId, Model model){
+    @RequestMapping("open/{taskid}")
+    public String getTheOne(@PathVariable(name = "taskid")String taskId, Model model){
 
         model.addAttribute("streamline",streamService.getTheone(taskId));
         Map<String ,Object> map = new HashMap<>();
-        map.put("task_id",taskId);
+        map.put("taskId",taskId);
         model.addAttribute("task",task.getAll(map));
         return "/view/task/lookone";
+
     }
 }
