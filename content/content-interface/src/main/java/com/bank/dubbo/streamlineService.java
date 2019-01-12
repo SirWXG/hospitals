@@ -10,7 +10,7 @@ public interface streamlineService {
      * @param stakid
      * @return 返回所有的任务流程
      */
-    public List<Streamline> getTheone(int stakid);
+    public List<Streamline> getTheone(String stakid);
 
     /**
      *
