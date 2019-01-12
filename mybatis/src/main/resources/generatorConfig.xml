@@ -5,7 +5,7 @@
 <generatorConfiguration>
 
     <!--指定特定数据库的jdbc驱动jar包的位置 -->
-    <classPathEntry location="D:\maven\repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar"/>
+    <classPathEntry location="E:\lib\repository\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar"/>
     <context id="context" targetRuntime="MyBatis3">
         <!-- optional，旨在创建class时，对注释进行控制 -->
         <commentGenerator>
@@ -16,7 +16,7 @@
         <!--jdbc的数据库连接 -->
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://localhost:3306/bank"
+                connectionURL="jdbc:mysql://10.12.153.62:3306/bank"
                 userId="bank"
                 password="1806">
             <property name="remarksReporting" value="true"/>
@@ -42,17 +42,6 @@
         </javaClientGenerator>
 
         <!-- !!!! Table Configurations !!!! -->
-        <table  tableName="BANK"/>
-        <table  tableName="CARD"/>
-        <table  tableName="CHECKS"/>
-        <table  tableName="CONSUME"/>
-        <table  tableName="CUSTOMER"/>
-        <table  tableName="DEPOSIT"/>
-        <table  tableName="DICT"/>
-        <table  tableName="EMP"/>
-        <table  tableName="LOAN"/>
-        <table  tableName="ROLE"/>
-        <table  tableName="TRANSFER"/>
-        <table  tableName="WITHDRAW"/>
+        <table  tableName="service_commit"/>
     </context>
 </generatorConfiguration>
