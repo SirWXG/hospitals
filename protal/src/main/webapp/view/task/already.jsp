@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>layui</title>
+    <title>已办任务</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -36,17 +36,38 @@
 
         table.render({
             elem: '#test'
-            ,url:'/tasks/select'
+            ,url:'/tasks/select?type=done'
             ,cols: [[
-                {field:'taskId', title:'ID', width:80, fixed: 'left', unresize: true, sort: true}
-                ,{field:'taskTitle', title:'任务标题', width:120}
-                ,{field:'emp.emp_name', title:'发起人', width:150}
-                ,{field:'taskDate', title:'发起时间', width:100}
-                ,{field:'taskResult', title:'任务状态', width:80}
+                {field:'taskId', title:'ID', width:80, fixed: 'left'}
+                ,{field:'taskTitle', title:'任务标题', width:220}
+                ,{field:'emp.empName', title:'发起人', width:150,templet:function(e){
+                    return e.emp.empName;
+                    }}
+                ,{field:'taskDate', title:'发起时间', width:100,templet:function (d) {
+                        return showTime(d.taskDate);
+                    }}
+                ,{field:'taskResult', title:'任务状态', width:150}
             ]]
             ,page: true
         });
-
+        //时间转换函数
+        function showTime(tempDate)
+        {
+            var d = new Date(tempDate);
+            var year = d.getFullYear();
+            var month = d.getMonth();
+            month++;
+            var day = d.getDate();
+            var hours = d.getHours();
+            var minutes = d.getMinutes();
+            var seconds = d.getSeconds();
+            month = month<10 ? "0"+month:month;
+            day = day<10 ? "0"+day:day;
+            hours = hours<10 ? "0"+hours:hours;
+            minutes = minutes<10 ? "0"+minutes:minutes;
+            seconds = seconds<10 ? "0"+seconds:seconds;
+            var time = year+"-"+month+"-"+day+":"+hours+":"+minutes+":"+seconds;
+            return time;}
         //监听行单击事件（单击事件为：rowDouble）
         table.on('row(test)', function(obj){
             var data = obj.data;
