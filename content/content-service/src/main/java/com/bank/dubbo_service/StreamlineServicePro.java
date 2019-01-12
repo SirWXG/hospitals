@@ -12,7 +12,7 @@ public class StreamlineServicePro implements streamlineService {
     @Autowired
     private StreamlineMapper streamline;
     @Override
-    public List<Streamline> getTheone(int stakid) {
+    public List<Streamline> getTheone(String stakid) {
         return streamline.selectBystask(stakid);
     }
 
