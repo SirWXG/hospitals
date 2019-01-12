@@ -25,5 +25,6 @@
     <dubbo:service interface="com.bank.dubbo.taskService" ref="taskServicePro"/>
     <!--任务流程线接口-->
     <dubbo:service interface="com.bank.dubbo.streamlineService" ref="streamlineServicePro"/>
-
+    <!--内部员工操作接口-->
+    <dubbo:service interface="com.bank.dubbo.empService" ref="empServicePro" />
 </beans>
