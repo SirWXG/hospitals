@@ -19,11 +19,11 @@
 
     <!--测试服务 ref为实现类首字母小写-->
 
-
+    <!--银行数据字典接口-->
     <dubbo:service interface="com.bank.dubbo.dictService" ref="dictServicePro"/>
-
+    <!--任务操作接口-->
     <dubbo:service interface="com.bank.dubbo.taskService" ref="taskServicePro"/>
-
+    <!--任务流程线接口-->
     <dubbo:service interface="com.bank.dubbo.streamlineService" ref="streamlineServicePro"/>
 
 </beans>
