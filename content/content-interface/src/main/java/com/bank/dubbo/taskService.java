@@ -15,7 +15,7 @@ public interface taskService {
 
     /**
      *
-     * @param map
+     * @param tasks
      * @return int判断是否修改成功
      */
     public int updateTask(Tasks tasks);
