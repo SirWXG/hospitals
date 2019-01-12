@@ -55,7 +55,8 @@
                     <a href="javascript:;">个人任务中心</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/view/task/already.jsp" target="option">已办任务</a></dd>
-                        <dd><a href="javascript:;">待办任务</a></dd>
+                        <dd><a href="/view/task/waittodo.jsp" target="option">待办任务</a></dd>
+                        <dd><a href="/view/task/createdtask.jsp" target="option">已发起任务</a></dd>
                         <dd><a href="javascript:;">分送任务</a></dd>
                     </dl>
                 </li>
@@ -119,7 +120,7 @@
     <div class="layui-body">
         <!-- 内容主体区域 -->
         <div style="padding: 15px;">内容主体区域</div>
-        <iframe id="man" name="option" src="head.html" style="overflow: visible;" scrolling="no" frameborder="no" width="100%" height="100%">
+        <iframe id="man" name="option" src="/view/task/waittodo.jsp" style="overflow: visible;" scrolling="yes" frameborder="no" width="100%" height=100%">
 
         </iframe>
     </div>
