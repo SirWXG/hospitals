@@ -54,8 +54,8 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">个人任务中心</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="/view/task/already.jsp" target="option">已办任务</a></dd>
                         <dd><a href="/view/task/waittodo.jsp" target="option">待办任务</a></dd>
+                        <dd><a href="/view/task/already.jsp" target="option">已办任务</a></dd>
                         <dd><a href="/view/task/createdtask.jsp" target="option">已发起任务</a></dd>
                         <dd><a href="javascript:;">分送任务</a></dd>
                     </dl>
