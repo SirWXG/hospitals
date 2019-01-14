@@ -72,7 +72,7 @@
         table.on('row(test)', function(obj){
             var $ = layui.jquery, layer = layui.layer; //独立版的layer无需执行这一句
             var data = obj.data;
-            //触发事件124
+            //触发事件
                     //配置一个透明的询问框
                     layer.msg('是否查看任务审批详情', {
                         time: 20000, //20s后自动关闭

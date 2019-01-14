@@ -38,15 +38,15 @@
             elem: '#test'
             ,url:'/tasks/select'
             ,cols: [[
-                {field:'taskId', title:'ID', width:80, fixed: 'left'}
-                ,{field:'taskTitle', title:'任务标题', width:220}
-                ,{field:'emp.empName', title:'发起人', width:150,templet:function(e){
-                    return e.emp.empName;
+                {field:'taskId', title:'ID', align: 'center',width:100}
+                ,{field:'taskTitle', title:'任务标题', align: 'center'}
+                ,{field:'emp.empName', title:'发起人', align: 'center',templet:function(e){
+                        return e.emp.empName;
                     }}
-                ,{field:'taskDate', title:'发起时间', width:100,templet:function (d) {
+                ,{field:'taskDate', title:'发起时间',align: 'center',templet:function (d) {
                         return showTime(d.taskDate);
                     }}
-                ,{field:'taskResult', title:'任务状态', width:150}
+                ,{field:'taskResult', title:'任务状态',align: 'center'}
             ]]
             ,page: true
         });
@@ -71,11 +71,18 @@
         //监听行单击事件（单击事件为：rowDouble）
         table.on('row(test)', function(obj){
             var data = obj.data;
-
-            layer.alert(JSON.stringify(data), {
-                title: '当前行数据：'
+            //配置一个透明的询问框
+            layer.msg('是否查看任务审批详情', {
+                time: 20000, //20s后自动关闭
+                btn: ['查看', '不看了'],
+                success:function(layero){
+                    var btn = layero.find('.layui-layer-btn');
+                    btn.find('.layui-layer-btn0').attr({
+                        href: '/tasks/open/'+data.taskId
+                        ,target: 'option'
+                    });
+                }
             });
-
             //标注选中样式
             obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');
         });

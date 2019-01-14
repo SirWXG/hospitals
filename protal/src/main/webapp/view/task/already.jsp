@@ -13,7 +13,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="/layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css"  media="all">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
 <body>
@@ -38,15 +38,15 @@
             elem: '#test'
             ,url:'/tasks/select?type=done'
             ,cols: [[
-                {field:'taskId', title:'ID', width:80, fixed: 'left'}
-                ,{field:'taskTitle', title:'任务标题', width:220}
-                ,{field:'emp.empName', title:'发起人', width:150,templet:function(e){
-                    return e.emp.empName;
+                {field:'taskId', title:'ID', align: 'center',width:100}
+                ,{field:'taskTitle', title:'任务标题', align: 'center'}
+                ,{field:'emp.empName', title:'发起人', align: 'center',templet:function(e){
+                        return e.emp.empName;
                     }}
-                ,{field:'taskDate', title:'发起时间', width:100,templet:function (d) {
+                ,{field:'taskDate', title:'发起时间',align: 'center',templet:function (d) {
                         return showTime(d.taskDate);
                     }}
-                ,{field:'taskResult', title:'任务状态', width:150}
+                ,{field:'taskResult', title:'任务状态',align: 'center'}
             ]]
             ,page: true
         });
@@ -71,10 +71,21 @@
         //监听行单击事件（单击事件为：rowDouble）
         table.on('row(test)', function(obj){
             var data = obj.data;
-
-            layer.alert(JSON.stringify(data), {
-                title: '当前行数据：'
+            //配置一个透明的询问框
+            layer.msg('是否查看任务审批详情', {
+                time: 20000, //20s后自动关闭
+                btn: ['查看', '不看了'],
+                success:function(layero){
+                    var btn = layero.find('.layui-layer-btn');
+                    btn.find('.layui-layer-btn0').attr({
+                        href: '/tasks/open/'+data.taskId
+                        ,target: 'option'
+                    });
+                }
             });
+            // layer.alert(JSON.stringify(data), {
+            //     title: '当前行数据：'
+            // });
 
             //标注选中样式
             obj.tr.addClass('layui-table-click').siblings().removeClass('layui-table-click');
