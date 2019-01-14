@@ -17,6 +17,22 @@
     <result column="EMP_BANK_ID" jdbcType="INTEGER" property="empBankId" />
     <result column="EMP_OTHER1" jdbcType="VARCHAR" property="empOther1" />
   </resultMap>
+  <select id="selectByCond" parameterType="map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from emp e left join bank b on b.bank_id=e.emp_bank_id
+  <where>
+    <if test="empBankId !=null" >
+      bank_id=#{empBankId}
+    </if>
+    <if test="empId !=null" >
+      and emp_id=#{emoId}
+    </if>
+    <if test="empName!=null and empPass !=null">
+      and emp_name=#{emp_name} and emp_pass=#{empPass}
+    </if>
+  </where>
+  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">

@@ -3,9 +3,13 @@ package com.bank.dao;
 import com.bank.pojo.Emp;
 import com.bank.pojo.EmpExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface EmpMapper {
+    List<Emp> selectByCond(Map<String ,Object> map);
+
     long countByExample(EmpExample example);
 
     int deleteByExample(EmpExample example);
