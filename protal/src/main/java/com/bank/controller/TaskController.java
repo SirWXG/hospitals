@@ -2,6 +2,7 @@ package com.bank.controller;
 
 import com.bank.dubbo.streamlineService;
 import com.bank.dubbo.taskService;
+import com.bank.pojo.Streamline;
 import com.bank.pojo.Tasks;
 import com.bank.utils.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -71,4 +73,17 @@ public class TaskController {
         return "/view/task/lookone";
 
     }
+
+    /**
+     * 增加一个流程线
+     * @return
+     */
+    @RequestMapping("/addline")
+    @ResponseBody
+    public String addLine(Streamline stream){
+        System.out.println(stream);
+       streamService.addOne(stream);
+        return "success";
+    }
+
 }
