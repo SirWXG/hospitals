@@ -12,6 +12,11 @@
 	<!-- 2、配置静态资源处理 -->
 	<mvc:default-servlet-handler />
 	<!-- 3、配置注解驱动 -->
+	<!--4、配置试图解析器-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/"></property>
+		<property name="suffix" value=".jsp"></property>
+	</bean>
 	<!-- java对象自动转换成json对象的现象 -->
 	<mvc:annotation-driven/>
 </beans>
