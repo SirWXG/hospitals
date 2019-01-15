@@ -1,9 +1,10 @@
 package com.bank.pojo;
 
 import java.io.Serializable;
+import java.util.Date;
 
-public class Card implements Serializable {
-    private Integer cardId;
+public class Card  implements Serializable {
+    private String cardId;
 
     private String cardPassword;
 
@@ -17,16 +18,18 @@ public class Card implements Serializable {
 
     private String cardPhone;
 
+    private Date cardDate;
+
     private Integer cardBankId;
 
     private String cardOther;
 
-    public Integer getCardId() {
+    public String getCardId() {
         return cardId;
     }
 
-    public void setCardId(Integer cardId) {
-        this.cardId = cardId;
+    public void setCardId(String cardId) {
+        this.cardId = cardId == null ? null : cardId.trim();
     }
 
     public String getCardPassword() {
@@ -75,6 +78,14 @@ public class Card implements Serializable {
 
     public void setCardPhone(String cardPhone) {
         this.cardPhone = cardPhone == null ? null : cardPhone.trim();
+    }
+
+    public Date getCardDate() {
+        return cardDate;
+    }
+
+    public void setCardDate(Date cardDate) {
+        this.cardDate = cardDate;
     }
 
     public Integer getCardBankId() {

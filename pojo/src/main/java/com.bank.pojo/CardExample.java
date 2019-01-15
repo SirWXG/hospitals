@@ -1,9 +1,11 @@
 package com.bank.pojo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public class CardExample {
+public class CardExample  implements Serializable {
     protected String orderByClause;
 
     protected boolean distinct;
@@ -114,52 +116,62 @@ public class CardExample {
             return (Criteria) this;
         }
 
-        public Criteria andCardIdEqualTo(Integer value) {
+        public Criteria andCardIdEqualTo(String value) {
             addCriterion("CARD_ID =", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdNotEqualTo(Integer value) {
+        public Criteria andCardIdNotEqualTo(String value) {
             addCriterion("CARD_ID <>", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdGreaterThan(Integer value) {
+        public Criteria andCardIdGreaterThan(String value) {
             addCriterion("CARD_ID >", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdGreaterThanOrEqualTo(Integer value) {
+        public Criteria andCardIdGreaterThanOrEqualTo(String value) {
             addCriterion("CARD_ID >=", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdLessThan(Integer value) {
+        public Criteria andCardIdLessThan(String value) {
             addCriterion("CARD_ID <", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdLessThanOrEqualTo(Integer value) {
+        public Criteria andCardIdLessThanOrEqualTo(String value) {
             addCriterion("CARD_ID <=", value, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdIn(List<Integer> values) {
+        public Criteria andCardIdLike(String value) {
+            addCriterion("CARD_ID like", value, "cardId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardIdNotLike(String value) {
+            addCriterion("CARD_ID not like", value, "cardId");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardIdIn(List<String> values) {
             addCriterion("CARD_ID in", values, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdNotIn(List<Integer> values) {
+        public Criteria andCardIdNotIn(List<String> values) {
             addCriterion("CARD_ID not in", values, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdBetween(Integer value1, Integer value2) {
+        public Criteria andCardIdBetween(String value1, String value2) {
             addCriterion("CARD_ID between", value1, value2, "cardId");
             return (Criteria) this;
         }
 
-        public Criteria andCardIdNotBetween(Integer value1, Integer value2) {
+        public Criteria andCardIdNotBetween(String value1, String value2) {
             addCriterion("CARD_ID not between", value1, value2, "cardId");
             return (Criteria) this;
         }
@@ -551,6 +563,66 @@ public class CardExample {
 
         public Criteria andCardPhoneNotBetween(String value1, String value2) {
             addCriterion("CARD_PHONE not between", value1, value2, "cardPhone");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateIsNull() {
+            addCriterion("CARD_DATE is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateIsNotNull() {
+            addCriterion("CARD_DATE is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateEqualTo(Date value) {
+            addCriterion("CARD_DATE =", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateNotEqualTo(Date value) {
+            addCriterion("CARD_DATE <>", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateGreaterThan(Date value) {
+            addCriterion("CARD_DATE >", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateGreaterThanOrEqualTo(Date value) {
+            addCriterion("CARD_DATE >=", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateLessThan(Date value) {
+            addCriterion("CARD_DATE <", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateLessThanOrEqualTo(Date value) {
+            addCriterion("CARD_DATE <=", value, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateIn(List<Date> values) {
+            addCriterion("CARD_DATE in", values, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateNotIn(List<Date> values) {
+            addCriterion("CARD_DATE not in", values, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateBetween(Date value1, Date value2) {
+            addCriterion("CARD_DATE between", value1, value2, "cardDate");
+            return (Criteria) this;
+        }
+
+        public Criteria andCardDateNotBetween(Date value1, Date value2) {
+            addCriterion("CARD_DATE not between", value1, value2, "cardDate");
             return (Criteria) this;
         }
 

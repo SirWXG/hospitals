@@ -59,6 +59,22 @@ public class Streamline implements Serializable{
         return streamlineDate;
     }
 
+    @Override
+    public String toString() {
+        return "Streamline{" +
+                "streamlineId=" + streamlineId +
+                ", streamlineName='" + streamlineName + '\'' +
+                ", checkEmpid=" + checkEmpid +
+                ", streamlineDate=" + streamlineDate +
+                ", streamlineInfo='" + streamlineInfo + '\'' +
+                ", streamlineResult='" + streamlineResult + '\'' +
+                ", lastId=" + lastId +
+                ", nextEmpid=" + nextEmpid +
+                ", streamlineOther='" + streamlineOther + '\'' +
+                ", emp=" + emp +
+                '}';
+    }
+
     public void setStreamlineDate(Date streamlineDate) {
         this.streamlineDate = streamlineDate;
     }
