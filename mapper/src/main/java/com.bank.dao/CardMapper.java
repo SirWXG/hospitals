@@ -3,9 +3,13 @@ package com.bank.dao;
 import com.bank.pojo.Card;
 import com.bank.pojo.CardExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface CardMapper {
+    //查询单个用户的单个或多个卡
+    List<Card> selectByCond(Map<String ,Object> map);
     long countByExample(CardExample example);
 
     int deleteByExample(CardExample example);
