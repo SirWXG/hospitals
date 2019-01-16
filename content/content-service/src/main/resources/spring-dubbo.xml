@@ -13,7 +13,8 @@
     <!-- 配置服务的应用名 -->
     <dubbo:application name="dubbo-content-service"/>
 
-    <dubbo:registry address="zookeeper://10.12.153.62:2181"/>
+    <!--<dubbo:registry address="zookeeper://10.12.153.62:2181"/>-->
+    <dubbo:registry address="zookeeper://120.79.32.91:2181"/>
     <dubbo:protocol name="dubbo" port="28080"/>
     <!-- 对外暴露的服务接口 -->
 
