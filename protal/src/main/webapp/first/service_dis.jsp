@@ -10,10 +10,9 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/lanrenzhijia.css">
-    <link rel="stylesheet" href="../layui/css/layui.css">
-    <script type="text/javascript" src="../layui/layui.js"></script>
-    <script type="text/javascript" src="../js/jquery.js" ></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js" ></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/layui/layui.js"></script>
     <style type="text/css">
         a link{text-decoration: none;}
         .i{
@@ -70,46 +69,52 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">类型</label>
                 <div class="layui-input-block" style="width: 200px">
-                    <input type="text" name="service_type" lay-verify="title" autocomplete="off" class="layui-input">
+                    <input type="text" name="serviceType" lay-verify="title" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">申请人</label>
                 <div class="layui-input-block"  style="width: 200px">
-                    <input type="text" name="service_customer"  autocomplete="off" class="layui-input">
+                    <input type="text" name="serviceCustomer"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">卡号</label>
                 <div class="layui-input-block" style="width: 200px">
-                    <input type="text" name="service_card"  autocomplete="off" class="layui-input">
+                    <input type="text" name="serviceCard"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">用途</label>
                 <div class="layui-input-block"  style="width: 200px">
-                    <input type="text" name="service_use" placeholder="请如实填写(如:购房意向)"  autocomplete="off" class="layui-input">
+                    <input type="text" name="serviceUse" placeholder="请如实填写(如:购房意向)"  autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
                 <label class="layui-form-label">电话</label>
                 <div class="layui-input-block"  style="width: 200px">
-                    <input type="text" name="service_phone" autocomplete="off" class="layui-input">
+                    <input type="text" name="servicePhone" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">日期</label>
                 <div class="layui-input-block">
-                    <input type="text" name="date" id="date1" autocomplete="off" class="layui-input">
+                    <input type="text" name="serviceDate" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">金额</label>
+                <div class="layui-input-block"  style="width: 200px">
+                    <input type="text" name="servicePrice" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item layui-form-text">
                 <label class="layui-form-label">理由</label>
                 <div class="layui-input-block" style="width: 400px">
-                    <textarea placeholder="请输入内容" class="layui-textarea" name="service_desc"></textarea>
+                    <textarea placeholder="请输入内容" class="layui-textarea" name="serviceDesc"></textarea>
                 </div>
             </div>
             <div class="layui-form-item">
@@ -140,14 +145,10 @@
                 //自定义验证规则
                 form.verify({
                     title: function(value){
-                        if(value.length < 5){
-                            return '标题至少得5个字符啊';
+                        if(value.length < 1){
+                            return '标题至少得1个字符啊';
                         }
                     }
-                    ,pass: [
-                        /^[\S]{6,12}$/
-                        ,'密码必须6到12位，且不能出现空格'
-                    ]
                     ,content: function(value){
                         layedit.sync(editIndex);
                     }
@@ -163,9 +164,16 @@
 
                 //监听提交
                 form.on('submit(demo1)', function(data){
-                    layer.alert(JSON.stringify(data.field), {
-                        title: '最终的提交信息'
-                    })
+                    $.ajax({
+                        url:'/serviceCommit/addService',
+                        type:"post",
+                        data: data.field,
+                        success:function(){
+                            layer.alert("业务请求成功",{
+                                title:'请求信息'
+                            })
+                        }
+                    });
                     return false;
                 });
             });

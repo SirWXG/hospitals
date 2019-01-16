@@ -17,8 +17,7 @@
 	<dubbo:registry protocol="zookeeper" address="zookeeper://120.79.32.91:2181"/>
 
 
-	<!--从dubbo中引用原来有rest提供的服务，交由spring管理   -->
-	<!--测试dubbo模块-->
+	<!--从dubbo中引用原来有rest提供的服务，交由sprin管理   -->
 	<dubbo:reference id="hello" interface="com.bank.dubbo.Hello"/>
 
 	<!--提供数据字典的接口-->
@@ -27,6 +26,7 @@
 	<dubbo:reference id="task" interface="com.bank.dubbo.taskService"/>
 	<!--提供任务流程线的接口-->
 	<dubbo:reference id="streamline" interface="com.bank.dubbo.streamlineService"/>
+	<dubbo:reference id="serviceCommitServiceImpl" interface="com.bank.dubbo.ServiceCommitService" />
 	<!--提供员工服务模块的接口-->
 	<dubbo:reference interface="com.bank.dubbo.empService" id="emps"/>
 	<dubbo:reference interface="com.bank.dubbo.cardService" id="card"/>
