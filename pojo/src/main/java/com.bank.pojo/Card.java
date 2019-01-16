@@ -23,6 +23,31 @@ public class Card  implements Serializable {
     private Integer cardBankId;
 
     private String cardOther;
+    private Customer customer;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "cardId='" + cardId + '\'' +
+                ", cardPassword='" + cardPassword + '\'' +
+                ", customerId=" + customerId +
+                ", cardBalance=" + cardBalance +
+                ", cardStatus='" + cardStatus + '\'' +
+                ", cardFail=" + cardFail +
+                ", cardPhone='" + cardPhone + '\'' +
+                ", cardDate=" + cardDate +
+                ", cardBankId=" + cardBankId +
+                ", cardOther='" + cardOther + '\'' +
+                '}';
+    }
 
     public String getCardId() {
         return cardId;
