@@ -13,6 +13,26 @@
     <result column="CARD_BANK_ID" jdbcType="INTEGER" property="cardBankId" />
     <result column="CARD_OTHER" jdbcType="VARCHAR" property="cardOther" />
   </resultMap>
+  <resultMap id="MyResultMap" type="card" extends="BaseResultMap">
+    <association property="customer" javaType="customer">
+     <id column="CUSTOMER_ID" jdbcType="INTEGER" property="customerId" />
+      <result column="REAL_NAME" jdbcType="VARCHAR" property="realName" />
+      <result column="CUSTOMER_IDENTITY" jdbcType="VARCHAR" property="customerIdentity" />
+      <result column="CUSTOMER_PHONE" jdbcType="VARCHAR" property="customerPhone" />
+    </association>
+  </resultMap>
+  <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
+    select  <include refid="Base_Column_List"/> REAL_NAME,CUSTOMER_IDENTITY,CUSTOMER_PHONE
+    FROM CARD ca LEFT JOIN CUSTOMER cu ON ca.CUSTOMER_ID=cu.CUSTOMER_ID
+    <where>
+      <if test="customerId!=null">
+        ca.CUSTOMER_ID=#{customerId}
+      </if>
+      <if test="cardId!=null">
+        ca.CARD_ID=#{cardId}
+      </if>
+    </where>
+  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -72,7 +92,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    CARD_ID, CARD_PASSWORD, CUSTOMER_ID, CARD_BALANCE, CARD_STATUS, CARD_FAIL, CARD_PHONE, 
+    CARD_ID, CARD_PASSWORD, ca.CUSTOMER_ID, CARD_BALANCE, CARD_STATUS, CARD_FAIL, CARD_PHONE,
     CARD_DATE, CARD_BANK_ID, CARD_OTHER
   </sql>
   <select id="selectByExample" parameterType="com.bank.pojo.CardExample" resultMap="BaseResultMap">
