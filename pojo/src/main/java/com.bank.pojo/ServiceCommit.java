@@ -1,8 +1,12 @@
 package com.bank.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class ServiceCommit {
+public class ServiceCommit implements Serializable {
     private Integer id;
 
     private String serviceType;
@@ -15,9 +19,41 @@ public class ServiceCommit {
 
     private String servicePhone;
 
+    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date serviceDate;
 
     private String serviceDesc;
+
+    private Float servicePrice;
+
+    private Integer serviceStatus;
+
+    private Integer serviceEmp;
+
+    public Integer getServiceEmp() {
+        return serviceEmp;
+    }
+
+    public Integer getServiceStatus() {
+        return serviceStatus;
+    }
+
+    public void setServiceEmp(Integer serviceEmp) {
+        this.serviceEmp = serviceEmp;
+    }
+
+    public void setServiceStatus(Integer serviceStatus) {
+        this.serviceStatus = serviceStatus;
+    }
+
+    public Float getServicePrice() {
+        return servicePrice;
+    }
+
+    public void setServicePrice(Float servicePrice) {
+        this.servicePrice = servicePrice;
+    }
 
     public Integer getId() {
         return id;

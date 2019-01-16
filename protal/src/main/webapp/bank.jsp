@@ -71,9 +71,9 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a class="" href="javascript:;">柜台电子业务办理</a>
+                    <a class="" href="javascript:;">电子业务办理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">客户贷款</a></dd>
+                        <dd><a href="/view/service/service_dispose.jsp" target="option">客户业务处理</a></dd>
                         <dd><a href="javascript:;">客户贷款付息</a></dd>
                         <dd><a href="javascript:;">客户存款结息</a></dd>
                         <dd><a href="javascript:;">电汇业务</a></dd>
@@ -84,7 +84,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;">客户账号业务</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">开通银行账户</a></dd>
+                        <dd><a href="/view/service/addCard.jsp" target="option">开通银行账户</a></dd>
                         <dd><a href="javascript:;">冻结/挂失账户</a></dd>
                         <dd><a href="javascript:;">解封账户</a></dd>
                         <dd><a href="javascript:;">客户修改密码</a></dd>
@@ -119,7 +119,6 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">内容主体区域</div>
         <iframe id="man" name="option" src="/view/task/waittodo.jsp" style="overflow: visible;" scrolling="yes" frameborder="no" width="100%" height=100%">
 
         </iframe>
