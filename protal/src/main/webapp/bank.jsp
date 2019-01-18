@@ -63,11 +63,10 @@
                 <li class="layui-nav-item">
                     <a class="" href="javascript:;">柜台现金业务办理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">客户取款</a></dd>
-                        <dd><a href="javascript:;">客户存款</a></dd>
-                        <dd><a href="javascript:;">现金转账</a></dd>
-                        <dd><a href="javascript:;">现金更换</a></dd>
-                        <dd><a href="javascript:;">其他</a></dd>
+                        <dd><a href="/view/cash/withdraw.jsp" target="option">客户取款</a></dd>
+                        <dd><a href="/view/cash/dealcard.jsp" target="option">客户存款</a></dd>
+                        <dd><a href="/view/cash/dealcard.jsp" target="option">现金转账</a></dd>
+                        <dd><a href="/view/cash/dealcard.jsp" target="option">其他</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
