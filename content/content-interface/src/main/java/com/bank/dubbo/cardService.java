@@ -1,6 +1,7 @@
 package com.bank.dubbo;
 
 import com.bank.pojo.Card;
+import com.bank.pojo.TransferPojo;
 import com.bank.pojo.CardUser;
 
 import java.util.List;
@@ -35,4 +36,14 @@ public interface cardService {
      * @return int 验证是否删除成功
      */
     public int deleteCard(Integer cardid);
+
+    /**
+     * 用户进行转账操作
+     * @param transferPojo
+     * @return
+     */
+    String transfer(TransferPojo transferPojo);
+
+    List<Card> getCardId();
+
 }
