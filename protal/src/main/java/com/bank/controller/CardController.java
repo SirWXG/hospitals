@@ -6,6 +6,7 @@ import com.bank.pojo.Card;
 import com.bank.pojo.CardUser;
 import com.bank.utils.CardId;
 import com.bank.utils.Msg;
+import com.bank.pojo.TransferPojo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class CardController {
     private CardUserService userService;
 
     /**
-     * 根据条件查询银行卡信息
+     * 根据条件查询银行卡信息主要用于取款
      * @param customerId
      * @param cardId
      * @return
@@ -38,22 +39,37 @@ public class CardController {
     @RequestMapping("/select")
     @ResponseBody
     public List<Card> getCard(@RequestParam(name = "customerId", defaultValue = "") String customerId,
-                              @RequestParam(name = "cardId", defaultValue = "") String cardId) {
+                              @RequestParam(name = "cardId", defaultValue = "") String cardId,
+                              @RequestParam(name = "cardpass", defaultValue = "") String password) {
         List<Card> cards = new ArrayList<>();
         Map<String, Object> map = new HashMap<>();
         if (customerId.trim().length() > 0)
             map.put("customerId", customerId);
-        if (cardId.trim().length() > 0)
+        if (cardId.trim().length() > 0 && password.trim().length() > 0) {
             map.put("cardId", cardId);
+            map.put("cardPass", password);
+        }
         if (map.size() > 0)
             cards = card.getCard(map);
         return cards;
     }
+
+    @RequestMapping("/getcard")
+    @ResponseBody
+    public List<Card> getCard() {
+
+        return card.getCardId();
+    }
+
     //修改银行卡的信息 如余额，密码，状态等
     @RequestMapping("/update")
-    public int updateOneCard(Card cards){
+    @ResponseBody
+    public int updateOneCard(Card cards) {
+       System.out.println(cards);
+
         return card.updateCard(cards);
     }
+
     //进行转账操作
 
     @RequestMapping(value = "/addCard",method = RequestMethod.POST)
@@ -80,6 +96,10 @@ public class CardController {
         return msg;
     }
 
+    @RequestMapping("/transfer")
+    public String doTrandfer(TransferPojo transfer) {
+        return card.transfer(transfer);
+    }
 
 
 }
