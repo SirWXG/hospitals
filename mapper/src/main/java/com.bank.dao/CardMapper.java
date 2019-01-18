@@ -10,6 +10,8 @@ import org.apache.ibatis.annotations.Param;
 public interface CardMapper {
     //查询单个用户的单个或多个卡
     List<Card> selectByCond(Map<String ,Object> map);
+    //查询所有的卡号
+    List<Card> selectCardId();
     long countByExample(CardExample example);
 
     int deleteByExample(CardExample example);

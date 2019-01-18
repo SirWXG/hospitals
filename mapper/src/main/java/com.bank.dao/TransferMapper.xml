@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.bank.pojo.Transfer">
     <id column="TRANSFER_ID" jdbcType="INTEGER" property="transferId" />
     <result column="TRANSFER_OUT" jdbcType="VARCHAR" property="transferOut" />
-    <result column="TRANSFER_AMOUNT" jdbcType="INTEGER" property="transferAmount" />
+    <result column="TRANSFER_AMOUNT" jdbcType="FLOAT" property="transferAmount" />
     <result column="TRANSFER_DATE" jdbcType="DATE" property="transferDate" />
     <result column="TRANSFER_IN" jdbcType="VARCHAR" property="transferIn" />
     <result column="TRANSFER_IN_NAME" jdbcType="VARCHAR" property="transferInName" />
@@ -12,6 +12,7 @@
     <result column="TRANSFER_STATUS" jdbcType="VARCHAR" property="transferStatus" />
     <result column="TRANSFER_OTHER" jdbcType="VARCHAR" property="transferOther" />
   </resultMap>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -105,12 +106,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.bank.pojo.Transfer">
-    insert into transfer (TRANSFER_ID, TRANSFER_OUT, TRANSFER_AMOUNT, 
+    insert into transfer ( TRANSFER_OUT, TRANSFER_AMOUNT,
       TRANSFER_DATE, TRANSFER_IN, TRANSFER_IN_NAME, 
       TRANSFER_INFO, TRANSFER_STATUS, TRANSFER_OTHER
       )
-    values (#{transferId,jdbcType=INTEGER}, #{transferOut,jdbcType=VARCHAR}, #{transferAmount,jdbcType=INTEGER}, 
-      #{transferDate,jdbcType=DATE}, #{transferIn,jdbcType=VARCHAR}, #{transferInName,jdbcType=VARCHAR}, 
+    values ( #{transferOut,jdbcType=VARCHAR}, #{transferAmount,jdbcType=FLOAT},
+      sysdate(), #{transferIn,jdbcType=VARCHAR}, #{transferInName,jdbcType=VARCHAR},
       #{transferInfo,jdbcType=VARCHAR}, #{transferStatus,jdbcType=VARCHAR}, #{transferOther,jdbcType=VARCHAR}
       )
   </insert>

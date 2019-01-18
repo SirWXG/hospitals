@@ -101,11 +101,11 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.bank.pojo.Withdraw">
-    insert into withdraw (WITHDRAW_ID, CARD_ID, WITHDRAW_AMOUNT, 
+    insert into withdraw ( CARD_ID, WITHDRAW_AMOUNT,
       WITHDRAW_DATE, WITHDRAW_BANK_ID, WITHDRAW_OTHER
       )
-    values (#{withdrawId,jdbcType=INTEGER}, #{cardId,jdbcType=VARCHAR}, #{withdrawAmount,jdbcType=REAL}, 
-      #{withdrawDate,jdbcType=DATE}, #{withdrawBankId,jdbcType=INTEGER}, #{withdrawOther,jdbcType=VARCHAR}
+    values ( #{cardId,jdbcType=VARCHAR}, #{withdrawAmount,jdbcType=REAL},
+      sysdate(), #{withdrawBankId,jdbcType=INTEGER}, #{withdrawOther,jdbcType=VARCHAR}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.bank.pojo.Withdraw">
