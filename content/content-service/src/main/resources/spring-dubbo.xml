@@ -37,4 +37,6 @@
     
     <dubbo:service interface="com.bank.dubbo.CustomerService" ref="customerServiceImpl" />
 
+    <dubbo:service interface="com.bank.dubbo.CardUserService" ref="cardUserServiceImpl" />
+
 </beans>

@@ -1,6 +1,7 @@
 package com.bank.dubbo;
 
 import com.bank.pojo.Card;
+import com.bank.pojo.CardUser;
 
 import java.util.List;
 import java.util.Map;
@@ -34,6 +35,4 @@ public interface cardService {
      * @return int 验证是否删除成功
      */
     public int deleteCard(Integer cardid);
-
-    List<Card> selectAllCard();
 }

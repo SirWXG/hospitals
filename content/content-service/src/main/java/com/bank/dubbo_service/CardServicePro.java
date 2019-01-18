@@ -1,8 +1,10 @@
 package com.bank.dubbo_service;
 
 import com.bank.dao.CardMapper;
+import com.bank.dao.CardUserMapper;
 import com.bank.dubbo.cardService;
 import com.bank.pojo.Card;
+import com.bank.pojo.CardUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ import java.util.Map;
 public class CardServicePro implements cardService {
     @Autowired
     private CardMapper cardMapper;
+
     /**
      * 查看用户的所有或单个银行卡
      * @param map 放入用户ID或者
@@ -54,9 +57,4 @@ public class CardServicePro implements cardService {
         return 0;
     }
 
-    @Override
-    public List<Card> selectAllCard() {
-        List<Card> list = cardMapper.selectAllCard();
-        return list;
-    }
 }

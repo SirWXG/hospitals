@@ -313,9 +313,4 @@
     INSERT INTO card(CARD_ID,CARD_PASSWORD,CUSTOMER_ID,CARD_BALANCE,CARD_STATUS,CARD_PHONE,CARD_DATE)
     values (#{cardId},#{cardPassword},#{customerId},#{cardBalance},#{cardStatus},#{cardPhone},#{cardDate})
   </insert>
-
-  <select id="selectAllCard" resultMap="BaseResultMap">
-    select  c.CARD_ID,c.CUSTOMER_ID,c.CARD_STATUS,c.CARD_PHONE,c.CARD_DATE,cu.REAL_NAME FROM card c right join customer cu
-    on c.CUSTOMER_ID=cu.CUSTOMER_IDENTITY
-  </select>
 </mapper>

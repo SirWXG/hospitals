@@ -34,5 +34,4 @@ public interface CardMapper {
 
     int addCard(Card card);
 
-    List<Card> selectAllCard();
 }

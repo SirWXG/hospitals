@@ -28,18 +28,10 @@
     });
 
     layui.use(['laydate', 'laypage', 'layer', 'table', 'carousel', 'upload', 'element', 'slider'], function(){
-        var laydate = layui.laydate //日期
-            ,laypage = layui.laypage //分页
+        var laypage = layui.laypage //分页
             ,layer = layui.layer //弹层
             ,table = layui.table //表格
-            ,carousel = layui.carousel //轮播
-            ,upload = layui.upload //上传
             ,element = layui.element //元素操作
-            ,slider = layui.slider //滑块
-
-        //向世界问个好
-        layer.msg('Hello World');
-
         //监听Tab切换
         element.on('tab(demo)', function(data){
             layer.tips('切换了 '+ data.index +'：'+ this.innerHTML, this, {
@@ -51,22 +43,19 @@
         table.render({
             elem: '#demo'
             ,height: 420
-            ,url: '/demo/table/user/' //数据接口
-            ,title: '用户表'
+            ,url: '/card/selectAllCard' //数据接口
+            ,title: '银行卡处理'
             ,page: true //开启分页
             ,toolbar: 'default' //开启工具栏，此处显示默认图标，可以自定义模板，详见文档
             ,totalRow: true //开启合计行
             ,cols: [[ //表头
                 {type: 'checkbox', fixed: 'left'}
-                ,{field: 'id', title: 'ID', width:80, sort: true, fixed: 'left', totalRowText: '合计：'}
-                ,{field: 'username', title: '用户名', width:80}
-                ,{field: 'experience', title: '积分', width: 90, sort: true, totalRow: true}
-                ,{field: 'sex', title: '性别', width:80, sort: true}
-                ,{field: 'score', title: '评分', width: 80, sort: true, totalRow: true}
-                ,{field: 'city', title: '城市', width:150}
-                ,{field: 'sign', title: '签名', width: 200}
-                ,{field: 'classify', title: '职业', width: 100}
-                ,{field: 'wealth', title: '财富', width: 135, sort: true, totalRow: true}
+                ,{field: 'cardId', title: '银行卡编号', width:300, sort: true, fixed: 'left', totalRowText: '合计：'}
+                ,{field: 'cardIdentity', title: '身份证', width:300}
+                ,{field: 'cardStatus', title: '状态', width: 200, sort: true, totalRow: true}
+                ,{field: 'cardPhone', title: '手机号', width:150, sort: true}
+                ,{field: 'cardDate', title: '办卡日期', width: 200, sort: true, totalRow: true}
+                ,{field: 'realName', title: '真实姓名', width:150}
                 ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
             ]]
         });
@@ -115,34 +104,7 @@
             }
         });
 
-        //执行一个轮播实例
-        carousel.render({
-            elem: '#test1'
-            ,width: '100%' //设置容器宽度
-            ,height: 200
-            ,arrow: 'none' //不显示箭头
-            ,anim: 'fade' //切换动画方式
-        });
 
-        //将日期直接嵌套在指定容器中
-        var dateIns = laydate.render({
-            elem: '#laydateDemo'
-            ,position: 'static'
-            ,calendar: true //是否开启公历重要节日
-            ,mark: { //标记重要日子
-                '0-10-14': '生日'
-                ,'2018-08-28': '新版'
-                ,'2018-10-08': '神秘'
-            }
-            ,done: function(value, date, endDate){
-                if(date.year == 2017 && date.month == 11 && date.date == 30){
-                    dateIns.hint('一不小心就月底了呢');
-                }
-            }
-            ,change: function(value, date, endDate){
-                layer.msg(value)
-            }
-        });
 
         //分页
         laypage.render({
@@ -156,25 +118,6 @@
                 }
             }
         });
-
-        //上传
-        upload.render({
-            elem: '#uploadDemo'
-            ,url: '' //上传接口
-            ,done: function(res){
-                console.log(res)
-            }
-        });
-
-        slider.render({
-            elem: '#sliderDemo'
-            ,input: true //输入框
-        });
-
-        //底部信息
-        var footerTpl = lay('#footer')[0].innerHTML;
-        lay('#footer').html(layui.laytpl(footerTpl).render({}))
-            .removeClass('layui-hide');
     });
 </script>
 </body>

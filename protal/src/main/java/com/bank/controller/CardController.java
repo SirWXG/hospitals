@@ -1,9 +1,13 @@
 package com.bank.controller;
 
+import com.bank.dubbo.CardUserService;
 import com.bank.dubbo.cardService;
 import com.bank.pojo.Card;
+import com.bank.pojo.CardUser;
 import com.bank.utils.CardId;
 import com.bank.utils.Msg;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +25,9 @@ import java.util.Map;
 public class CardController {
     @Autowired
     private cardService card;
+
+    @Autowired
+    private CardUserService userService;
 
     /**
      * 根据条件查询银行卡信息
@@ -57,8 +64,19 @@ public class CardController {
     }
 
     @RequestMapping(value = "/selectAllCard",method = RequestMethod.GET)
-    public Msg selectAllCard(){
+    @ResponseBody
+    public Msg selectAllCard(@RequestParam(name = "page",defaultValue = "1")Integer page,
+                             @RequestParam(name = "limit",defaultValue = "10")Integer limit){
         Msg msg = new Msg();
+        List<CardUser> list = userService.selectAllCard();
+        int count = list.size();
+        msg.setCount(count);
+        PageHelper.startPage(page,limit);
+        List<CardUser> lists = userService.selectAllCard();
+        PageInfo<CardUser> pageInfo = new PageInfo<>(lists);
+        msg.setCode(0);
+        msg.setData(pageInfo.getList());
+        msg.setMsg("请求成功");
         return msg;
     }
 
