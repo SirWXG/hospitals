@@ -14,6 +14,7 @@
     <result column="CUSTOMER_CREDIT" jdbcType="INTEGER" property="customerCredit" />
     <result column="CUSTOMER_OTHER1" jdbcType="VARCHAR" property="customerOther1" />
     <result column="CUSTOMER_OTHER2" jdbcType="VARCHAR" property="customerOther2" />
+    <result column="CUSTOMER_STATUS" jdbcType="VARCHAR" property="customerStatus" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -321,4 +322,20 @@
       CUSTOMER_OTHER2 = #{customerOther2,jdbcType=VARCHAR}
     where CUSTOMER_ID = #{customerId,jdbcType=INTEGER}
   </update>
+
+  <select id="selectCustomer" parameterType="com.bank.pojo.Customer" resultMap="BaseResultMap">
+    SELECT <include refid="Base_Column_List" />
+    from customer where  REAL_NAME=#{realName} AND  CUSTOMER_IDENTITY=#{customerIdentity}
+  </select>
+
+  <insert id="addCustomer" parameterType="com.bank.pojo.Customer">
+    INSERT into
+    customer(CUSTOMER_NAME,REAL_NAME,CUSTOMER_IDENTITY,CUSTOMER_ADDRESS,CUSTOMER_PHONE,CUSTOMER_PASSWORD,CUSTOMER_SEX,CUSTOMER_BIRTH,CUSTOMER_STATUS)
+    values
+    (#{customerName},#{realName},#{customerIdentity},#{customerAddress},#{customerPhone},#{customerPassword},#{customerSex},#{customerBirth},#{customerStatus})
+  </insert>
+
+  <select id="selectCustomerByIdentity" parameterType="string" resultType="com.bank.pojo.Customer">
+    select REAL_NAME from  customer where CUSTOMER_IDENTITY=#{customerIdentity}
+  </select>
 </mapper>

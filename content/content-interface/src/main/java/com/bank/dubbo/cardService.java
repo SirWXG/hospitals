@@ -34,4 +34,6 @@ public interface cardService {
      * @return int 验证是否删除成功
      */
     public int deleteCard(Integer cardid);
+
+    List<Card> selectAllCard();
 }

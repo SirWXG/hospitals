@@ -28,7 +28,8 @@ public class CardServicePro implements cardService {
      */
     @Override
     public int addCard(Card card) {
-        return 0;
+        int flag =cardMapper.addCard(card);
+        return flag;
     }
 
     /**
@@ -51,5 +52,11 @@ public class CardServicePro implements cardService {
     @Override
     public int deleteCard(Integer cardid) {
         return 0;
+    }
+
+    @Override
+    public List<Card> selectAllCard() {
+        List<Card> list = cardMapper.selectAllCard();
+        return list;
     }
 }

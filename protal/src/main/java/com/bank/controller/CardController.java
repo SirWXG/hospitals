@@ -2,9 +2,12 @@ package com.bank.controller;
 
 import com.bank.dubbo.cardService;
 import com.bank.pojo.Card;
+import com.bank.utils.CardId;
+import com.bank.utils.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -45,6 +48,19 @@ public class CardController {
         return card.updateCard(cards);
     }
     //进行转账操作
+
+    @RequestMapping(value = "/addCard",method = RequestMethod.POST)
+    @ResponseBody
+    public int addCard(Card cards){
+        cards.setCardId(CardId.getCardId());
+        return card.addCard(cards);
+    }
+
+    @RequestMapping(value = "/selectAllCard",method = RequestMethod.GET)
+    public Msg selectAllCard(){
+        Msg msg = new Msg();
+        return msg;
+    }
 
 
 

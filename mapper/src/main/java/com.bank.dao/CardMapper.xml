@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.bank.pojo.Card">
     <id column="CARD_ID" jdbcType="VARCHAR" property="cardId" />
     <result column="CARD_PASSWORD" jdbcType="VARCHAR" property="cardPassword" />
-    <result column="CUSTOMER_ID" jdbcType="INTEGER" property="customerId" />
+    <result column="CUSTOMER_ID" jdbcType="VARCHAR" property="customerId" />
     <result column="CARD_BALANCE" jdbcType="REAL" property="cardBalance" />
     <result column="CARD_STATUS" jdbcType="VARCHAR" property="cardStatus" />
     <result column="CARD_FAIL" jdbcType="INTEGER" property="cardFail" />
@@ -130,7 +130,7 @@
       CARD_BALANCE, CARD_STATUS, CARD_FAIL, 
       CARD_PHONE, CARD_DATE, CARD_BANK_ID, 
       CARD_OTHER)
-    values (#{cardId,jdbcType=VARCHAR}, #{cardPassword,jdbcType=VARCHAR}, #{customerId,jdbcType=INTEGER}, 
+    values (#{cardId,jdbcType=VARCHAR}, #{cardPassword,jdbcType=VARCHAR}, #{customerId,jdbcType=VARCHAR},
       #{cardBalance,jdbcType=REAL}, #{cardStatus,jdbcType=VARCHAR}, #{cardFail,jdbcType=INTEGER}, 
       #{cardPhone,jdbcType=VARCHAR}, #{cardDate,jdbcType=TIMESTAMP}, #{cardBankId,jdbcType=INTEGER}, 
       #{cardOther,jdbcType=VARCHAR})
@@ -177,7 +177,7 @@
         #{cardPassword,jdbcType=VARCHAR},
       </if>
       <if test="customerId != null">
-        #{customerId,jdbcType=INTEGER},
+        #{customerId,jdbcType=VARCHAR},
       </if>
       <if test="cardBalance != null">
         #{cardBalance,jdbcType=REAL},
@@ -218,7 +218,7 @@
         CARD_PASSWORD = #{record.cardPassword,jdbcType=VARCHAR},
       </if>
       <if test="record.customerId != null">
-        CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+        CUSTOMER_ID = #{record.customerId,jdbcType=VARCHAR},
       </if>
       <if test="record.cardBalance != null">
         CARD_BALANCE = #{record.cardBalance,jdbcType=REAL},
@@ -250,7 +250,7 @@
     update card
     set CARD_ID = #{record.cardId,jdbcType=VARCHAR},
       CARD_PASSWORD = #{record.cardPassword,jdbcType=VARCHAR},
-      CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+      CUSTOMER_ID = #{record.customerId,jdbcType=VARCHAR},
       CARD_BALANCE = #{record.cardBalance,jdbcType=REAL},
       CARD_STATUS = #{record.cardStatus,jdbcType=VARCHAR},
       CARD_FAIL = #{record.cardFail,jdbcType=INTEGER},
@@ -269,7 +269,7 @@
         CARD_PASSWORD = #{cardPassword,jdbcType=VARCHAR},
       </if>
       <if test="customerId != null">
-        CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+        CUSTOMER_ID = #{customerId,jdbcType=VARCHAR},
       </if>
       <if test="cardBalance != null">
         CARD_BALANCE = #{cardBalance,jdbcType=REAL},
@@ -298,7 +298,7 @@
   <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Card">
     update card
     set CARD_PASSWORD = #{cardPassword,jdbcType=VARCHAR},
-      CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+      CUSTOMER_ID = #{customerId,jdbcType=VARCHAR},
       CARD_BALANCE = #{cardBalance,jdbcType=REAL},
       CARD_STATUS = #{cardStatus,jdbcType=VARCHAR},
       CARD_FAIL = #{cardFail,jdbcType=INTEGER},
@@ -308,4 +308,14 @@
       CARD_OTHER = #{cardOther,jdbcType=VARCHAR}
     where CARD_ID = #{cardId,jdbcType=VARCHAR}
   </update>
+
+  <insert id="addCard" parameterType="com.bank.pojo.Card">
+    INSERT INTO card(CARD_ID,CARD_PASSWORD,CUSTOMER_ID,CARD_BALANCE,CARD_STATUS,CARD_PHONE,CARD_DATE)
+    values (#{cardId},#{cardPassword},#{customerId},#{cardBalance},#{cardStatus},#{cardPhone},#{cardDate})
+  </insert>
+
+  <select id="selectAllCard" resultMap="BaseResultMap">
+    select  c.CARD_ID,c.CUSTOMER_ID,c.CARD_STATUS,c.CARD_PHONE,c.CARD_DATE,cu.REAL_NAME FROM card c right join customer cu
+    on c.CUSTOMER_ID=cu.CUSTOMER_IDENTITY
+  </select>
 </mapper>

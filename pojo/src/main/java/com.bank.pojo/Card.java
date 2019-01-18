@@ -1,5 +1,8 @@
 package com.bank.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -8,7 +11,7 @@ public class Card  implements Serializable {
 
     private String cardPassword;
 
-    private Integer customerId;
+    private String customerId;
 
     private Float cardBalance;
 
@@ -18,6 +21,8 @@ public class Card  implements Serializable {
 
     private String cardPhone;
 
+    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date cardDate;
 
     private Integer cardBankId;
@@ -49,6 +54,10 @@ public class Card  implements Serializable {
                 '}';
     }
 
+    public static void main(String []args){
+
+    }
+
     public String getCardId() {
         return cardId;
     }
@@ -65,11 +74,11 @@ public class Card  implements Serializable {
         this.cardPassword = cardPassword == null ? null : cardPassword.trim();
     }
 
-    public Integer getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Integer customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 

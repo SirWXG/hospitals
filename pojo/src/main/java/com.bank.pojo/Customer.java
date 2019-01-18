@@ -1,5 +1,8 @@
 package com.bank.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -20,6 +23,8 @@ public class Customer implements Serializable {
 
     private String customerSex;
 
+    @JsonFormat(pattern="yyyy-MM-dd",timezone="GMT+8")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date customerBirth;
 
     private Integer customerCredit;
@@ -27,6 +32,16 @@ public class Customer implements Serializable {
     private String customerOther1;
 
     private String customerOther2;
+
+    private String customerStatus;
+
+    public String getCustomerStatus() {
+        return customerStatus;
+    }
+
+    public void setCustomerStatus(String customerStatus) {
+        this.customerStatus = customerStatus;
+    }
 
     public Integer getCustomerId() {
         return customerId;
@@ -122,5 +137,24 @@ public class Customer implements Serializable {
 
     public void setCustomerOther2(String customerOther2) {
         this.customerOther2 = customerOther2 == null ? null : customerOther2.trim();
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerId=" + customerId +
+                ", customerName='" + customerName + '\'' +
+                ", realName='" + realName + '\'' +
+                ", customerIdentity='" + customerIdentity + '\'' +
+                ", customerAddress='" + customerAddress + '\'' +
+                ", customerPhone='" + customerPhone + '\'' +
+                ", customerPassword='" + customerPassword + '\'' +
+                ", customerSex='" + customerSex + '\'' +
+                ", customerBirth=" + customerBirth +
+                ", customerCredit=" + customerCredit +
+                ", customerOther1='" + customerOther1 + '\'' +
+                ", customerOther2='" + customerOther2 + '\'' +
+                ", customerStatus='" + customerStatus + '\'' +
+                '}';
     }
 }

@@ -33,8 +33,14 @@
                         realName:realName,
                         customerIdentity:customerIdentity
                     },
-                    success:function(){
-
+                    success:function(data){
+                        if(data.code==1){
+                            layer.open({
+                                title: '信息提示'
+                                ,area: ['500px','200px']
+                                ,content:'<div>查无此用户,请<a href="/view/service/regist.jsp" target="option">注册</a></div>'
+                            })
+                        }
                     }
                 })
             }
@@ -44,15 +50,9 @@
 </script>
 <form class="layui-form" action="">
     <div class="layui-form-item">
-        <label class="layui-form-label">真实姓名</label>
-        <div class="layui-input-block">
-            <input type="text" name="realName" lay-verify="required" autocomplete="off" placeholder="请输入标题" class="layui-input">
-        </div>
-    </div>
-    <div class="layui-form-item">
         <label class="layui-form-label">身份证</label>
         <div class="layui-input-block">
-            <input type="text" name="customerIdentity" lay-verify="identity" placeholder="" autocomplete="off" class="layui-input">
+            <input type="text" name="customerId" lay-verify="identity" placeholder="" autocomplete="off" class="layui-input">
         </div>
     </div>
 
@@ -90,38 +90,9 @@
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">网点</label>
-        <div class="layui-input-inline">
-            <select name="quiz1">
-                <option value="">请选择省</option>
-                <option value="浙江" selected="">浙江省</option>
-                <option value="陕西省">陕西省</option>
-                <option value="">福建省</option>
-            </select>
-        </div>
-        <div class="layui-input-inline">
-            <select name="quiz2">
-                <option value="">请选择市</option>
-                <option value="西安">西安</option>
-                <option value="榆林">榆林</option>
-                <option value="渭南">渭南</option>
-                <option value="宝鸡">宝鸡</option>
-                <option value="咸阳">咸阳</option>
-            </select>
-        </div>
-        <div class="layui-input-inline">
-            <select name="quiz3">
-                <option value="">请选择县/区</option>
-                <option value="雁塔区">雁塔区</option>
-                <option value="鄠邑区">鄠邑区</option>
-                <option value="长安区">长安市</option>
-            </select>
-        </div>
-    </div>
-    <div class="layui-form-item">
         <label class="layui-form-label">账户状态</label>
         <div class="layui-input-block">
-            <input type="checkbox" name="open" checked="" lay-skin="switch" lay-text="正常|冻结">
+            <input type="checkbox" name="cardStatus" checked="" lay-skin="switch" lay-text="正常|冻结">
         </div>
     </div>
     <div class="layui-form-item">
@@ -170,8 +141,15 @@
 
         //监听提交
         form.on('submit(demo1)', function(data){
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
+            $.ajax({
+                url:"/card/addCard",
+                type:"post",
+                data:data.field,
+                success:function () {
+                    layer.alert("新增银行卡成功",{
+                        title:"提示信息"
+                    })
+                }
             })
             return false;
         });

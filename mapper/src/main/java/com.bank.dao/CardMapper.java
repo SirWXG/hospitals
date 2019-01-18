@@ -31,4 +31,8 @@ public interface CardMapper {
     int updateByPrimaryKeySelective(Card record);
 
     int updateByPrimaryKey(Card record);
+
+    int addCard(Card card);
+
+    List<Card> selectAllCard();
 }

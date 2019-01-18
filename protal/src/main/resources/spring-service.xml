@@ -30,4 +30,5 @@
 	<!--提供员工服务模块的接口-->
 	<dubbo:reference interface="com.bank.dubbo.empService" id="emps"/>
 	<dubbo:reference interface="com.bank.dubbo.cardService" id="card"/>
+	<dubbo:reference interface="com.bank.dubbo.CustomerService" id="customerServiceImpl" />
 </beans>
