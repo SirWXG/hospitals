@@ -25,7 +25,7 @@
     select  card_id  FROM CARD
   </select>
   <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
-    select  <include refid="Base_Column_List"/> REAL_NAME,CUSTOMER_IDENTITY,CUSTOMER_PHONE
+    select  <include refid="Base_Column_List"/>, REAL_NAME,CUSTOMER_IDENTITY,CUSTOMER_PHONE
     FROM CARD ca LEFT JOIN CUSTOMER cu ON ca.CUSTOMER_ID=cu.CUSTOMER_ID
     <where>
       <if test="customerId!=null">
