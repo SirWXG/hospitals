@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Customer implements Serializable {
-    private Integer customerId;
+    private String customerId;
 
     private String customerName;
 
@@ -43,11 +43,11 @@ public class Customer implements Serializable {
         this.customerStatus = customerStatus;
     }
 
-    public Integer getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Integer customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 

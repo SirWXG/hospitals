@@ -8,7 +8,7 @@ public class Transfer implements Serializable {
 
     private String transferOut;
 
-    private Integer transferAmount;
+    private float transferAmount;
 
     private Date transferDate;
 
@@ -38,11 +38,11 @@ public class Transfer implements Serializable {
         this.transferOut = transferOut == null ? null : transferOut.trim();
     }
 
-    public Integer getTransferAmount() {
+    public float getTransferAmount() {
         return transferAmount;
     }
 
-    public void setTransferAmount(Integer transferAmount) {
+    public void setTransferAmount(float transferAmount) {
         this.transferAmount = transferAmount;
     }
 
