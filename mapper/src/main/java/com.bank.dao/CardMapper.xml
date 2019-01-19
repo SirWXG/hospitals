@@ -32,7 +32,7 @@
         ca.CUSTOMER_ID=#{customerId}
       </if>
       <if test="cardId!=null">
-        ca.CARD_ID=#{cardId}
+       and   ca.CARD_ID=#{cardId}
       </if>
     </where>
   </select>
