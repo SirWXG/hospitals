@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.bank.dao.DictMapper">
-  <resultMap id="BaseResultMap" type="com.bank.pojo.Dict">
-    <id column="DICT_ID" jdbcType="INTEGER" property="dictId" />
-    <result column="DICT_CATEGORY_ID" jdbcType="INTEGER" property="dictCategoryId" />
-    <result column="DICT_INFO" jdbcType="VARCHAR" property="dictInfo" />
-    <result column="DICT_VALUE" jdbcType="VARCHAR" property="dictValue" />
-    <result column="DICT_OTHER" jdbcType="VARCHAR" property="dictOther" />
+<mapper namespace="com.bank.dao.DictCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.bank.pojo.DictCategory">
+    <id column="DICT_CATEGORY_ID" jdbcType="INTEGER" property="dictCategoryId" />
+    <result column="DICT_CATEGORY_NAME" jdbcType="VARCHAR" property="dictCategoryName" />
   </resultMap>
-  <resultMap id="MyResultMap" type="dict" extends="BaseResultMap">
-    <association property="dictCategory" javaType="dictCategory"
-  </resultMap>
-  
-  <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
-
-  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -74,15 +64,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    DICT_ID, DICT_CATEGORY_ID, DICT_INFO, DICT_VALUE, DICT_OTHER
+    DICT_CATEGORY_ID, DICT_CATEGORY_NAME
   </sql>
-  <select id="selectByExample" parameterType="com.bank.pojo.DictExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.bank.pojo.DictCategoryExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from dict
+    from dict_category
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -93,85 +83,56 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from dict
-    where DICT_ID = #{dictId,jdbcType=INTEGER}
+    from dict_category
+    where DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from dict
-    where DICT_ID = #{dictId,jdbcType=INTEGER}
+    delete from dict_category
+    where DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.bank.pojo.DictExample">
-    delete from dict
+  <delete id="deleteByExample" parameterType="com.bank.pojo.DictCategoryExample">
+    delete from dict_category
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.bank.pojo.Dict">
-    insert into dict (DICT_ID, DICT_CATEGORY_ID, DICT_INFO, 
-      DICT_VALUE, DICT_OTHER)
-    values (#{dictId,jdbcType=INTEGER}, #{dictCategoryId,jdbcType=INTEGER}, #{dictInfo,jdbcType=VARCHAR}, 
-      #{dictValue,jdbcType=VARCHAR}, #{dictOther,jdbcType=VARCHAR})
+  <insert id="insert" parameterType="com.bank.pojo.DictCategory">
+    insert into dict_category (DICT_CATEGORY_ID, DICT_CATEGORY_NAME)
+    values (#{dictCategoryId,jdbcType=INTEGER}, #{dictCategoryName,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.bank.pojo.Dict">
-    insert into dict
+  <insert id="insertSelective" parameterType="com.bank.pojo.DictCategory">
+    insert into dict_category
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="dictId != null">
-        DICT_ID,
-      </if>
       <if test="dictCategoryId != null">
         DICT_CATEGORY_ID,
       </if>
-      <if test="dictInfo != null">
-        DICT_INFO,
-      </if>
-      <if test="dictValue != null">
-        DICT_VALUE,
-      </if>
-      <if test="dictOther != null">
-        DICT_OTHER,
+      <if test="dictCategoryName != null">
+        DICT_CATEGORY_NAME,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="dictId != null">
-        #{dictId,jdbcType=INTEGER},
-      </if>
       <if test="dictCategoryId != null">
         #{dictCategoryId,jdbcType=INTEGER},
       </if>
-      <if test="dictInfo != null">
-        #{dictInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="dictValue != null">
-        #{dictValue,jdbcType=VARCHAR},
-      </if>
-      <if test="dictOther != null">
-        #{dictOther,jdbcType=VARCHAR},
+      <if test="dictCategoryName != null">
+        #{dictCategoryName,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.bank.pojo.DictExample" resultType="java.lang.Long">
-    select count(*) from dict
+  <select id="countByExample" parameterType="com.bank.pojo.DictCategoryExample" resultType="java.lang.Long">
+    select count(*) from dict_category
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update dict
+    update dict_category
     <set>
-      <if test="record.dictId != null">
-        DICT_ID = #{record.dictId,jdbcType=INTEGER},
-      </if>
       <if test="record.dictCategoryId != null">
         DICT_CATEGORY_ID = #{record.dictCategoryId,jdbcType=INTEGER},
       </if>
-      <if test="record.dictInfo != null">
-        DICT_INFO = #{record.dictInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="record.dictValue != null">
-        DICT_VALUE = #{record.dictValue,jdbcType=VARCHAR},
-      </if>
-      <if test="record.dictOther != null">
-        DICT_OTHER = #{record.dictOther,jdbcType=VARCHAR},
+      <if test="record.dictCategoryName != null">
+        DICT_CATEGORY_NAME = #{record.dictCategoryName,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -179,40 +140,25 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update dict
-    set DICT_ID = #{record.dictId,jdbcType=INTEGER},
-      DICT_CATEGORY_ID = #{record.dictCategoryId,jdbcType=INTEGER},
-      DICT_INFO = #{record.dictInfo,jdbcType=VARCHAR},
-      DICT_VALUE = #{record.dictValue,jdbcType=VARCHAR},
-      DICT_OTHER = #{record.dictOther,jdbcType=VARCHAR}
+    update dict_category
+    set DICT_CATEGORY_ID = #{record.dictCategoryId,jdbcType=INTEGER},
+      DICT_CATEGORY_NAME = #{record.dictCategoryName,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.bank.pojo.Dict">
-    update dict
+  <update id="updateByPrimaryKeySelective" parameterType="com.bank.pojo.DictCategory">
+    update dict_category
     <set>
-      <if test="dictCategoryId != null">
-        DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER},
-      </if>
-      <if test="dictInfo != null">
-        DICT_INFO = #{dictInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="dictValue != null">
-        DICT_VALUE = #{dictValue,jdbcType=VARCHAR},
-      </if>
-      <if test="dictOther != null">
-        DICT_OTHER = #{dictOther,jdbcType=VARCHAR},
+      <if test="dictCategoryName != null">
+        DICT_CATEGORY_NAME = #{dictCategoryName,jdbcType=VARCHAR},
       </if>
     </set>
-    where DICT_ID = #{dictId,jdbcType=INTEGER}
+    where DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Dict">
-    update dict
-    set DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER},
-      DICT_INFO = #{dictInfo,jdbcType=VARCHAR},
-      DICT_VALUE = #{dictValue,jdbcType=VARCHAR},
-      DICT_OTHER = #{dictOther,jdbcType=VARCHAR}
-    where DICT_ID = #{dictId,jdbcType=INTEGER}
+  <update id="updateByPrimaryKey" parameterType="com.bank.pojo.DictCategory">
+    update dict_category
+    set DICT_CATEGORY_NAME = #{dictCategoryName,jdbcType=VARCHAR}
+    where DICT_CATEGORY_ID = #{dictCategoryId,jdbcType=INTEGER}
   </update>
 </mapper>

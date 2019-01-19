@@ -24,6 +24,7 @@ public class CustomerController {
             msg.setMsg("无此用户");
         }else{
             msg.setCode(0);
+            msg.setData(list);
             msg.setMsg("已有此用户");
         }
         return msg;

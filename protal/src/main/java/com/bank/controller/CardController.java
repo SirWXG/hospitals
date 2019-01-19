@@ -2,6 +2,7 @@ package com.bank.controller;
 
 import com.bank.dubbo.CardUserService;
 import com.bank.dubbo.cardService;
+import com.bank.exception.Myexception;
 import com.bank.pojo.Card;
 import com.bank.pojo.CardUser;
 import com.bank.utils.CardId;
@@ -9,7 +10,6 @@ import com.bank.utils.Msg;
 import com.bank.pojo.TransferPojo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sun.corba.se.spi.ior.ObjectKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -82,7 +82,7 @@ public class CardController {
 
     @RequestMapping(value = "/selectCardToId",method = RequestMethod.GET)
     @ResponseBody
-    public CardUser selectAllCard(@RequestParam(name="cardIds")String cardId,@RequestParam(name="cardIdentitys")String cardIdentity){
+    public CardUser selectAllCard(@RequestParam(name="cardIds")String cardId,@RequestParam(name="cardIdentitys")String cardIdentity) {
 
         Map<String,Object> map = new HashMap<>();
         map.put("cardId",cardId);
@@ -91,9 +91,22 @@ public class CardController {
         return list;
     }
 
-    @RequestMapping("/transfer")
+    @RequestMapping(value = "/transfer", produces = {"application/text;charset=UTF-8"})
+    @ResponseBody
     public String doTrandfer(TransferPojo transfer) {
-        return card.transfer(transfer);
+        System.out.println(transfer);
+        //return  0;
+        String str = "";
+        try {
+            str = card.transfer(transfer);
+        } catch (Myexception w) {
+            w.printStackTrace();
+        } catch (Exception e) {
+            str = "请核实对方账户";
+            System.out.println(e.getMessage());
+            //e.printStackTrace();
+        }
+        return str;
     }
 
     @RequestMapping(value = "/updateCardStatus",method = RequestMethod.GET)

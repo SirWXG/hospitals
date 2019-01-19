@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 
 @Service
@@ -14,8 +15,9 @@ public class DictServicePro implements dictService {
     @Autowired
     private DictMapper dictMapper;
     @Override
-    public List<Dict> getAll() {
-        return dictMapper.selectByExample( null );
+    public List<Dict> getAll(Map<String , Object> map) {
+
+        return dictMapper.selectByCond(map);
     }
 
     @Override

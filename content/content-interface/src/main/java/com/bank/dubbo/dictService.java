@@ -3,6 +3,7 @@ package com.bank.dubbo;
 import com.bank.pojo.Dict;
 
 import java.util.List;
+import java.util.Map;
 
 
 public interface dictService {
@@ -10,7 +11,7 @@ public interface dictService {
      *
      * @return Dict 集合
      */
-    List<Dict> getAll();
+    List<Dict> getAll(Map<String,Object> map);
 
     /**
      * 查询名字

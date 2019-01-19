@@ -112,11 +112,13 @@
         }
     });
     $("#streamlineName").val($("#streamName").text().replace(new RegExp("\n","g"),""));
-    layui.use('form',function(){
+
+   window.onload=function(){
+
+  layui.use('form',function(){
 
         var form = layui.form;
-        //刷新界面 所有元素
-        form.render("");
+
         form.on('submit(demo1)', function(data){
             $("#streamlineName").val($("#streamName").text());
            $.ajax({
@@ -132,7 +134,14 @@
             })
             return false;
         });
+        //刷新界面 所有元素
+      setTimeout(function () {
+          form.render()
+      },500);
+        //form.render();
     });
+   }
+
 </script>
 
 </body>

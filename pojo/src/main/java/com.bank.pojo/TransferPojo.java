@@ -1,6 +1,8 @@
 package com.bank.pojo;
 
-public class TransferPojo {
+import java.io.Serializable;
+
+public class TransferPojo implements Serializable {
     //转出卡的卡号
     private String outCard;
     //转账金额
@@ -9,6 +11,18 @@ public class TransferPojo {
     private String inCard;
     //转入卡持有人姓名
     private String inName;
+
+    @Override
+    public String toString() {
+        return "TransferPojo{" +
+                "outCard='" + outCard + '\'' +
+                ", money=" + money +
+                ", inCard='" + inCard + '\'' +
+                ", inName='" + inName + '\'' +
+                ", info='" + info + '\'' +
+                '}';
+    }
+
     //备注信息
     private String info;
 
