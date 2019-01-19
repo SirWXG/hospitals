@@ -33,7 +33,7 @@ public class DictController {
         data.setData(list);
         return data;
     }
-
+//
     @RequestMapping(value = "/getAll")
     @ResponseBody
     public List<Dict> getAll(@RequestParam(name = "dictCategory", defaultValue = "") String dictCategory,
