@@ -64,8 +64,8 @@
                     <a class="" href="javascript:;">柜台现金业务办理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/view/cash/withdraw.jsp" target="option">客户取款</a></dd>
-                        <dd><a href="/view/cash/dealcard.jsp" target="option">客户存款</a></dd>
-                        <dd><a href="/view/cash/dealcard.jsp" target="option">现金转账</a></dd>
+                        <dd><a href="/view/cash/cash2card.jsp" target="option">客户存款</a></dd>
+                        <dd><a href="/view/cash/transfer.jsp" target="option">转账</a></dd>
                         <dd><a href="/view/cash/dealcard.jsp" target="option">其他</a></dd>
                     </dl>
                 </li>
@@ -74,7 +74,7 @@
                     <dl class="layui-nav-child">
                         <dd><a href="/view/service/service_dispose.jsp" target="option">客户业务处理</a></dd>
                         <dd><a href="javascript:;">客户贷款付息</a></dd>
-                        <dd><a href="javascript:;">客户存款结息</a></dd>
+                        <dd><a href="javascript:;">客户定期存款</a></dd>
                         <dd><a href="javascript:;">电汇业务</a></dd>
                         <dd><a href="javascript:;">兑换外币</a></dd>
                         <dd><a href="javascript:;">其他</a></dd>
