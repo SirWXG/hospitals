@@ -46,4 +46,6 @@ public interface cardService {
 
     List<Card> getCardId();
 
+    int updateCardStatus(Map<String,Object> map);
+
 }

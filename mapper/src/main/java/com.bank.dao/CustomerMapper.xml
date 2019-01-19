@@ -323,9 +323,9 @@
     where CUSTOMER_ID = #{customerId,jdbcType=INTEGER}
   </update>
 
-  <select id="selectCustomer" parameterType="com.bank.pojo.Customer" resultMap="BaseResultMap">
+  <select id="selectCustomer" parameterType="string" resultMap="BaseResultMap">
     SELECT <include refid="Base_Column_List" />
-    from customer where  REAL_NAME=#{realName} AND  CUSTOMER_IDENTITY=#{customerIdentity}
+    from customer where  CUSTOMER_IDENTITY=#{customerIdentity}
   </select>
 
   <insert id="addCustomer" parameterType="com.bank.pojo.Customer">

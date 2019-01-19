@@ -84,12 +84,9 @@
                     <a href="javascript:;">客户账号业务</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/view/service/addCard.jsp" target="option">开通银行账户</a></dd>
-                        <dd><a href="/view/service/card_dis.jsp" target="option">冻结/挂失账户</a></dd>
-                        <dd><a href="javascript:;">解封账户</a></dd>
+                        <dd><a href="/view/service/card_dis.jsp" target="option">冻结/解封账户</a></dd>
                         <dd><a href="javascript:;">客户修改密码</a></dd>
-                        <dd><a href="javascript:;">更换/补办银行卡</a></dd>
                         <dd><a href="javascript:;">注销银行卡</a></dd>
-                        <dd><a href="">超链接</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">

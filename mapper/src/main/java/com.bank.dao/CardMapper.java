@@ -36,4 +36,6 @@ public interface CardMapper {
 
     int addCard(Card card);
 
+    int updateCardStatus(Map<String,Object> map);
+
 }

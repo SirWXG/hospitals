@@ -6,7 +6,7 @@ import com.bank.pojo.CardUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Map;
 
 @Service
 public class CardUserServiceImpl implements CardUserService {
@@ -15,8 +15,8 @@ public class CardUserServiceImpl implements CardUserService {
     private CardUserMapper cardUserMapper;
 
     @Override
-    public List<CardUser> selectAllCard() {
-        List<CardUser> list = cardUserMapper.selectAllCard();
+    public CardUser selectAllCard(Map<String,Object> map) {
+        CardUser list = cardUserMapper.selectAllCard(map);
         return list;
     }
 }

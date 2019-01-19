@@ -316,4 +316,8 @@
     INSERT INTO card(CARD_ID,CARD_PASSWORD,CUSTOMER_ID,CARD_BALANCE,CARD_STATUS,CARD_PHONE,CARD_DATE)
     values (#{cardId},#{cardPassword},#{customerId},#{cardBalance},#{cardStatus},#{cardPhone},#{cardDate})
   </insert>
+
+  <update id="updateCardStatus" parameterType="map">
+    update card set CARD_STATUS=#{cardStatus} where CARD_ID=#{cardId} and CUSTOMER_ID=#{cardIdentity}
+  </update>
 </mapper>
