@@ -15,10 +15,10 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @PostMapping(value = "/checkCustomer")
-    public Msg selectCustomer(Customer customer){
+    @GetMapping(value = "/checkCustomer")
+    public Msg selectCustomer(@RequestParam(name="customerIdentity")String customerIdentity){
         Msg msg = new Msg();
-        List<Customer> list = customerService.selectCustomer(customer);
+        List<Customer> list = customerService.selectCustomer(customerIdentity);
         if(list.size()<1){
             msg.setCode(1);
             msg.setMsg("无此用户");

@@ -19,18 +19,16 @@
 </fieldset>
 <script type="text/javascript">
     $(function () {
-        $("input[name='customerIdentity']").blur(function () {
-            var realName = $("input[name='realName']").val();
-            var customerIdentity = $("input[name='customerIdentity']").val();
-            if(realName==null||realName.trim().length<1||customerIdentity==null||customerIdentity.trim().length<17){
+        $("input[name='customerId']").blur(function () {
+            var customerIdentity = $("input[name='customerId']").val();
+            if(customerIdentity==null||customerIdentity.trim().length<17){
                 alert("格式错误,");
                 return false;
             }else{
                 $.ajax({
-                    url:"/customer/checkCustomer",
-                    type:"post",
+                    url:"/customer/checkCustomer?",
+                    type:"get",
                     data:{
-                        realName:realName,
                         customerIdentity:customerIdentity
                     },
                     success:function(data){

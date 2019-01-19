@@ -15,8 +15,8 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerMapper customerMapper;
 
     @Override
-    public List<Customer> selectCustomer(Customer customer) {
-        List<Customer> list = customerMapper.selectCustomer(customer);
+    public List<Customer> selectCustomer(String identity) {
+        List<Customer> list = customerMapper.selectCustomer(identity);
         return list;
     }
 

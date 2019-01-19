@@ -9,6 +9,7 @@ import com.bank.utils.Msg;
 import com.bank.pojo.TransferPojo;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.sun.corba.se.spi.ior.ObjectKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -79,26 +80,38 @@ public class CardController {
         return card.addCard(cards);
     }
 
-    @RequestMapping(value = "/selectAllCard",method = RequestMethod.GET)
+    @RequestMapping(value = "/selectCardToId",method = RequestMethod.GET)
     @ResponseBody
-    public Msg selectAllCard(@RequestParam(name = "page",defaultValue = "1")Integer page,
-                             @RequestParam(name = "limit",defaultValue = "10")Integer limit){
-        Msg msg = new Msg();
-        List<CardUser> list = userService.selectAllCard();
-        int count = list.size();
-        msg.setCount(count);
-        PageHelper.startPage(page,limit);
-        List<CardUser> lists = userService.selectAllCard();
-        PageInfo<CardUser> pageInfo = new PageInfo<>(lists);
-        msg.setCode(0);
-        msg.setData(pageInfo.getList());
-        msg.setMsg("请求成功");
-        return msg;
+    public CardUser selectAllCard(@RequestParam(name="cardIds")String cardId,@RequestParam(name="cardIdentitys")String cardIdentity){
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("cardId",cardId);
+        map.put("cardIdentity",cardIdentity);
+        CardUser list = userService.selectAllCard(map);
+        return list;
     }
 
     @RequestMapping("/transfer")
     public String doTrandfer(TransferPojo transfer) {
         return card.transfer(transfer);
+    }
+
+    @RequestMapping(value = "/updateCardStatus",method = RequestMethod.GET)
+    @ResponseBody
+    public CardUser updateCard(@RequestParam(name="cardIds")String cardId,@RequestParam(name = "cardIdentitys")String cardIdentity,
+                             @RequestParam(name="cardStatus")boolean cardStatus){
+        String status = "";
+        if(cardStatus){
+             status = "on";
+        }
+        Map<String, Object> map = new HashMap<>();
+        map.put("cardId",cardId);
+        map.put("cardIdentity",cardIdentity);
+        map.put("cardStatus",status);
+        card.updateCardStatus(map);
+        System.out.println(map);
+        CardUser user = userService.selectAllCard(map);
+        return user;
     }
 
 

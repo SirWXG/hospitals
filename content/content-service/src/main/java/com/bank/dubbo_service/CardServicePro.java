@@ -100,6 +100,12 @@ public class CardServicePro implements cardService {
         return cardMapper.selectCardId();
     }
 
+    @Override
+    public int updateCardStatus(Map<String, Object> map) {
+        int flag = cardMapper.updateCardStatus(map);
+        return flag;
+    }
+
     /**
      * 用户进行转账操作
      *

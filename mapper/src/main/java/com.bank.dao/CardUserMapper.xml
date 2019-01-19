@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bank.dao.CardUserMapper">
-    <select id="selectAllCard" resultType="com.bank.pojo.CardUser">
+    <select id="selectAllCard" resultType="com.bank.pojo.CardUser" parameterType="map">
     select
     c.CARD_ID as cardId,c.CUSTOMER_ID as cardIdentity,c.CARD_STATUS as cardStatus,c.CARD_PHONE as cardPhone,c.CARD_DATE as cardDate,cu.REAL_NAME as realName
     FROM card c right join customer cu
-    on c.CUSTOMER_ID=cu.CUSTOMER_IDENTITY
+    on c.CUSTOMER_ID=cu.CUSTOMER_IDENTITY where c.CARD_ID=#{cardId} and c.CUSTOMER_ID=#{cardIdentity}
   </select>
 </mapper>

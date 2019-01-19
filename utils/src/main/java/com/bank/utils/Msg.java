@@ -39,4 +39,14 @@ public class Msg {
     public void setData(List<?> data) {
         this.data = data;
     }
+
+    @Override
+    public String toString() {
+        return "Msg{" +
+                "data=" + data +
+                ", count=" + count +
+                ", code=" + code +
+                ", msg='" + msg + '\'' +
+                '}';
+    }
 }

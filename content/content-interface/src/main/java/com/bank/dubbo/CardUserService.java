@@ -2,8 +2,9 @@ package com.bank.dubbo;
 
 import com.bank.pojo.CardUser;
 
-import java.util.List;
+import java.util.Map;
+
 
 public interface CardUserService {
-    List<CardUser> selectAllCard();
+    CardUser selectAllCard(Map<String,Object> map);
 }

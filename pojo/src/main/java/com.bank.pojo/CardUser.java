@@ -64,4 +64,16 @@ public class CardUser implements Serializable {
     public void setRealName(String realName) {
         this.realName = realName;
     }
+
+    @Override
+    public String toString() {
+        return "CardUser{" +
+                "cardId='" + cardId + '\'' +
+                ", cardIdentity='" + cardIdentity + '\'' +
+                ", cardStatus='" + cardStatus + '\'' +
+                ", cardPhone='" + cardPhone + '\'' +
+                ", cardDate=" + cardDate +
+                ", realName='" + realName + '\'' +
+                '}';
+    }
 }

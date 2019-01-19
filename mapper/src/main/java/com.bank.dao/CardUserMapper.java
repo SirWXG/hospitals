@@ -2,8 +2,9 @@ package com.bank.dao;
 
 import com.bank.pojo.CardUser;
 
-import java.util.List;
+import java.util.Map;
+
 
 public interface CardUserMapper {
-    List<CardUser> selectAllCard();
+    CardUser selectAllCard(Map<String,Object> map);
 }

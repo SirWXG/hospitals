@@ -27,7 +27,7 @@ public interface CustomerMapper {
     int updateByPrimaryKeySelective(Customer record);
 
     int updateByPrimaryKey(Customer record);
-    List<Customer> selectCustomer(Customer customer);
+    List<Customer> selectCustomer(String identity);
     int addCustomer(Customer customer);
     String selectCustomerByIdentity(String identity);
 }
