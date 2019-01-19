@@ -12,7 +12,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>银行卡现金业务</title>
+    <title>银行卡现金存款业务</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -49,11 +49,22 @@
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">银行卡余额</label>
-        <div class="layui-input-block">
-            <input type="text" readonly="readonly" name="title" value="" lay-verify="title" autocomplete="off" placeholder="请先查询" class="layui-input">
+
+        <div class="layui-inline">
+            <label class="layui-form-label">当前银行卡余额</label>
+            <div class="layui-input-inline">
+                <input type="text" readonly="readonly" name="title" value="" lay-verify="title" autocomplete="off" placeholder="请先查询" class="layui-input">
+            </div>
+            </div>
+        </div>
+        <div class="layui-inline">
+            <label class="layui-form-label">银行卡持有人</label>
+            <div class="layui-input-inline">
+                <input type="text" readonly="readonly" name="cardOwner" autocomplete="off" class="layui-input">
+            </div>
         </div>
     </div>
+
 </form>
 
 <hr></hr>
@@ -62,15 +73,15 @@
     <input name="outCard" type="hidden">
     <input name="money" type="hidden">
     <div class="layui-form-item">
-        <label class="layui-form-label">取款金额</label>
+        <label class="layui-form-label">存款金额</label>
         <div class="layui-input-block">
-            <input type="text" name="cash" value="" lay-verify="money"  placeholder="0.00" class="layui-input">
+            <input type="text" name="cash" value="" lay-verify="money"  placeholder="请输入存款金额" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button class="layui-btn" lay-submit="" lay-filter="demo2">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            <button type="reset" id="recash" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
 
@@ -84,7 +95,7 @@
     //给卡号输入框赋值
 $(document).ready(function () {
     $.ajax({
-        url:"/card/getcard?ii="+Math.random(10),
+        url:"/card/getcard",
         type:"get",
         success:function (mres) {
             $.each(mres,function(index,item){
@@ -94,42 +105,32 @@ $(document).ready(function () {
         }
     });
 });
-
-
-
-   // $("select:eq(0)").append($("<option>").attr("value",55555).text(55555));
-  // $(document).ready(function(){
+//layui加载事件 定义在下拉框加载以后
    window.onload=function(){
 
        setTimeout(function(){
     layui.use('form', function(){
-        var totalmoney=0;//可用余额
-        var currcardId="";//当前卡号
         var form = layui.form;
-        // var layer = layui.layer;
-        // var element=layui.element;
-        //element.init();
-        //setTimeout(function(){ alert(22);},2000);
-//alert(55);
+        var totalmoney=0;//定义变量存储当前余额
         //刷新页面数据
         form.render();
-
 
             //监听提交查询余额
             form.on('submit(demo1)', function(data){
                 // layer.alert(JSON.stringify(data.field), {
                 //     title: '最终的提交信息'
                 // })
-               // currcardId=data.field.cardId;
                $("input[name='outCard']").attr("value", data.field.cardId);
                 $.ajax({
                     url:"/card/select",
                     type:"post",
                     data:data.field,
                     success:function (money) {
+                        // alert(JSON.stringify(money));
                         $.each(money,function (index,item) {
                             // alert(item.cardBalance);
                             $("input:read-only")[0].value=item.cardBalance;
+                            $("input:read-only")[1].value=item.customer.realName;
                             totalmoney=item.cardBalance;
                         })
                     }
@@ -140,33 +141,31 @@ $(document).ready(function () {
         form.verify({
            money: function (value) {
                if(totalmoney==0){
-                   return  '不能取款';
+                   return  '不能存款';
                }
-                if (value > totalmoney) {
-                    return '取款金额不能大于余额';
-                }
             }, carpass: [
                 /^[\S]{6}$/
                 ,'密码必须6位，且不能出现空格'
             ]
         })
-            //监听提交取款
+            //监听提交存款
             form.on('submit(demo2)', function(data){
-                var money=(totalmoney-data.field.cash);
-                // layer.alert(JSON.stringify(data.field), {
-                //     title: '最终的提交信息'
-                // });
+                var money=(totalmoney+Number(data.field.cash));
+                layer.alert(JSON.stringify(data.field), {
+                    title: '最终的提交信息'
+                });
                 $.ajax({
                     url:"/card/update",
                     type:"post",
-                    data:{"cardId":data.field.outCard,"cardBalance":money,
-                        "cardOther":data.field.cash,"cardStatus":"out"},
+                    data:{"cardId":data.field.outCard,"cardBalance":money
+                        ,"cardOther":data.field.cash,"cardStatus":"in"},
                     success:function (res) {
                       if(res==1){
-                          layer.alert("取款成功");
+                          layer.alert("存款成功");
                       }else
-                          layer.alert("取款失败");
+                          layer.alert("存款失败");
                         $("#tijiao").click();
+                        $("#recash").click();
                     }
                 });
                 return false;
