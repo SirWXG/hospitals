@@ -3,9 +3,13 @@ package com.bank.dao;
 import com.bank.pojo.Deposit;
 import com.bank.pojo.DepositExample;
 import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface DepositMapper {
+    //按条件进行查找
+    List<Deposit> selectByCond(Map<String, Object> map);
     long countByExample(DepositExample example);
 
     int deleteByExample(DepositExample example);
@@ -27,4 +31,6 @@ public interface DepositMapper {
     int updateByPrimaryKeySelective(Deposit record);
 
     int updateByPrimaryKey(Deposit record);
+
+
 }

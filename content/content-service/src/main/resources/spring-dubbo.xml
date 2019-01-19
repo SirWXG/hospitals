@@ -38,5 +38,7 @@
     <dubbo:service interface="com.bank.dubbo.CustomerService" ref="customerServiceImpl" />
 
     <dubbo:service interface="com.bank.dubbo.CardUserService" ref="cardUserServiceImpl" />
+    <!--定期存款应用接口-->
+    <dubbo:service interface="com.bank.dubbo.depositService" ref="depositServicePro" />
 
 </beans>

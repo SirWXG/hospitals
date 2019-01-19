@@ -3,7 +3,7 @@
 <mapper namespace="com.bank.dao.DepositMapper">
   <resultMap id="BaseResultMap" type="com.bank.pojo.Deposit">
     <id column="DEPOSIT_ID" jdbcType="INTEGER" property="depositId" />
-    <result column="CUSTOMER_ID" jdbcType="INTEGER" property="customerId" />
+    <result column="CUSTOMER_ID" jdbcType="VARCHAR" property="customerId" />
     <result column="DEPOSIT_AMOUNT" jdbcType="REAL" property="depositAmount" />
     <result column="DEPOSIT_TERM" jdbcType="INTEGER" property="depositTerm" />
     <result column="DEPOSIT_RATE" jdbcType="REAL" property="depositRate" />
@@ -11,6 +11,26 @@
     <result column="DEPOSIT_BANK_ID" jdbcType="INTEGER" property="depositBankId" />
     <result column="DEPOSIT_OTHER" jdbcType="VARCHAR" property="depositOther" />
   </resultMap>
+  <resultMap id="MyResultMap" type="deposit" extends="BaseResultMap">
+    <association property="custemer" javaType="customer">
+      <result column="REAL_NAME" jdbcType="VARCHAR" property="realName" />
+      <result column="CUSTOMER_ADDRESS" jdbcType="VARCHAR" property="customerAddress" />
+      <result column="CUSTOMER_PHONE" jdbcType="VARCHAR" property="customerPhone" />
+    </association>
+  </resultMap>
+  <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
+      select  DEPOSIT_ID, d.CUSTOMER_ID, DEPOSIT_AMOUNT, DEPOSIT_TERM, DEPOSIT_RATE, DEPOSIT_DATE,
+    DEPOSIT_BANK_ID, DEPOSIT_OTHER,real_name,customer_address,customer_phone
+      from deposit d left  join customer c on c.CUSTOMER_ID=d.CUSTOMER_ID
+      <where>
+        <if test="customerId!=null">
+          d.CUSTOMER_ID=#{customerId}
+        </if>
+        <if test="depositId!=null">
+          deposit_id=#{depositId}
+        </if>
+      </where>
+  </select>
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -104,11 +124,11 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.bank.pojo.Deposit">
-    insert into deposit (DEPOSIT_ID, CUSTOMER_ID, DEPOSIT_AMOUNT, 
+    insert into deposit ( CUSTOMER_ID, DEPOSIT_AMOUNT,
       DEPOSIT_TERM, DEPOSIT_RATE, DEPOSIT_DATE, 
       DEPOSIT_BANK_ID, DEPOSIT_OTHER)
-    values (#{depositId,jdbcType=INTEGER}, #{customerId,jdbcType=INTEGER}, #{depositAmount,jdbcType=REAL}, 
-      #{depositTerm,jdbcType=INTEGER}, #{depositRate,jdbcType=REAL}, #{depositDate,jdbcType=DATE}, 
+    values ( #{customerId,jdbcType=INTEGER}, #{depositAmount,jdbcType=REAL},
+      #{depositTerm,jdbcType=INTEGER}, #{depositRate,jdbcType=REAL}, sysdate(),
       #{depositBankId,jdbcType=INTEGER}, #{depositOther,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.bank.pojo.Deposit">
@@ -179,7 +199,7 @@
         DEPOSIT_ID = #{record.depositId,jdbcType=INTEGER},
       </if>
       <if test="record.customerId != null">
-        CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+        CUSTOMER_ID = #{record.customerId,jdbcType=VARCHAR},
       </if>
       <if test="record.depositAmount != null">
         DEPOSIT_AMOUNT = #{record.depositAmount,jdbcType=REAL},
@@ -207,7 +227,7 @@
   <update id="updateByExample" parameterType="map">
     update deposit
     set DEPOSIT_ID = #{record.depositId,jdbcType=INTEGER},
-      CUSTOMER_ID = #{record.customerId,jdbcType=INTEGER},
+      CUSTOMER_ID = #{record.customerId,jdbcType=VARCHAR},
       DEPOSIT_AMOUNT = #{record.depositAmount,jdbcType=REAL},
       DEPOSIT_TERM = #{record.depositTerm,jdbcType=INTEGER},
       DEPOSIT_RATE = #{record.depositRate,jdbcType=REAL},
@@ -222,7 +242,7 @@
     update deposit
     <set>
       <if test="customerId != null">
-        CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+        CUSTOMER_ID = #{customerId,jdbcType=VARCHAR},
       </if>
       <if test="depositAmount != null">
         DEPOSIT_AMOUNT = #{depositAmount,jdbcType=REAL},
@@ -247,7 +267,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.bank.pojo.Deposit">
     update deposit
-    set CUSTOMER_ID = #{customerId,jdbcType=INTEGER},
+    set CUSTOMER_ID = #{customerId,jdbcType=VARCHAR},
       DEPOSIT_AMOUNT = #{depositAmount,jdbcType=REAL},
       DEPOSIT_TERM = #{depositTerm,jdbcType=INTEGER},
       DEPOSIT_RATE = #{depositRate,jdbcType=REAL},
