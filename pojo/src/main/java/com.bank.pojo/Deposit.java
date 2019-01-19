@@ -6,7 +6,7 @@ import java.util.Date;
 public class Deposit implements Serializable {
     private Integer depositId;
 
-    private Integer customerId;
+    private String customerId;
 
     private Float depositAmount;
 
@@ -19,6 +19,15 @@ public class Deposit implements Serializable {
     private Integer depositBankId;
 
     private String depositOther;
+    private Customer customer;;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 
     public Integer getDepositId() {
         return depositId;
@@ -28,11 +37,11 @@ public class Deposit implements Serializable {
         this.depositId = depositId;
     }
 
-    public Integer getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(Integer customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 
