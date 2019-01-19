@@ -21,15 +21,16 @@
 	<dubbo:reference id="hello" interface="com.bank.dubbo.Hello"/>
 
 	<!--提供数据字典的接口-->
-	<dubbo:reference id="dict" interface="com.bank.dubbo.dictService"/>
+	<dubbo:reference id="dict" interface="com.bank.dubbo.dictService" timeout="2000"/>
 	<!--提供任务的接口-->
-	<dubbo:reference id="task" interface="com.bank.dubbo.taskService"/>
+	<dubbo:reference id="task" interface="com.bank.dubbo.taskService" timeout="2000"/>
 	<!--提供任务流程线的接口-->
-	<dubbo:reference id="streamline" interface="com.bank.dubbo.streamlineService"/>
-	<dubbo:reference id="serviceCommitServiceImpl" interface="com.bank.dubbo.ServiceCommitService" />
+	<dubbo:reference id="streamline" interface="com.bank.dubbo.streamlineService" timeout="2000"/>
+	<dubbo:reference id="serviceCommitServiceImpl" interface="com.bank.dubbo.ServiceCommitService" timeout="2000" />
 	<!--提供员工服务模块的接口-->
-	<dubbo:reference interface="com.bank.dubbo.empService" id="emps"/>
-	<dubbo:reference interface="com.bank.dubbo.cardService" id="card"/>
-	<dubbo:reference interface="com.bank.dubbo.CustomerService" id="customerServiceImpl" />
-	<dubbo:reference interface="com.bank.dubbo.CardUserService" id="cardUserServiceImpl" />
+	<dubbo:reference interface="com.bank.dubbo.empService" id="emps" timeout="2000"/>
+	<!--提供银行卡服务模块接口-->
+	<dubbo:reference interface="com.bank.dubbo.cardService" id="card" timeout="2000"/>
+	<dubbo:reference interface="com.bank.dubbo.CustomerService" id="customerServiceImpl" timeout="2000" />
+	<dubbo:reference interface="com.bank.dubbo.CardUserService" id="cardUserServiceImpl" timeout="2000" />
 </beans>
