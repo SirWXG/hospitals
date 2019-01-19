@@ -1,6 +1,8 @@
 package com.bank.exception;
 
-public class Myexception extends Exception {
+import java.io.Serializable;
+
+public class Myexception extends RuntimeException implements Serializable {
     public Myexception(String info){
         super(info);
     }
