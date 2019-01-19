@@ -13,6 +13,16 @@ public class Dict implements Serializable {
 
     private String dictOther;
 
+    private DictCategory dictCategory;
+
+    public DictCategory getDictCategory() {
+        return dictCategory;
+    }
+
+    public void setDictCategory(DictCategory dictCategory) {
+        this.dictCategory = dictCategory;
+    }
+
     public Integer getDictId() {
         return dictId;
     }
