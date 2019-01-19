@@ -38,4 +38,6 @@ public interface CardMapper {
 
     int updateCardStatus(Map<String,Object> map);
 
+    int updateCardPass(Map<String,Object> map);
+
 }

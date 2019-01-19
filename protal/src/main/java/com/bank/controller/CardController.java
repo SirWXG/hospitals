@@ -122,10 +122,47 @@ public class CardController {
         map.put("cardIdentity",cardIdentity);
         map.put("cardStatus",status);
         card.updateCardStatus(map);
-        System.out.println(map);
         CardUser user = userService.selectAllCard(map);
         return user;
     }
 
+    @RequestMapping("/cancelCard")
+    @ResponseBody
+    public CardUser cancelCard(@RequestParam(name="cardIds")String cardId,@RequestParam(name = "cardIdentitys")String cardIdentity,
+                             @RequestParam(name="cardStatus")String cardStatus){
+        Map<String,Object> map = new HashMap<>();
+        map.put("cardId",cardId);
+        map.put("cardIdentity",cardIdentity);
+        map.put("cardStatus",cardStatus);
+        card.updateCardStatus(map);
+        CardUser user = userService.selectAllCard(map);
+        return user;
+    }
+
+    @RequestMapping(value = "/updateCardPass")
+    @ResponseBody
+    public Msg updateCardPass(@RequestParam(name="cardId")String cardId,
+                                 @RequestParam(name="cardIdentity")String cardIdentity,
+                                 @RequestParam(name="cardPassword")String cardPassword,
+                                 @RequestParam(name="newPassword")String newPassword,
+                                 @RequestParam(name="replacePass")String replacePass){
+        Msg msg = new Msg();
+        if(!newPassword.equals(replacePass)){
+            msg.setCode(1);
+            msg.setMsg("两次密码输入不一致");
+            return msg;
+        }
+        Map<String,Object> map = new HashMap<>();
+        map.put("cardId",cardId);
+        map.put("cardIdentity",cardIdentity);
+        map.put("newPassword",newPassword);
+        map.put("cardPassword",cardPassword);
+        int flag = card.updateCardPass(map);
+        if(flag<1){
+            msg.setCode(2);
+            msg.setMsg("信息输入有误,请重新输入");
+        }
+        return msg;
+    }
 
 }
