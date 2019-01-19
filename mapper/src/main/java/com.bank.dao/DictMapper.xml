@@ -9,11 +9,24 @@
     <result column="DICT_OTHER" jdbcType="VARCHAR" property="dictOther" />
   </resultMap>
   <resultMap id="MyResultMap" type="dict" extends="BaseResultMap">
-    <association property="dictCategory" javaType="dictCategory"
+    <association property="dictCategory" javaType="dictCategory">
+      <id column="DICT_CATEGORY_ID" jdbcType="INTEGER" property="dictCategoryId" />
+      <result column="DICT_CATEGORY_NAME" jdbcType="VARCHAR" property="dictCategoryName" />
+    </association>
   </resultMap>
   
   <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
-
+    select
+    DICT_ID, d.DICT_CATEGORY_ID, DICT_INFO, DICT_VALUE, DICT_OTHER,DICT_CATEGORY_NAME
+    FROM DICT D  LEFT JOIN DICT_CATEGORY C ON D.DICT_CATEGORY_ID=C.DICT_CATEGORY_ID
+    <where>
+      <if test="dictCategory !=null">
+        d.dict_category_id =#{dictCategory}
+      </if>
+      <if test="dictId!=null">
+       and dict_id=#{dictId}
+      </if>
+    </where>
   </select>
   <sql id="Example_Where_Clause">
     <where>
