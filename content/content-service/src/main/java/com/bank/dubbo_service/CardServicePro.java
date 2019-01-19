@@ -110,6 +110,12 @@ public class CardServicePro implements cardService {
         return flag;
     }
 
+    @Override
+    public int updateCardPass(Map<String, Object> map) {
+        int flag = cardMapper.updateCardPass(map);
+        return flag;
+    }
+
     /**
      * 用户进行转账操作
      *

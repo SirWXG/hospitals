@@ -57,7 +57,6 @@
                         <dd><a href="/view/task/waittodo.jsp" target="option">待办任务</a></dd>
                         <dd><a href="/view/task/already.jsp" target="option">已办任务</a></dd>
                         <dd><a href="/view/task/createdtask.jsp" target="option">已发起任务</a></dd>
-                        <dd><a href="javascript:;">分送任务</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -85,8 +84,8 @@
                     <dl class="layui-nav-child">
                         <dd><a href="/view/service/addCard.jsp" target="option">开通银行账户</a></dd>
                         <dd><a href="/view/service/card_dis.jsp" target="option">冻结/解封账户</a></dd>
-                        <dd><a href="javascript:;">客户修改密码</a></dd>
-                        <dd><a href="javascript:;">注销银行卡</a></dd>
+                        <dd><a href="/view/service/change_pass.jsp" target="option">客户修改密码</a></dd>
+                        <dd><a href="/view/service/card_cancel.jsp" target="option">注销银行卡</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
@@ -97,18 +96,7 @@
                         <dd><a href="javascript:;">贷款记录表</a></dd>
                         <dd><a href="javascript:;">存款记录表</a></dd>
                     </dl>
-                </li><li class="layui-nav-item">
-                    <a href="javascript:;">银行存贷数据报表</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">数据字典</a></dd>
-                        <dd><a href="javascript:;">黑名单表</a></dd>
-                        <dd><a href="javascript:;">贷款记录表</a></dd>
-                        <dd><a href="javascript:;">存款记录表</a></dd>
-                    </dl>
                 </li>
-
-                <li class="layui-nav-item"><a href="">中国人民银行征信</a></li>
-                <li class="layui-nav-item"><a href="">中央国债综合业务系统</a></li>
             </ul>
         </div>
     </div>
@@ -122,7 +110,6 @@
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
-        © layui.com - 底部固定区域
     </div>
 </div>
 <script src="layui/layui.all.js"></script>
