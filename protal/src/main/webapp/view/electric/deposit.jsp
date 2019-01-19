@@ -29,7 +29,7 @@
         <div class="layui-inline">
             <label class="layui-form-label">用户身份证号</label>
             <div class="layui-input-inline">
-                <input type="text" name="customerId" value="" lay-verify="customerId" placeholder="请输入有限身份证号"
+                <input type="text" name="customerIdentity" value="" lay-verify="customerId" placeholder="请输入有限身份证号"
                        class="layui-input">
             </div>
         </div>
@@ -43,7 +43,7 @@
 
     <div class="layui-form-item">
         <div class="layui-input-block">
-            <button class="layui-btn" lay-submit="" id="tijiao" lay-filter="demo1">立即提交</button>
+            <button class="layui-btn" lay-submit=""  lay-filter="demo1">立即提交</button>
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
@@ -70,20 +70,19 @@
 <hr></hr>
 <%--存款信息填写表--%>
 <form class="layui-form" action="">
-    <input name="customerIdentity" type="hidden">
-    <input name="money" type="hidden">
+    <input name="customerId" type="hidden" lay-verify="customerId">
     <div class="layui-form-item">
         <label class="layui-form-label">存款金额</label>
         <div class="layui-input-block">
-            <input type="text" name="deposit" value="" lay-verify="deposit" placeholder="请输入存款金额" class="layui-input">
+            <input type="text" name="depositAmount" value="" lay-verify="deposit" placeholder="请输入存款金额" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
 
         <div class="layui-inline">
-            <label class="layui-form-label">银行卡号</label>
+            <label class="layui-form-label">存款利率</label>
             <div class="layui-input-inline">
-                <select name="depositRate" lay-verify="depositTerm" lay-search="">
+                <select name="depositRate" lay-verify="depositRate" lay-search="">
                     <option value="">直接选择或搜索选择</option>
                 </select>
             </div>
@@ -106,7 +105,7 @@
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button class="layui-btn" lay-submit="" lay-filter="demo2">立即提交</button>
-            <button type="reset" id="recash" class="layui-btn layui-btn-primary">重置</button>
+            <button type="reset" id="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
 
@@ -120,12 +119,12 @@
     //layui加载事件
 
     $.ajax({
-        url: "/card/getcard",
+        url: "/dict/getAll?dictCategory=1",
         type: "get",
-        success: function (mres) {
-            $.each(mres, function (index, item) {
+        success: function (dict) {
+            $.each(dict, function (index, item) {
                 // alert(JSON.stringify(item));
-                $("select:eq(0)").append($("<option>").attr("value", item.cardId).text(item.cardId));
+                $("select:eq(0)").append($("<option>").attr("value", item.dictValue).text(item.dictInfo));
             })
         }
     });
@@ -140,18 +139,18 @@
             layer.alert(JSON.stringify(data.field), {
                 title: '最终的提交信息'
             })
-            $("input[name='customerIdentity']").attr("value", data.field.customerId);
+            $("input[name='customerId']").attr("value", data.field.customerIdentity);
             $.ajax({
                 url: "/customer/checkCustomer",
                 type: "get",
-                data: {"customerIdentity": data.field.customerId},
+                data: {"customerIdentity": data.field.customerIdentity},
                 success: function (res) {
                     alert(JSON.stringify(res));
                     $.each(res.data, function (index, item) {
                         // alert(item.cardBalance);
                         $("input:read-only")[0].value = item.realName;
                         $("input:read-only")[1].value = item.customerCredit;
-                        $("input[name='customerIdentity']").attr("value", item.customerIdentity);
+                        $("input[name='customerIdentity']").attr("value", parseFloat(item.customerIdentity));
                     })
                 }
             })
@@ -161,7 +160,7 @@
         form.verify({
             deposit: function (value) {
                 if (value <= 0) {
-                    return '不能存款';
+                    return '请输入正确存款金额';
                 }
             }, carpass: [
                 /^[\S]{6}$/
@@ -169,27 +168,28 @@
             ], customerId: [
                 /^[\d]{18}$/
                 , '身份证号必须18位，且不能出现空格'
-            ]
+            ],depositRate:function(value){
+                if(value=="")
+                    return "请选择存款利率";
+            }
         })
         //监听提交存款
         form.on('submit(demo2)', function (data) {
             layer.alert(JSON.stringify(data.field), {
                 title: '最终的提交信息'
             });
-            // $.ajax({
-            //     url:"/card/update",
-            //     type:"post",
-            //     data:{"cardId":data.field.outCard,"cardBalance":money
-            //         ,"cardOther":data.field.cash,"cardStatus":"in"},
-            //     success:function (res) {
-            //       if(res==1){
-            //           layer.alert("存款成功");
-            //       }else
-            //           layer.alert("存款失败");
-            //         $("#tijiao").click();
-            //         $("#recash").click();
-            //     }
-            // });
+            $.ajax({
+                url:"/deposit/add",
+                type:"post",
+                data:data.field,
+                success:function (res) {
+                  if(res==1){
+                      layer.alert("存款成功");
+                  }else
+                      layer.alert("存款失败");
+                    $("#reset").click();
+                }
+            });
             return false;
         });
 
