@@ -12,7 +12,7 @@
     <result column="DEPOSIT_OTHER" jdbcType="VARCHAR" property="depositOther" />
   </resultMap>
   <resultMap id="MyResultMap" type="deposit" extends="BaseResultMap">
-    <association property="custemer" javaType="customer">
+    <association property="customer" javaType="customer">
       <result column="REAL_NAME" jdbcType="VARCHAR" property="realName" />
       <result column="CUSTOMER_ADDRESS" jdbcType="VARCHAR" property="customerAddress" />
       <result column="CUSTOMER_PHONE" jdbcType="VARCHAR" property="customerPhone" />
