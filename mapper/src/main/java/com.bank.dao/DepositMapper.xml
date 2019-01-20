@@ -21,7 +21,7 @@
   <select id="selectByCond" resultMap="MyResultMap" parameterType="map">
       select  DEPOSIT_ID, d.CUSTOMER_ID, DEPOSIT_AMOUNT, DEPOSIT_TERM, DEPOSIT_RATE, DEPOSIT_DATE,
     DEPOSIT_BANK_ID, DEPOSIT_OTHER,real_name,customer_address,customer_phone
-      from deposit d left  join customer c on c.CUSTOMER_ID=d.CUSTOMER_ID
+      from deposit d left  join customer c on c.CUSTOMER_IDENTITY=d.CUSTOMER_ID
       <where>
         <if test="customerId!=null">
           d.CUSTOMER_ID=#{customerId}

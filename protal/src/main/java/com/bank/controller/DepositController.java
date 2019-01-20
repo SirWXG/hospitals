@@ -2,6 +2,7 @@ package com.bank.controller;
 
 import com.bank.dubbo.depositService;
 import com.bank.pojo.Deposit;
+import com.bank.utils.Msg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,8 +27,9 @@ public class DepositController {
     //查询
     @RequestMapping("/select")
     @ResponseBody
-    public List<Deposit> getDeposit(@RequestParam(name = "depositId",defaultValue = "")String depositid,
-                                    @RequestParam(name = "customerId",defaultValue = "")String customertId){
+    public Msg getDeposit(@RequestParam(name = "depositId",defaultValue = "")String depositid,
+                          @RequestParam(name = "customerId",defaultValue = "")String customertId){
+        Msg msg=new Msg();
         Map<String ,Object> map =new HashMap<>();
         if(depositid.trim().length()>0){
             map.put("depositId",depositid);
@@ -35,7 +37,11 @@ public class DepositController {
         if(customertId.trim().length()>0){
             map.put("customertId",customertId);
         }
-       return  deposits.getAll(map);
+       List<Deposit> list= deposits.getAll(map);
+        msg.setData(list);
+        msg.setCode(0);
+        msg.setMsg("success");
+        return  msg;
     }
     //修改
     @RequestMapping("/update")

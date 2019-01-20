@@ -94,7 +94,7 @@
                         <dd><a href="javascript:;">数据字典</a></dd>
                         <dd><a href="javascript:;">黑名单表</a></dd>
                         <dd><a href="javascript:;">贷款记录表</a></dd>
-                        <dd><a href="javascript:;">存款记录表</a></dd>
+                        <dd><a href="/view/houtai/depositinfo.jsp" target="option">存款记录表</a></dd>
                     </dl>
                 </li>
             </ul>
