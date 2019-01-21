@@ -15,4 +15,6 @@ public interface ServiceCommitMapper {
      int updateService(ServiceCommit serviceCommit);
 
     List<ServiceCommit> selectServiceCommit(String serviceCustomer);
+
+    List<ServiceCommit> selectLoan();
 }

@@ -38,4 +38,9 @@
     select <include refid="base" />
     from service_commit where service_customer=#{serviceCustomer}
   </select>
+  <select id="selectLoan" resultMap="BaseResultMap" >
+    select <include refid="base" />
+    from service_commit where service_type like concat(concat('%','贷款'),'%')
+
+  </select>
 </mapper>

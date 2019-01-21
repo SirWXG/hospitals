@@ -14,4 +14,6 @@ public interface ServiceCommitService {
     int updateService(ServiceCommit serviceCommit);
 
     List<ServiceCommit> selectServiceCommit(String serviceCustomer);
+
+    List<ServiceCommit> selectLoan();
 }

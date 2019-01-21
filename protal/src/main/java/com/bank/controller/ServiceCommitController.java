@@ -90,4 +90,14 @@ public class ServiceCommitController {
         msg.setData(slist);
         return  msg;
     }
+    @RequestMapping(value = "/getloan")
+    public Msg getLoan(){
+        Msg msg =new Msg();
+        List<ServiceCommit> list = commitService.selectLoan();
+        msg.setMsg("");
+        msg.setCode(0);
+        msg.setData(list);
+        msg.setCount(list.size());
+        return msg;
+    }
 }

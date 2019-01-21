@@ -33,6 +33,11 @@ public class ServiceCommitServiceImpl implements ServiceCommitService {
     }
 
     @Override
+    public List<ServiceCommit> selectLoan() {
+        return serviceCommitMapper.selectLoan();
+    }
+
+    @Override
     public List<ServiceCommit> selectServiceCommit(String serviceCustomer) {
         List<ServiceCommit> list = serviceCommitMapper.selectServiceCommit(serviceCustomer);
         return list;
