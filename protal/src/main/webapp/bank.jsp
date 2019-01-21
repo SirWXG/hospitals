@@ -66,7 +66,6 @@
                         <dd><a href="/view/cash/withdraw.jsp" target="option">客户取款</a></dd>
                         <dd><a href="/view/cash/cash2card.jsp" target="option">客户存款</a></dd>
                         <dd><a href="/view/cash/transfer.jsp" target="option">转账</a></dd>
-                        <dd><a href="/view/cash/dealcard.jsp" target="option">其他</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
