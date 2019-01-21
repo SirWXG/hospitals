@@ -18,9 +18,7 @@
 <table class="layui-hide" id="demo" lay-filter="test"></table>
 
 <script type="text/html" id="barDemo">
-    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
-    <button data-method="notice" class="layui-btn layui-btn-xs" lay-event="edit">分配</button>
-    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">分配</a>
 </script>
 <script>
     layui.config({

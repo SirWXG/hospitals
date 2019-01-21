@@ -8,7 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.List;
@@ -29,9 +32,11 @@ public class LoginController {
         map.put("empName",username);
         map.put("empPassword",password);
         List<Emp> list = service.checkLogin(map);
+        HttpSession session =((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest().getSession();
         if(list.size()<1){
            return "redirect:/login.jsp";
         }
+        session.setAttribute("Emp",list.get(0));
         return "redirect:/bank.jsp";
     }
 }
