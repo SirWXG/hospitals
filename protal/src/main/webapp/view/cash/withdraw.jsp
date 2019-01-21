@@ -70,7 +70,7 @@
     <div class="layui-form-item">
         <div class="layui-input-block">
             <button class="layui-btn" lay-submit="" lay-filter="demo2">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            <button type="reset" id="reset2" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </div>
 
@@ -164,6 +164,7 @@ $(document).ready(function () {
                     success:function (res) {
                       if(res==1){
                           layer.alert("取款成功");
+                          $("#reset2").click();
                       }else
                           layer.alert("取款失败");
                         $("#tijiao").click();

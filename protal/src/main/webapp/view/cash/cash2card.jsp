@@ -151,9 +151,9 @@ $(document).ready(function () {
             //监听提交存款
             form.on('submit(demo2)', function(data){
                 var money=(totalmoney+Number(data.field.cash));
-                layer.alert(JSON.stringify(data.field), {
-                    title: '最终的提交信息'
-                });
+                // layer.alert(JSON.stringify(data.field), {
+                //     title: '最终的提交信息'
+                // });
                 $.ajax({
                     url:"/card/update",
                     type:"post",
