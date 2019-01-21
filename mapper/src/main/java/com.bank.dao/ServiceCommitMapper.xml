@@ -33,4 +33,9 @@
   <update id="updateService" parameterType="com.bank.pojo.ServiceCommit">
     UPDATE service_commit set service_status=#{serviceStatus},service_emp=#{serviceEmp} where id=#{id}
   </update>
+
+  <select id="selectServiceCommit" parameterType="string" resultMap="BaseResultMap">
+    select <include refid="base" />
+    from service_commit where service_customer=#{serviceCustomer}
+  </select>
 </mapper>

@@ -72,11 +72,8 @@
                     <a class="" href="javascript:;">电子业务办理</a>
                     <dl class="layui-nav-child">
                         <dd><a href="/view/service/service_dispose.jsp" target="option">客户业务处理</a></dd>
-                        <dd><a href="javascript:;">客户贷款付息</a></dd>
                         <dd><a href="/view/electric/deposit.jsp" target="option">客户定期存款</a></dd>
-                        <dd><a href="javascript:;">电汇业务</a></dd>
-                        <dd><a href="javascript:;">兑换外币</a></dd>
-                        <dd><a href="javascript:;">其他</a></dd>
+                        <dd><a href="/view/electric/foreign_exchange.jsp" target="option">兑换外币</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">

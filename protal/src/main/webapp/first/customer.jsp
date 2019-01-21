@@ -13,10 +13,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>网上银行</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/lanrenzhijia.css">
     <script type="text/javascript" src="../js/jquery.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/layui/layui.js"></script>
     <style type="text/css">
         a link{text-decoration: none;}
         .i{
@@ -97,7 +99,7 @@
                 <div class="col-md-1" style="line-height: 60px;" ><a href="#">悦享生活</a></div>
                 <div class="col-md-1" style="line-height: 60px;" ><a href="#">优智规划</a></div>
                 <div class="col-md-1" style="line-height: 60px;" align="right">
-                    <a class="btn btn-primary btn-large theme-login" href="javascript:;">登录</a>
+                    <button id="login" data-method="notice" class="layui-btn" style="width: 80px;">登录</button>
                 </div>
                 <div class="col-md-1"   style="line-height: 60px; width: 15px;">|</div>
                 <div class="col-md-1" style="line-height: 60px;" align="left">

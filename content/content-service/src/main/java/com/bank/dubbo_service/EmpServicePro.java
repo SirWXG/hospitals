@@ -52,4 +52,10 @@ public class EmpServicePro implements empService {
     public int updateEmp(Emp emp) {
         return empMapper.updateByPrimaryKeySelective(emp);
     }
+
+    @Override
+    public List<Emp> checkLogin(Map<String, Object> map) {
+        List<Emp> list = empMapper.checkLogin(map);
+        return list;
+    }
 }

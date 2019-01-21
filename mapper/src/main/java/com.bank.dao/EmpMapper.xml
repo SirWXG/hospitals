@@ -366,4 +366,9 @@
       EMP_OTHER1 = #{empOther1,jdbcType=VARCHAR}
     where EMP_ID = #{empId,jdbcType=INTEGER}
   </update>
+
+  <select id="checkLogin" resultType="com.bank.pojo.Emp" parameterType="map">
+    select <include refid="Base_Column_List" />
+    from emp where EMP_NAME=#{empName} and EMP_PASSWORD=#{empPassword}
+  </select>
 </mapper>

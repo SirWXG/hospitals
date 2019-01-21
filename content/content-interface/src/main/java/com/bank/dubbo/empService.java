@@ -33,4 +33,6 @@ public interface empService {
      * @return
      */
     public int updateEmp(Emp emp);
+
+    List<Emp> checkLogin(Map<String,Object> map);
 }

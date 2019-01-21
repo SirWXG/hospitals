@@ -63,4 +63,5 @@ public class Withdraw  implements Serializable {
     public void setWithdrawOther(String withdrawOther) {
         this.withdrawOther = withdrawOther == null ? null : withdrawOther.trim();
     }
+
 }

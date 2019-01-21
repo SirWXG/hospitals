@@ -7,7 +7,10 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
@@ -68,5 +71,23 @@ public class ServiceCommitController {
         msg.setMsg("请求成功");
         msg.setCode(0);
         return msg;
+    }
+
+    @GetMapping(value = "/selectServiceCommit")
+    public Msg selectServiceCommit(@RequestParam(name = "serviceCustomer",defaultValue = "sdasdas")String serviceCustomer,
+                                   @RequestParam(name="page")Integer page,
+                                   @RequestParam(name="limit")Integer limit){
+        List<ServiceCommit> list = commitService.selectServiceCommit(serviceCustomer);
+        Msg msg = new Msg();
+        int count = list.size();
+        msg.setCount(count);
+        PageHelper.startPage(page,limit);
+        List<ServiceCommit> lists = commitService.selectServiceCommit(serviceCustomer);
+        PageInfo<ServiceCommit> pages = new PageInfo<>(lists);
+        List<ServiceCommit> slist =pages.getList();
+        msg.setMsg("");
+        msg.setCode(0);
+        msg.setData(slist);
+        return  msg;
     }
 }

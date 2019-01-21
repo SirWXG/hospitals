@@ -31,4 +31,12 @@ public class ServiceCommitServiceImpl implements ServiceCommitService {
         int flag = serviceCommitMapper.updateService(serviceCommit);
         return flag;
     }
+
+    @Override
+    public List<ServiceCommit> selectServiceCommit(String serviceCustomer) {
+        List<ServiceCommit> list = serviceCommitMapper.selectServiceCommit(serviceCustomer);
+        return list;
+    }
+
+
 }

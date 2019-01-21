@@ -13,4 +13,6 @@ public interface ServiceCommitMapper {
     List<ServiceCommit> selectAllByStatus(int status);
 
      int updateService(ServiceCommit serviceCommit);
+
+    List<ServiceCommit> selectServiceCommit(String serviceCustomer);
 }
