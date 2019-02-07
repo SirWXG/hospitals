@@ -7,142 +7,265 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1540ffbf-ba99-4066-8d7b-5d455ba713d1" name="Default Changelist" comment="银行系统">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_3_0_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/TaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/view/task/already.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/protal_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/protal_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/DeptService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DeptServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DeptController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protal/src/main/webapp/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/CardUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/CustomerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/ServiceCommitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/cardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/depositService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/empService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/streamlineService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/taskService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CardServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CardUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CustomerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DepositServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DictServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/EmpServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/ServiceCommitServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/BankMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/BankMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ChecksMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ChecksMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ConsumeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ConsumeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CustomerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CustomerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DepositMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DepositMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictCategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/LoanMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/LoanMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TransferMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TransferMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/WithdrawMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/WithdrawMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/com.bank.generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/com.bank.generator/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/protal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/protal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/service/xx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/BankExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/CardExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/CardUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Checks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/ChecksExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Consume.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/ConsumeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/CustomerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Deposit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DepositExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dict.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DictCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DictCategoryExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DictExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Emp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/EmpExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Loan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/LoanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/RoleExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/ServiceCommit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/ServiceCommitExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/StreamlineExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/TasksExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/TransferExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/TransferPojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/WithdrawExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/CardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DepositController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/EmpController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/ForeignController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/ServiceCommitController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/TaskController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/protal/src/main/resources/spring-service.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/resources/spring-service.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/layui.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/webapp/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/coding2utf8.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Coding2utf8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/data2layui.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Data2layui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/WEB-INF/register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/bank.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/css/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/elem1.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/elem2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/elem3.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/elem4.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/service.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/service_dis.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/service_dispose.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/user.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/first/userInfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/protal/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/js/prefixfree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/cash/cash2card.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/cash/dealcard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/cash/transfer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/cash/withdraw.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/electric/deposit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/electric/foreign_exchange.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/houtai/daikuancount.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/houtai/depositinfo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/addCard.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_cancel.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_dis.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_dispose.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/change_pass.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/regist.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/service/service_dispose.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/task/already.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/task/createdtask.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/task/lookone.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/protal/src/main/webapp/view/task/waittodo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/data2layui.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/content/content-interface/target/" />
     <ignored path="$PROJECT_DIR$/content/content-service/target/" />
@@ -159,99 +282,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-786358715">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="css" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="64" />
-          <entry key="js" value="6" />
-          <entry key="jsp" value="7" />
-          <entry key="properties" value="3" />
-          <entry key="sadas" value="1" />
-          <entry key="xml" value="59" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="CSS" value="1" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="64" />
-          <entry key="JSP" value="7" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="3" />
-          <entry key="XML" value="59" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="28" />
-          <entry key="java" value="2267" />
-          <entry key="jsp" value="504" />
-          <entry key="properties" value="24" />
-          <entry key="txt" value="147" />
-          <entry key="xml" value="1023" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2267" />
-          <entry key="JSP" value="504" />
-          <entry key="PLAIN_TEXT" value="175" />
-          <entry key="Properties" value="24" />
-          <entry key="SQL" value="7" />
-          <entry key="XML" value="1016" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DeptController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DictServicePro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/TaskController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state relative-caret-position="321">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,110 +297,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="81">
+              <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#668#669#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#757#758#0" expanded="true" />
-                <element signature="e#794#795#0" expanded="true" />
-                <element signature="e#983#984#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
-                <element signature="e#1247#1248#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-                <element signature="e#1377#1378#0" expanded="true" />
-                <element signature="e#1571#1572#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
-                <element signature="e#1805#1806#0" expanded="true" />
-                <element signature="e#1834#1835#0" expanded="true" />
-                <element signature="e#1879#1880#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#1984#1985#0" expanded="true" />
-                <element signature="e#2035#2036#0" expanded="true" />
-                <element signature="e#2077#2078#0" expanded="true" />
-                <element signature="e#2119#2120#0" expanded="true" />
-                <element signature="e#2157#2158#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="280">
+              <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Data2layui.java">
+        <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/order.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#224#225#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-                <element signature="e#153#154#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="81">
+              <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/view/task/already.jsp">
+        <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/taskService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="162">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -372,14 +336,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java">
+        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="621">
+              <caret line="23" column="56" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+              <folding>
+                <element signature="e#1017#1028#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="51" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/DeptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DeptServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -390,9 +394,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -423,65 +428,59 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Utf8.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/coding2utf8.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/data2layui.java" />
-        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/dictController.java" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/dictServicePro.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DictExample.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/content/content-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/content/content-service/pom.xml" />
-        <option value="$PROJECT_DIR$/pojo/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/HelloService.java" />
-        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java" />
-        <option value="$PROJECT_DIR$/mapper/pom.xml" />
-        <option value="$PROJECT_DIR$/content/pom.xml" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DictServicePro.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dict.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Card.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Checks.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Consume.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Customer.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Deposit.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Emp.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Loan.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CustomerMapper.java" />
+        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/CustomerService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/addCard.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_dis.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_cancel.jsp" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.java" />
+        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/cardService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CardServicePro.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/CardMapper.xml" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/change_pass.jsp" />
         <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java" />
-        <option value="$PROJECT_DIR$/protal/src/main/webapp/bank_background.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/CardController.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/ForeignController.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/electric/foreign_exchange.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/first/user.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/first/service_dispose.jsp" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.java" />
+        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/ServiceCommitService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/ServiceCommitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/first/userInfo.jsp" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.xml" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/ServiceCommitController.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/first/service.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/first/customer.jsp" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.xml" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.java" />
+        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/empService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/EmpServicePro.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/card_dispose.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/service/service_dispose.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/protal/src/main/webapp/bank.jsp" />
-        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DepositServicePro.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/com.bank.generator/Generator.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/taskService.java" />
-        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.java" />
-        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.java" />
-        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.xml" />
-        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/streamlineService.java" />
-        <option value="$PROJECT_DIR$/protal/pom.xml" />
+        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dept.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/deptMapper.java" />
+        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.xml" />
+        <option value="$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/DeptService.java" />
+        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DeptServiceImpl.java" />
         <option value="$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java" />
-        <option value="$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java" />
         <option value="$PROJECT_DIR$/protal/src/main/resources/spring-service.xml" />
-        <option value="$PROJECT_DIR$/protal/src/main/webapp/view/task/already.jsp" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Data2layui.java" />
-        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/TaskController.java" />
-        <option value="$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java" />
-        <option value="$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DeptController.java" />
+        <option value="$PROJECT_DIR$/protal/src/main/webapp/order.html" />
+        <option value="$PROJECT_DIR$/protal/src/main/resources/springmvc.xml" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -493,8 +492,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="mavenHome" value="E:/lib/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="E:\lib\apache-maven-3.3.9\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -517,11 +516,20 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="content" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="content" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="mapper" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pojo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="pojo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
@@ -546,10 +554,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="36" />
-    <option name="width" value="1034" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="y" value="35" />
+    <option name="width" value="1035" />
     <option name="height" value="995" />
   </component>
   <component name="ProjectView">
@@ -557,6 +564,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -568,6 +577,46 @@
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="content-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
@@ -621,26 +670,106 @@
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="content-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="content-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bank.dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bank.generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com.bank.pojo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
@@ -696,51 +825,69 @@
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="protal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="BankProject" type="462c0819:PsiDirectoryNode" />
-              <item name="protal" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankProject" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/IdeaProjects/BankProject/protal/src/main/resources/spring-service.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547138224630" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549501195735" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25789472" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\BankProject\mapper\src\main\java\com.bank.dao" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bank.controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\banker\BankProject\mapper\src\main\java\com.bank.dao" />
+      <recent name="E:\banker\BankProject\protal\src\main\webapp\js" />
+      <recent name="E:\banker\BankProject\protal\src\main\webapp\css" />
       <recent name="D:\IdeaProjects\BankProject\mapper\src\main\java\com.bank.dao" />
       <recent name="D:\IdeaProjects\BankProject\pojo\src\main\java\com.bank.pojo" />
-      <recent name="D:\IdeaProjects\BankProject\protal\src\main\webapp" />
-      <recent name="D:\IdeaProjects\BankProject\protal\src\main\webapp\css" />
-      <recent name="D:\IdeaProjects\BankProject\protal\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -756,6 +903,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Maven.consumer">
+    <configuration name="CardId" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.utils.CardId" />
+      <module name="utils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Generator" />
       <module name="mybatis" />
@@ -840,14 +1000,16 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Generator" />
+      <item itemvalue="Application.CardId" />
       <item itemvalue="Maven.provider" />
       <item itemvalue="Maven.consumer" />
       <item itemvalue="Maven.genertor" />
-      <item itemvalue="Application.Generator" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Generator" />
+        <item itemvalue="Application.CardId" />
       </list>
     </recent_temporary>
   </component>
@@ -869,6 +1031,25 @@
       <workItem from="1547018556034" duration="13813000" />
       <workItem from="1547081188566" duration="28446000" />
       <workItem from="1547128306558" duration="8838000" />
+      <workItem from="1547628274899" duration="12744000" />
+      <workItem from="1547696895945" duration="100000" />
+      <workItem from="1547699266648" duration="5413000" />
+      <workItem from="1547722787274" duration="5581000" />
+      <workItem from="1547772246859" duration="3836000" />
+      <workItem from="1547790912670" duration="25282000" />
+      <workItem from="1547859542522" duration="23299000" />
+      <workItem from="1547954247156" duration="18247000" />
+      <workItem from="1548030624217" duration="7128000" />
+      <workItem from="1548051052075" duration="2226000" />
+      <workItem from="1548059446856" duration="4212000" />
+      <workItem from="1548126621101" duration="738000" />
+      <workItem from="1548333980882" duration="817000" />
+      <workItem from="1549331330452" duration="846000" />
+      <workItem from="1549333895284" duration="1325000" />
+      <workItem from="1549348494935" duration="733000" />
+      <workItem from="1549447679073" duration="2728000" />
+      <workItem from="1549459827773" duration="2018000" />
+      <workItem from="1549499821500" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="customer.jsp">
       <created>1546939328060</created>
@@ -954,17 +1135,66 @@
       <option name="project" value="LOCAL" />
       <updated>1547128719913</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="银行系统">
+      <created>1547795621901</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547795621901</updated>
+    </task>
+    <task id="LOCAL-00014" summary="银行系统">
+      <created>1547803237781</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1547803237781</updated>
+    </task>
+    <task id="LOCAL-00015" summary="银行系统">
+      <created>1547869940298</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1547869940298</updated>
+    </task>
+    <task id="LOCAL-00016" summary="银行系统">
+      <created>1547888816092</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1547888816092</updated>
+    </task>
+    <task id="LOCAL-00017" summary="银行系统">
+      <created>1548031483105</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1548031483105</updated>
+    </task>
+    <task id="LOCAL-00018" summary="银行系统">
+      <created>1548035519509</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1548035519509</updated>
+    </task>
+    <task id="LOCAL-00019" summary="银行系统">
+      <created>1548037227678</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1548037227678</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86273000" />
+    <option name="totallyTimeSpent" value="204856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27010724" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -977,29 +1207,31 @@
       <window_info anchor="bottom" id="Messages" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.49731904" visible="true" weight="0.40567377" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" sideWeight="0.4968017" visible="true" weight="0.30477223" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.30151844" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50268096" side_tool="true" weight="0.3815603" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50319827" side_tool="true" weight="0.40563992" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.3286334" />
       <window_info anchor="bottom" id="JRebel Console" order="16" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" order="17" />
       <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.15817694" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.18869936" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="BPMNPalette" order="10" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26741996" />
@@ -1043,9 +1275,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="customer.jsp" />
     <MESSAGE value="dao层" />
@@ -1055,408 +1284,284 @@
     <MESSAGE value="service" />
     <MESSAGE value="controller" />
     <MESSAGE value="layui样式文件" />
-    <MESSAGE value="银行系统" />
     <MESSAGE value="新增任务" />
     <MESSAGE value="流程线" />
-    <option name="LAST_COMMIT_MESSAGE" value="流程线" />
+    <MESSAGE value="银行系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="银行系统" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/pom.xml">
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/view/service/change_pass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        <state relative-caret-position="561">
+          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/first/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3456">
+          <caret line="128" column="10" selection-start-line="128" selection-start-column="10" selection-end-line="128" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/first/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/ServiceCommitServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/bank.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2754">
+          <caret line="102" column="37" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/first/service_dispose.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/first/service_dis.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/first/service.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="89" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/view/service/card_dispose.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/view/service/service_dispose.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="110" column="53" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/ServiceCommitMapper.java" />
+    <entry file="file://$PROJECT_DIR$/mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="34" column="12" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/EmpServicePro.java" />
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/HelloService.java" />
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DepositServicePro.java" />
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/EmpController.java" />
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/ServiceCommitController.java" />
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/exception/Myexception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CardUserServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/BankMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/taskService.java" />
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/CardServicePro.java" />
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/res/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/BankMapper.java" />
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java" />
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/utils/CardId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Coding2utf8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Msg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-154">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-370" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/res/db.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DictMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/DictExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7885">
-          <caret line="436" lean-forward="true" selection-start-line="436" selection-end-line="436" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Checks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Consume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Deposit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Emp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Loan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Transfer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Withdraw.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/elem1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/js/moment/moment.min.js" />
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/css/layui.css" />
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/js/layui.js" />
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/js/layui.all.js" />
-    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/service/IhellowService.java" />
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/customer.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/protal.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/bank.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/generatorConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="57" column="40" lean-forward="true" selection-start-line="57" selection-start-column="40" selection-end-line="57" selection-end-column="40" />
+        <state relative-caret-position="162">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.java">
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/com.bank.generator/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="-81">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
+    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Dept.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="80" lean-forward="true" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/EmpMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="70" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/StreamlineMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="243">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/mapper/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/streamlineService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/dictService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/TaskServicePro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/StreamlineServicePro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DictServicePro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="1536">
+          <caret line="59" column="12" selection-start-line="47" selection-start-column="4" selection-end-line="59" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protal/src/main/resources/spring-service.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="540">
+          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/view/task/already.jsp">
+    <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/DeptService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/content-interface/src/main/java/com/bank/dubbo/taskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="162">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/bank/utils/Data2layui.java">
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/java/com/bank/dubbo_service/DeptServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="351">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/TasksMapper.xml">
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/WEB-INF/register.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="81">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Tasks.java">
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="162">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#477#478#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pojo/src/main/java/com.bank.pojo/Streamline.java">
+    <entry file="file://$PROJECT_DIR$/protal/src/main/java/com/bank/controller/DeptController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="321">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1189#1190#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-            <element signature="e#1571#1572#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1805#1806#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2119#2120#0" expanded="true" />
-            <element signature="e#2157#2158#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapper/src/main/java/com.bank.dao/DeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="e#1017#1028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/content-service/src/main/resources/spring-dubbo.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="56" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/webapp/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protal/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="31" column="63" lean-forward="true" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
         </state>
       </provider>
     </entry>
