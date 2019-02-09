@@ -8,7 +8,7 @@
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!--扫描service的实现类-->
-    <context:component-scan base-package="com.bank.dubbo_service"/>
+    <context:component-scan base-package="com.hospital.dubbo_service"/>
     <!-- 配置dubbo服务提供者的注册 -->
     <!-- 配置服务的应用名 -->
     <dubbo:application name="dubbo-content-service"/>
@@ -21,9 +21,11 @@
     <!--测试服务 ref为实现类首字母小写-->
 
 
-    <dubbo:service interface="com.bank.dubbo.DeptService" ref="deptServiceImpl"/>
-    <dubbo:service interface="com.bank.dubbo.EmpService" ref="empServiceImpl" />
-    <duboo:service interface="com.bank.dubbo.OrdersService" ref="ordersServiceImpl" />
+    <dubbo:service interface="com.hospital.dubbo.DeptService" ref="deptServiceImpl"/>
+    <dubbo:service interface="com.hospital.dubbo.EmpService" ref="empServiceImpl" />
+    <duboo:service interface="com.hospital.dubbo.OrdersService" ref="ordersServiceImpl" />
+    <duboo:service interface="com.hospital.dubbo.OrdersService" ref="ordersServiceImpl" />
+    <duboo:service interface="com.hospital.dubbo.MedicineService" ref="medicineServiceImpl" />
 
 
 </beans>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.dao.MedicineOrderMapper">
+  <resultMap id="BaseResultMap" type="com.hospital.pojo.MedicineOrder">
+    <id column="medicine_order_id" jdbcType="VARCHAR" property="medicineOrderId" />
+    <result column="cottoms_id" jdbcType="VARCHAR" property="cottomsId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    medicine_order_id, cottoms_id
+  </sql>
+  <select id="selectByExample" parameterType="com.hospital.pojo.MedicineOrderExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from medicine_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from medicine_order
+    where medicine_order_id = #{medicineOrderId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from medicine_order
+    where medicine_order_id = #{medicineOrderId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hospital.pojo.MedicineOrderExample">
+    delete from medicine_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hospital.pojo.MedicineOrder">
+    insert into medicine_order (medicine_order_id, cottoms_id)
+    values (#{medicineOrderId,jdbcType=VARCHAR}, #{cottomsId,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hospital.pojo.MedicineOrder">
+    insert into medicine_order
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="medicineOrderId != null">
+        medicine_order_id,
+      </if>
+      <if test="cottomsId != null">
+        cottoms_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="medicineOrderId != null">
+        #{medicineOrderId,jdbcType=VARCHAR},
+      </if>
+      <if test="cottomsId != null">
+        #{cottomsId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hospital.pojo.MedicineOrderExample" resultType="java.lang.Long">
+    select count(*) from medicine_order
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update medicine_order
+    <set>
+      <if test="record.medicineOrderId != null">
+        medicine_order_id = #{record.medicineOrderId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.cottomsId != null">
+        cottoms_id = #{record.cottomsId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update medicine_order
+    set medicine_order_id = #{record.medicineOrderId,jdbcType=VARCHAR},
+      cottoms_id = #{record.cottomsId,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hospital.pojo.MedicineOrder">
+    update medicine_order
+    <set>
+      <if test="cottomsId != null">
+        cottoms_id = #{cottomsId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where medicine_order_id = #{medicineOrderId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hospital.pojo.MedicineOrder">
+    update medicine_order
+    set cottoms_id = #{cottomsId,jdbcType=VARCHAR}
+    where medicine_order_id = #{medicineOrderId,jdbcType=VARCHAR}
+  </update>
+</mapper>
