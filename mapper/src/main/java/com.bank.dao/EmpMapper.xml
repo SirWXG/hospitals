@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bank.dao.EmpMapper">
+    <resultMap id="BaseResultMap" type="com.bank.pojo.Emp">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="emp_id" jdbcType="INTEGER" property="empId" />
+        <result column="emp_name" jdbcType="VARCHAR" property="empName" />
+        <result column="emp_pass" jdbcType="VARCHAR" property="empPass" />
+        <result column="hiredate" jdbcType="DATE" property="hiredate" />
+        <result column="roler_id" jdbcType="INTEGER" property="rolerId" />
+        <result column="dept_id" jdbcType="INTEGER" property="deptId" />
+        <result column="emp_info" jdbcType="VARCHAR" property="empInfo" />
+        <result column="emp_img" jdbcType="VARCHAR" property="empImg" />
+        <result column="emp_maxorder" jdbcType="INTEGER" property="empMaxorder"/>
+        <result column="order_num" jdbcType="INTEGER" property="orderNum" />
+    </resultMap>
+
+    <select id="selectEmpByDept" parameterType="int" resultMap="BaseResultMap">
+        SELECT emp_name,emp_info,emp_img,emp_maxorder,order_num FROM emp where dept_id=#{deptId}
+    </select>
+</mapper>

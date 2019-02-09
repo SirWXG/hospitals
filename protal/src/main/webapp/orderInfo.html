@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/orders/addOrder}" th:object="${orders}" method="post">
+    <span>预约医生:<input type="text" th:field="*{empName}" disabled/></span>
+    <br />
+    <span>预约科室:<input type="text" th:field="*{orderDeptId}" disabled/></span>
+    <br />
+    <span>预约人姓名:<input type="text" th:field="*{orderName}"/></span>
+    <br />
+    <span>预约人年龄:<input type="text" th:field="*{patientAge}"/></span>
+    <br />
+    <span>预约人电话:<input type="text" th:field="*{orderPhone}"/></span>
+    <br />
+    <span>预约人大致病情:<textarea th:field="*{orderInfo}"></textarea></span>
+    <br />
+    <input type="submit" th:text="预约"/>
+</form>
+</body>
+</html>

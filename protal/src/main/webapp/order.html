@@ -3,10 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
 </head>
 <body>
+<span>请选择预约的科室:</span>
 <tr th:each="depts:${dept}">
-    <td th:text="${depts.deptName}"></td>
+    <a th:href="@{'/emp/selectEmp?empId='+${depts.deptId}}" th:text="${depts.deptName}"></a>
 </tr>
 </body>
 </html>
