@@ -17,7 +17,6 @@
         INSERT INTO
         orders
         values (#{orderId},#{orderName},#{patientAge},#{orderPhone},#{orderDeptId},#{empName},#{orderInfo},#{orderDate},#{orderStatus})
-
     </insert>
 
 </mapper>

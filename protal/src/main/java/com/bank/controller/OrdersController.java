@@ -40,10 +40,7 @@ public class OrdersController {
         orders.setOrderDate(date);
         orders.setOrderStatus(1);
         orders.setOrderDeptId(10);
-        int flag = ordersService.addOrders(orders);
-        if(flag<1){
-            return "";
-        }
+        ordersService.addOrders(orders);
         return "return";
     }
 }

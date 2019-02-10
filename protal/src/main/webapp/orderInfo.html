@@ -6,9 +6,9 @@
 </head>
 <body>
 <form th:action="@{/orders/addOrder}" th:object="${orders}" method="post">
-    <span>预约医生:<input type="text" th:field="*{empName}" disabled/></span>
+    <span>预约医生:<input type="text" th:field="*{empName}" /></span>
     <br />
-    <span>预约科室:<input type="text" th:field="*{orderDeptId}" disabled/></span>
+    <span>预约科室:<input type="text" th:field="*{orderDeptId}" /></span>
     <br />
     <span>预约人姓名:<input type="text" th:field="*{orderName}"/></span>
     <br />
