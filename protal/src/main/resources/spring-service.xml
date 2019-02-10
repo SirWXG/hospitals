@@ -20,6 +20,11 @@
 	<!--从dubbo中引用原来有rest提供的服务，交由sprin管理   -->
     <dubbo:reference interface="com.hospital.dubbo.DeptService" id="deptService" />
 	<dubbo:reference interface="com.hospital.dubbo.EmpService" id="empService" />
+	<!--预约服务-->
 	<dubbo:reference interface="com.hospital.dubbo.OrdersService" id="ordersService" />
+	<!--药品服务-->
 	<dubbo:reference interface="com.hospital.dubbo.MedicineService" id="medicinePro" />
+	<!--solr的药品查询-->
+	<dubbo:reference interface="com.hospital.dubbo.SolrService" id="solrServicePro" />
+
 </beans>
