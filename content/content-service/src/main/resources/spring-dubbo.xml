@@ -24,7 +24,6 @@
     <dubbo:service interface="com.hospital.dubbo.DeptService" ref="deptServiceImpl" timeout="3000"/>
     <dubbo:service interface="com.hospital.dubbo.EmpService" ref="empServiceImpl" timeout="3000"/>
     <duboo:service interface="com.hospital.dubbo.OrdersService" ref="ordersServiceImpl" timeout="3000"/>
-    <duboo:service interface="com.hospital.dubbo.OrdersService" ref="ordersServiceImpl" timeout="3000"/>
     <duboo:service interface="com.hospital.dubbo.MedicineService" ref="medicineServiceImpl" timeout="3000"/>
     <duboo:service interface="com.hospital.dubbo.SolrService" ref="solrServiceImpl" timeout="3000" />
 

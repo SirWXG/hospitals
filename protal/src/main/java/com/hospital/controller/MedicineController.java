@@ -26,11 +26,11 @@ public class MedicineController {
     //查询所有的药品
     @RequestMapping("/all")
     @ResponseBody
-    public List<Medicine> getAll() {
-        Map<String, Object> map = new HashMap<>();
-        List<Medicine> list = medicinePro.getAllMedicine(map);
+    public List<Medicine> getAll(){
+        Map<String,Object> map = new HashMap<>();
+       List<Medicine> list= medicinePro.getAllMedicine(map);
         System.out.println(list);
-        return list;
+return list;
     }
     @RequestMapping("/allsolr")
     @ResponseBody

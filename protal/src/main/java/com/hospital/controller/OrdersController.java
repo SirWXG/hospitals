@@ -1,6 +1,7 @@
 package com.hospital.controller;
 
 
+import com.hospital.dubbo.EmpService;
 import com.hospital.dubbo.OrdersService;
 import com.hospital.pojo.Orders;
 import com.hospital.utils.CardId;

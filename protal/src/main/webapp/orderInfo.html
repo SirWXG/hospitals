@@ -22,22 +22,6 @@
 <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <!--<form th:action="@{/orders/addOrder}" th:object="${orders}" method="post">-->
-            <!--<span>预约医生:<input type="text" th:field="*{empName}" readonly="readonly"/></span>-->
-            <!--<br />-->
-            <!--<span>预约科室:<input type="text" th:field="*{orderDeptId}" readonly="readonly" th:text="内科"/></span>-->
-            <!--<br />-->
-            <!--<span>预约人姓名:<input type="text" th:field="*{orderName}"/></span>-->
-            <!--<br />-->
-            <!--<span>预约人年龄:<input type="text" th:field="*{patientAge}"/></span>-->
-            <!--<br />-->
-            <!--<span>预约人电话:<input type="text" th:field="*{orderPhone}"/></span>-->
-            <!--<br />-->
-            <!--<span>预约人大致病情:<textarea th:field="*{orderInfo}"></textarea></span>-->
-            <!--<br />-->
-            <!--<input type="submit" value="预约"/>-->
-        <!--</form>-->
-
         <form  th:action="@{/orders/addOrder}" th:object="${orders}" method="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">预约医生</label>
