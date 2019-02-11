@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
-	<context:component-scan base-package="com.bank.dubbo_service"/>
+	<context:component-scan base-package="com.hospital.dubbo_service"/>
 	<!-- 
 	  1、配置加载数据源参数文件；
 	  2、配置数据源
@@ -29,12 +29,12 @@
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:res/sqlMapConfig.xml"/>
-		<property name="mapperLocations" value="classpath*:com.bank.dao/*.xml"/>
-		<property name="typeAliasesPackage" value="com.bank.pojo"/>
+		<property name="mapperLocations" value="classpath*:com/hospital/dao/*.xml"/>
+		<property name="typeAliasesPackage" value="com.hospital.pojo"/>
 	</bean>
 	<!-- 4 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.bank.dao"/>
+		<property name="basePackage" value="com.hospital.dao"/>
 		<property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
 
 	</bean>
