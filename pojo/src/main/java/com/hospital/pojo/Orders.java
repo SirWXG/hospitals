@@ -10,7 +10,7 @@ public class Orders implements Serializable {
     private String orderPhone;
     private String empName;
     private String orderInfo;
-    private Integer orderDeptId;
+    private String orderDeptId;
     private Date orderDate;
     private Integer orderStatus;
 
@@ -78,11 +78,11 @@ public class Orders implements Serializable {
         this.orderInfo = orderInfo;
     }
 
-    public Integer getOrderDeptId() {
+    public String getOrderDeptId() {
         return orderDeptId;
     }
 
-    public void setOrderDeptId(Integer orderDeptId) {
+    public void setOrderDeptId(String orderDeptId) {
         this.orderDeptId = orderDeptId;
     }
 }

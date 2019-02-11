@@ -32,7 +32,7 @@
                 <br /><br />
                 预约状态:<td th:text="${emps.orderNum<emps.empMaxorder}?'可预约':'不可预约'"></td>
                 <br /><br />
-                <td><a th:if="${emps.orderNum<emps.empMaxorder}" th:text="预约" th:href="@{'/orders/addOrders?empId='+${emps.empName}}"></a></td>
+                <td><a th:if="${emps.orderNum<emps.empMaxorder}" th:text="预约" th:href="@{'/orders/addOrders?empId='+${emps.empName}+'&deptName='+${deptName}}"></a></td>
             </div>
         </tr>
     <div class="col-md-1"></div>
@@ -42,7 +42,7 @@
     <div class="col-md-10">
         <div class="jumbotron">
             <h3>关于平台</h3>
-            <p>平台由万旭刚，周绪东，寇晨雨，霍瑛珏联合承办，立人医药集团目标为三甲医院。为客户提供在线预约，挂号检查报告，体检预约等多项健康服务</p>
+            <p>平台由万旭刚，周绪东，寇晨宇，霍瑛珏联合承办，立人医药集团目标为三甲医院。为客户提供在线预约，挂号检查报告，体检预约等多项健康服务</p>
         </div>
     </div>
     <div class="col-md-1"></div>

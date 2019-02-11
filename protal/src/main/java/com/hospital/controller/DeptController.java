@@ -20,7 +20,6 @@ public class DeptController {
     @RequestMapping(value = "/selectAllDept",method = RequestMethod.GET)
     public String getAllDept(Model model){
         List<Dept> list = deptService.selectAllDept();
-        System.out.println(list.get(0).getDeptName());
         model.addAttribute("dept",list);
         return "order";
     }

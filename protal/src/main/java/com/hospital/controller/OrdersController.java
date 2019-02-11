@@ -28,10 +28,12 @@ public class OrdersController {
 
     /*thymleaf返回结果*/
     @RequestMapping(value = "/addOrders")
-    public String addOrders(@RequestParam(name = "empId")String empName,Model model){
+    public String addOrders(@RequestParam(name = "empId")String empName,@RequestParam(name="deptName")String deptName,Model model){
         Orders orders = new Orders();
         empName = Coding2utf8.getString(empName);
+        deptName = Coding2utf8.getString(deptName);
         orders.setEmpName(empName);
+        orders.setOrderDeptId(deptName);
         model.addAttribute("orders",orders);
         return "orderInfo";
     }
@@ -44,8 +46,7 @@ public class OrdersController {
         empService.updateNum(orders.getEmpName());
         orders.setOrderDate(date);
         orders.setOrderStatus(1);
-        orders.setOrderDeptId(10);
         ordersService.addOrders(orders);
-        return "order";
+        return "redirect:/dept/selectAllDept";
     }
 }

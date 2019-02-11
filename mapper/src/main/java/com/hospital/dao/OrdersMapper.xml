@@ -6,7 +6,7 @@
         <result column="order_name" jdbcType="VARCHAR" property="orderName" />
         <result column="patient_age" jdbcType="VARCHAR" property="patientAge" />
         <result column="order_phone" jdbcType="VARCHAR" property="orderPhone" />
-        <result column="order_deptid" jdbcType="INTEGER" property="orderDeptId" />
+        <result column="order_deptid" jdbcType="VARCHAR" property="orderDeptId" />
         <result column="emp_name" jdbcType="VARCHAR" property="empName" />
         <result column="order_info" jdbcType="VARCHAR" property="orderInfo" />
         <result column="order_date" jdbcType="DATE" property="orderDate" />

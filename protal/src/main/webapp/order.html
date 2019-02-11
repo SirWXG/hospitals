@@ -31,7 +31,7 @@
         <div class="col-md-1"></div>
         <div class="col-md-2">
            <h4>
-               <a class="btn" th:href="@{'/emp/selectEmp?empId='+${depts.deptId}}" th:text="${depts.deptName}"></a>
+               <a class="btn" th:href="@{'/emp/selectEmp?empId='+${depts.deptId}+'&deptName='+${depts.deptName}}" th:text="${depts.deptName}"></a>
            </h4>
         </div>
     </tr>
