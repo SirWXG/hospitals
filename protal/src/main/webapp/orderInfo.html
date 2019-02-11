@@ -3,22 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
 </head>
 <body>
-<form th:action="@{/orders/addOrder}" th:object="${orders}" method="post">
-    <span>预约医生:<input type="text" th:field="*{empName}" /></span>
-    <br />
-    <span>预约科室:<input type="text" th:field="*{orderDeptId}" /></span>
-    <br />
-    <span>预约人姓名:<input type="text" th:field="*{orderName}"/></span>
-    <br />
-    <span>预约人年龄:<input type="text" th:field="*{patientAge}"/></span>
-    <br />
-    <span>预约人电话:<input type="text" th:field="*{orderPhone}"/></span>
-    <br />
-    <span>预约人大致病情:<textarea th:field="*{orderInfo}"></textarea></span>
-    <br />
-    <input type="submit" th:text="预约"/>
-</form>
+<br /><br /><br />
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2"><img th:src="${'/images/logo.png'}" /></div>
+    <div class="col-md-9">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ><a th:href="@{'items.html'}">预约</a></li>
+            <li role="presentation"><a href="#">预约医生选择</a></li>
+            <li role="presentation"  class="active"><a href="#">预约信息</a></li>
+        </ul>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <!--<form th:action="@{/orders/addOrder}" th:object="${orders}" method="post">-->
+            <!--<span>预约医生:<input type="text" th:field="*{empName}" readonly="readonly"/></span>-->
+            <!--<br />-->
+            <!--<span>预约科室:<input type="text" th:field="*{orderDeptId}" readonly="readonly" th:text="内科"/></span>-->
+            <!--<br />-->
+            <!--<span>预约人姓名:<input type="text" th:field="*{orderName}"/></span>-->
+            <!--<br />-->
+            <!--<span>预约人年龄:<input type="text" th:field="*{patientAge}"/></span>-->
+            <!--<br />-->
+            <!--<span>预约人电话:<input type="text" th:field="*{orderPhone}"/></span>-->
+            <!--<br />-->
+            <!--<span>预约人大致病情:<textarea th:field="*{orderInfo}"></textarea></span>-->
+            <!--<br />-->
+            <!--<input type="submit" value="预约"/>-->
+        <!--</form>-->
+
+        <form  th:action="@{/orders/addOrder}" th:object="${orders}" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">预约医生</label>
+                <input type="text" style="size: 100px" class="form-control" id="exampleInputEmail1" th:field="*{empName}" readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">预约科室</label>
+                <input type="text" style="size: 100px" class="form-control" id="exampleInputPassword1" th:field="*{orderDeptId}" readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile">预约人姓名</label>
+                <input type="text" style="size: 100px" class="form-control" id="exampleInputFile" th:field="*{orderName}">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFiles">年龄</label>
+                <input type="text" style="size: 100px"  class="form-control" id="exampleInputFiles" th:field="*{patientAge}">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFiless">预约人电话</label>
+                <input type="text" style="size: 100px" class="form-control" id="exampleInputFiless" th:field="*{orderPhone}">
+            </div>
+            <div class="form-group">
+                <label for="textArea">大致病情</label>
+                <textarea type="text" style="size: 100px"  class="form-control" id="textArea" th:field="*{orderInfo}"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="jumbotron">
+            <h3>关于平台</h3>
+            <p>平台由万旭刚，周绪东，寇晨雨，霍瑛珏联合承办，立人医药集团目标为三甲医院。为客户提供在线预约，挂号检查报告，体检预约等多项健康服务</p>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
 </body>
 </html>

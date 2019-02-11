@@ -22,6 +22,9 @@ public class OrdersController {
     @Autowired
     private OrdersService ordersService;
 
+    @Autowired
+    private EmpService empService;
+
     /*thymleaf返回结果*/
     @RequestMapping(value = "/addOrders")
     public String addOrders(@RequestParam(name = "empId")String empName,Model model){
@@ -37,10 +40,11 @@ public class OrdersController {
         Msg msg = new Msg();
         orders.setOrderId(CardId.getCardId());
         Date date = new Date();
+        empService.updateNum(orders.getEmpName());
         orders.setOrderDate(date);
         orders.setOrderStatus(1);
         orders.setOrderDeptId(10);
         ordersService.addOrders(orders);
-        return "return";
+        return "order";
     }
 }

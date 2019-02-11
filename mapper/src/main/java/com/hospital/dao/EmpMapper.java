@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface EmpMapper {
    List<Emp> selectEmpByDept(int deptId);
+
+   void  updateNum(String empName);
 }

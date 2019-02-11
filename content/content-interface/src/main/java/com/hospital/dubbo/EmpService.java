@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface EmpService {
     List<Emp> selectEmpByDept(int deptId);
+
+    void updateNum(String empName);
 }

@@ -18,4 +18,8 @@
     <select id="selectEmpByDept" parameterType="int" resultMap="BaseResultMap">
         SELECT emp_name,emp_info,emp_img,emp_maxorder,order_num FROM emp where dept_id=#{deptId}
     </select>
+
+    <update id="updateNum" parameterType="string">
+        update emp set order_num=order_num+1 WHERE emp_name=#{empName}
+    </update>
 </mapper>

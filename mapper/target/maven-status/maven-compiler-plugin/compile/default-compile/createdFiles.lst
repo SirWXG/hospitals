@@ -1,1 +1,3 @@
 com\bank\dao\DeptMapper.class
+com\bank\dao\EmpMapper.class
+com\bank\dao\OrdersMapper.class

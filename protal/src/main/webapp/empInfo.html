@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
 </head>
 <body>
-<tr th:each="emps:${emp}">
-    <td th:text="${emps.empName}"></td>
-    <span></span>
-    <td th:text="${emps.empInfo}"></td>
-    <td th:text="${emps.orderNum<emps.empMaxorder}?'可预约':'不可预约'"></td>
-    <td><a th:text="预约" th:href="@{'/orders/addOrders?empId='+${emps.empName}}"></a></td>
-</tr>
+<br /><br /><br />
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2"><img th:src="${'/images/logo.png'}" /></div>
+    <div class="col-md-9">
+        <ul class="nav nav-tabs">
+            <li role="presentation" ><a th:href="@{'items.html'}">预约</a></li>
+            <li role="presentation" class="active"><a href="#">预约医生选择</a></li>
+            <li role="presentation"><a href="#">预约信息</a></li>
+        </ul>
+    </div>
+</div>
+<br />
+
+<div class="row">
+    <div class="col-md-1"></div>
+        <tr th:each="emps:${emp}">
+            <div class="col-md-1">
+                <td><img th:src="${emps.empImg}" style="width: 100px;height: 100px"/></td>
+                <br /><br />
+                医生姓名:<td th:text="${emps.empName}"></td>
+                <br /><br />
+                医生信息:<td th:text="${emps.empInfo}"></td>
+                <br /><br />
+                预约状态:<td th:text="${emps.orderNum<emps.empMaxorder}?'可预约':'不可预约'"></td>
+                <br /><br />
+                <td><a th:if="${emps.orderNum<emps.empMaxorder}" th:text="预约" th:href="@{'/orders/addOrders?empId='+${emps.empName}}"></a></td>
+            </div>
+        </tr>
+    <div class="col-md-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="jumbotron">
+            <h3>关于平台</h3>
+            <p>平台由万旭刚，周绪东，寇晨雨，霍瑛珏联合承办，立人医药集团目标为三甲医院。为客户提供在线预约，挂号检查报告，体检预约等多项健康服务</p>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
 </body>
 </html>

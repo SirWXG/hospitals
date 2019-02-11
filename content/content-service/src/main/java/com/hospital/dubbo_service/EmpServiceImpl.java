@@ -19,4 +19,10 @@ public class EmpServiceImpl implements EmpService {
         List<Emp> list = empMapper.selectEmpByDept(deptId);
         return list;
     }
+
+    @Override
+    public void updateNum(String empName) {
+        empMapper.updateNum(empName);
+    }
+
 }

@@ -19,4 +19,6 @@
 
 	<!--从dubbo中引用原来有rest提供的服务，交由sprin管理   -->
     <dubbo:reference interface="com.bank.dubbo.DeptService" id="deptService" />
+	<dubbo:reference interface="com.bank.dubbo.EmpService" id="empService" />
+	<dubbo:reference interface="com.bank.dubbo.OrdersService" id="ordersService" />
 </beans>

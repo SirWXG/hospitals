@@ -3,10 +3,33 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Title</title>
+    <link rel="stylesheet" th:href="${'/css/bootstrap.css'}" />
+    <script type="text/javascript" th:src="${'/js/jquery.js'}"></script>
 </head>
 <body>
+<br /><br /><br />
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-7"><img th:src="${'/images/logo.png'}" /></div>
+    <div class="col-md-1"><a th:href="@{'items.html'}">医院廉政标语</a></div>
+    <div class="col-md-4"><font color="#ff7f50">但愿世人无疾病，宁可架上药生尘</font></div>
+</div>
+<br />
+<span>请选择预约的科室:</span>
 <tr th:each="depts:${dept}">
-    <td th:text="${depts.deptName}"></td>
+    <a class="btn" th:href="@{'/emp/selectEmp?empId='+${depts.deptId}}" th:text="${depts.deptName}"></a>
 </tr>
+
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="jumbotron">
+    <h3>友情提醒:</h3>
+    <p></p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
 </body>
 </html>

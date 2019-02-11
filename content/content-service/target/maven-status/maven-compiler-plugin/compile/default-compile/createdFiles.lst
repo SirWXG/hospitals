@@ -1,1 +1,3 @@
 com\bank\dubbo_service\DeptServiceImpl.class
+com\bank\dubbo_service\OrdersServiceImpl.class
+com\bank\dubbo_service\EmpServiceImpl.class
