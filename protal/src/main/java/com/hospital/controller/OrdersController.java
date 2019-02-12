@@ -47,6 +47,6 @@ public class OrdersController {
         orders.setOrderDate(date);
         orders.setOrderStatus(1);
         ordersService.addOrders(orders);
-        return "redirect:/dept/selectAllDept";
+        return "return";
     }
 }
