@@ -26,5 +26,7 @@
 	<dubbo:reference interface="com.hospital.dubbo.MedicineService" id="medicinePro" />
 	<!--solr的药品查询-->
 	<dubbo:reference interface="com.hospital.dubbo.SolrService" id="solrServicePro" />
+	
+	<dubbo:reference interface="com.hospital.dubbo.MenuService" id="menuService" />
 
 </beans>

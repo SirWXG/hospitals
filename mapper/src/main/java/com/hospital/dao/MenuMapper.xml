@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.dao.MenuMapper">
+    <select id="selectMenuByEmp" parameterType="string" resultType="com.hospital.pojo.MenuAndEmp">
+        select s.menu_item as menuName,s.menu_url as menuUrl,e.emp_id as empId,e.emp_name as empName,e.emp_img as empUrl
+        FROM (SELECT m.menu_url AS menu_url,me.emp_id AS emp_id,m.menu_item AS menu_item
+        FROM menu m LEFT JOIN menu_emp me ON me.menu_id=m.id) s LEFT JOIN emp e on e.emp_id=s.emp_id WHERE e.emp_id=#{empId}
+    </select>
+</mapper>
