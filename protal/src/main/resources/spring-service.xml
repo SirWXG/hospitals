@@ -29,4 +29,8 @@
 	
 	<dubbo:reference interface="com.hospital.dubbo.MenuService" id="menuService" />
 
+	<dubbo:reference interface="com.hospital.dubbo.EmpInfoService" id="empInfoService" />
+
+
+
 </beans>

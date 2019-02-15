@@ -27,6 +27,7 @@
     <dubbo:service interface="com.hospital.dubbo.MedicineService" ref="medicineServiceImpl" timeout="3000"/>
     <dubbo:service interface="com.hospital.dubbo.SolrService" ref="solrServiceImpl" timeout="3000" />
     <dubbo:service interface="com.hospital.dubbo.MenuService" ref="menuServiceImpl" timeout="3000" />
+    <dubbo:service interface="com.hospital.dubbo.EmpInfoService" ref="empInfoServiceImpl" timeout="3000" />
 
 
 </beans>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="/layui/css/layui.css">
+
+</head>
+<body>
+<div id="deptList"></div>
+
+<table class="layui-table">
+    <colgroup>
+        <col width="150">
+        <col width="200">
+        <col>
+    </colgroup>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>简介</th>
+        <th>日会诊数量</th>
+        <th>目前会诊数量</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  th:each="emps:${emp}">
+        <th th:text="${emps.empName}"></th>
+        <th th:text="${emps.empInfo}"></th>
+        <th th:text="${emps.empMaxorder}"></th>
+        <th th:text="${emps.orderNum}"></th>
+        <th><a th:href="@{'/emp/deleteEmp?empId='+${emps.empId}}">删除</a>&nbsp;<a th:href="@{'/emp/selectOneEmp?empId='+${emps.empId}}">修改</a></th>
+    </tr>
+    </tbody>
+</table>
+<script type="text/javascript " src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" >
+
+$.ajax({
+        url:"/dept/selectAllDepts",
+        method:"get",
+        async:false,
+        success:function(data){
+        alert(data)
+        }
+    })
+</script>
+</body>
+</html>

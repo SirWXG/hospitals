@@ -15,14 +15,14 @@
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left">
             <li class="layui-nav-item">
-                <a href="">预约信息<span class="layui-badge" th:text="${emp['orderNum']}"></span></a>
+                <a href="">预约信息<span class="layui-badge" th:text="${emp.orderNumi}"></span></a>
             </li>
         </ul>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
                 <a href="javascript:;">
-                    <img th:src="${emp['empUrl']}" class="layui-nav-img">
-                    <span th:text="${emp['empName']}"></span>
+                    <img th:src="${emp.empImg}" class="layui-nav-img">
+                    <span th:text="${emp.empName}"></span>
                 </a>
             </li>
             <li class="layui-nav-item"><a href="">退了</a></li>

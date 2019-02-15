@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
+<body>
+
+<form th:action="@{/emp/addemp}" th:object="${emp}" method="post">
+    <span>姓名:<input type="text" th:field="*{empName}" disabled/></span>
+    <br />
+    <span>入职时间:<input type="time" th:field="*{hiredate}" disabled/></span>
+    <br />
+    <span>科室:<select id="dept" name="deptId"></select> </span>
+    <br />
+    <span>简介:<input type="text" th:field="*{empInfo}"/></span>
+    <br />
+    <span>照片:<input type="file" th:field="*{orderPhone}"/></span>
+    <br />
+    <span>日最大被访问数量:<input type="text" th:field="*{empMaxorder}"/></span>
+    <br />
+    <input type="submit" th:text="预约"/>
+</form>
+</body>
+
+</html>

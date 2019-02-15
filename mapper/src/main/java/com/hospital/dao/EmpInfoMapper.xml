@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hospital.dao.EmpInfoMapper">
+
+    <select id="checkLogin" parameterType="string" resultType="com.hospital.pojo.EmpInfo">
+        SELECT e.emp_id as empId,e.emp_img as empImg,e.emp_name as empName,e.order_num as orderNum,d.dept_name as deptName
+        FROM emp e
+        LEFT JOIN dept d
+        on e.dept_id=d.dept_id
+        where e.emp_name=#{name}
+    </select>
+</mapper>
